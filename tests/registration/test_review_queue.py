@@ -28,3 +28,29 @@ def test_queue_preserves_source_flags_and_defers_missing_measurements():
     assert queue["counts"]["catalog_associated_pairs"] is None
     assert all(r["scientific_eligibility"]["motion"] == "INSUFFICIENT_EVIDENCE"
                for r in queue["records"])
+
+
+def test_shared_candidates_do_not_confirm_identity():
+    def measurement():
+        return {"status": "MEASURED_CONDITIONAL", "flag_bits": 1 << 21}
+
+    comparison = {
+        "schema_version": "sieve.qr3.comparison.v1",
+        "geometry": {"inputs": [{"exposure_id": "a"}, {"exposure_id": "b"}],
+                     "source_motion_status": "REGISTRATION_UNQUALIFIED",
+                     "flux_variability_status": "INSUFFICIENT_CALIBRATION"},
+        "measurements": [[measurement()], [measurement()]],
+        "pairings": {"candidate_pairs": [{"a": 0, "b": 0, "ambiguous": False}]},
+        "detections_per_exposure": [1, 1],
+        "provenance": {"input_sha256": ["a", "b"]},
+    }
+    identities = {"catalog_sha256": "hash", "catalog_scope": "partial", "results": [
+        {"detection_id": f"measurement:{obs}:00000", "status": "inconclusive",
+         "candidates": [{"catalog": "Gaia", "id": "x"}]}
+        for obs in ("a", "b")
+    ]}
+    result = build(comparison, "hash", identities)
+    assert result["counts"]["catalog_associated_pairs"] == 1
+    assert result["records"][0]["catalog_association"] == "SHARED_CANDIDATE_UNCONFIRMED"
+    assert result["records"][0]["identify"][0]["status"] == "inconclusive"
+    assert result["counts"]["science_eligible_pairs"] == 0

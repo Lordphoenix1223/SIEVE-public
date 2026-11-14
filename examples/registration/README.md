@@ -66,7 +66,7 @@ PYTHONPATH=. uv run --no-sync python examples/registration/review_queue.py \
 This groups usable singleton measurements, measurements with excluded-pixel bits in
 the fit window or ambiguous pairings, and deferred incomplete measurements. SOURCE
 is not treated as a bad-pixel flag. Flags describe pixels in the fit window and are
-not artifact labels. All pairs remain present. Catalog associations are unknown for
-the field; the selected-source Gaia cone is not used as a field-wide catalog.
+not artifact labels. All pairs remain present. The field matcher uses the retained bounded 473-row Gaia cohort (G<18, proper motion
+required); a shared candidate is not confirmed, and no match is not a discovery.
 Scientific eligibility remains insufficient. The groups have not been validated as
 an accuracy ranking, and the queue does not change legacy identity/triage gates.

@@ -32,7 +32,24 @@ def test_demo_runs_real_pipeline_and_refuses_overwrite(tmp_path: Path) -> None:
     assert marker.ra_deg == package.cases[0].ra_deg
     assert marker.dec_deg == package.cases[0].dec_deg
     assert marker.inspector_case_id == package.cases[0].id
-    assert manifest["identify"].startswith("NOT_RUN")
+    assert manifest["identify"] == "searchx-identifications.json"
+    identities = json.loads((output / manifest["identify"]).read_text())
+    assert len(identities) == 2
+    for row, measurement in zip(identities, package.cases[0].measurements, strict=True):
+        assert row["detection"]["id"] == measurement["measurement_id"]
+        assert row["detection"]["sigma_arcsec"] is None
+        assert row["status"] == "inconclusive"
+        assert row["association"]["discovery_claim"] is False
+        assert row["association"]["candidates"][0]["id"] == "6316705404065320832"
+        assert row["observation"]["cutout_sha256"]
+    geometry = json.loads((output / "wcs-diagnostics.json").read_text())
+    assert [i["sha256"] for i in geometry["inputs"]] == [
+        o["cutout_sha256"] for o in package.cases[0].observation["input_exposures"]
+    ]
+    assert marker.identify_file == manifest["identify"]
+    for row in identities:
+        assert row["scientific_comparability"]["motion_claim"] == "REFUSED"
+        assert row["scientific_comparability"]["flux_variability_claim"] == "REFUSED"
     assert manifest["harness"].startswith("NOT_RUN")
     failed = subprocess.run(command, cwd=ROOT, env=env, capture_output=True, text=True)
     assert failed.returncode != 0

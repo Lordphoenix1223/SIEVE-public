@@ -19,7 +19,8 @@ import numpy
 import photutils
 from pydantic import BaseModel, ConfigDict, Field
 
-from examples.source_investigation import build_evidence
+from examples.source_investigation import build_evidence, identify_bridge
+from sieve.registration.core import compare, load_observation
 
 HERE = Path(__file__).resolve().parent
 CATALOG_SHA256 = "69395c68563b17afec52117c73f229a68f96b7840d92862efcdabc94198c42f0"
@@ -37,6 +38,7 @@ class Marker(BaseModel):
     status: Literal["TENTATIVE_ASSOCIATION"] = "TENTATIVE_ASSOCIATION"
     inspector_case_id: Literal["A"] = "A"
     inspector_file: Literal["evidence.json"] = "evidence.json"
+    identify_file: Literal["searchx-identifications.json"] = "searchx-identifications.json"
 
 
 def digest(path: Path) -> str:
@@ -85,6 +87,25 @@ def main() -> None:
         (args.output / "evidence.json").read_text()
     )
     case = package.cases[0]
+    exposures = json.loads((build_evidence.BASE / "source.json").read_text())["exposures"][:2]
+    observations = [load_observation(build_evidence.BASE / item["file"]) for item in exposures]
+    if [o.sha256 for o in observations] != [e["sha256"] for e in exposures]:
+        raise ValueError("WCS inputs differ from the source-investigation inputs")
+    geometry = compare(*observations)
+    (args.output / "wcs-diagnostics.json").write_text(
+        json.dumps(geometry, indent=2, allow_nan=False) + "\n"
+    )
+    identities = identify_bridge.build(case, package.catalog)
+    for identity in identities:
+        identity["wcs_diagnostics_file"] = "wcs-diagnostics.json"
+        identity["scientific_comparability"] = {
+            "motion": geometry["source_motion_status"],
+            "flux_variability": geometry["flux_variability_status"],
+            "motion_claim": "REFUSED", "flux_variability_claim": "REFUSED",
+        }
+    (args.output / "searchx-identifications.json").write_text(
+        json.dumps(identities, indent=2, allow_nan=False) + "\n"
+    )
     marker = Marker(
         id=case.measurements[0]["measurement_id"], ra_deg=case.ra_deg, dec_deg=case.dec_deg
     )
@@ -106,8 +127,11 @@ def main() -> None:
                 "source_sha256": {
                     "run_demo.py": digest(Path(__file__)),
                     "build_evidence.py": digest(HERE / "build_evidence.py"),
+                    "identify_bridge.py": digest(HERE / "identify_bridge.py"),
+                    "identify/match.mjs": digest(HERE / "identify" / "match.mjs"),
+                    "identify/engine.mjs": digest(HERE / "identify" / "engine.mjs"),
                 },
-                "identify": "NOT_RUN: SearchX Identify interface unavailable",
+                "identify": "searchx-identifications.json",
                 "harness": "NOT_RUN: no applicable moving-object backend executed",
                 "artifact_case": "retained exploratory simulation, not re-executed by this command",
                 "files_sha256": {
@@ -119,7 +143,7 @@ def main() -> None:
         + "\n"
     )
     print(f"Validated evidence and Aladin marker: {args.output}")
-    print(f"Gaia mode: {package.catalog['access_mode']}; Identify and Harness NOT_RUN")
+    print(f"Gaia mode: {package.catalog['access_mode']}; Identify complete; Harness NOT_RUN")
 
 
 if __name__ == "__main__":

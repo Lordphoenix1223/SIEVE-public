@@ -30,7 +30,8 @@ data sources, and limitations.
 The Gaia association is **tentative**, and the independent check is **inconclusive**:
 qualified positional and registration uncertainties are unavailable. The artifact
 example is a labeled simulation, not a real detection or a validated classifier.
-SearchX Identify, Harness, and an Aladin frontend are not run or claimed as integrated.
+The demo also runs SearchX Identify and writes per-detection inspector evidence
+to `searchx-identifications.json`. Node.js 20+ is required. Harness is not run.
 
 ## Science and provenance
 

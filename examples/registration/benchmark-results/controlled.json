@@ -1,0 +1,100 @@
+{
+  "schema_version": "sieve.registration.controlled-benchmark.v1",
+  "cases": [
+    {
+      "rotation_deg": 30,
+      "scale_ratio": 1,
+      "reflection": false,
+      "sip": false,
+      "truth_count": 4,
+      "original_correct": 4,
+      "original_incorrect": 0,
+      "upgraded_correct": 4,
+      "upgraded_incorrect": 0,
+      "reference_correct": 4,
+      "reference_incorrect": 0,
+      "maximum_angular_error_arcsec": 1.574374567324441e-11,
+      "ambiguous_pairs": 0
+    },
+    {
+      "rotation_deg": 90,
+      "scale_ratio": 1,
+      "reflection": false,
+      "sip": false,
+      "truth_count": 4,
+      "original_correct": 4,
+      "original_incorrect": 0,
+      "upgraded_correct": 4,
+      "upgraded_incorrect": 0,
+      "reference_correct": 4,
+      "reference_incorrect": 0,
+      "maximum_angular_error_arcsec": 1.5743745673244406e-11,
+      "ambiguous_pairs": 0
+    },
+    {
+      "rotation_deg": 180,
+      "scale_ratio": 1,
+      "reflection": false,
+      "sip": false,
+      "truth_count": 4,
+      "original_correct": 4,
+      "original_incorrect": 0,
+      "upgraded_correct": 4,
+      "upgraded_incorrect": 0,
+      "reference_correct": 4,
+      "reference_incorrect": 0,
+      "maximum_angular_error_arcsec": 1.5743745673244406e-11,
+      "ambiguous_pairs": 0
+    },
+    {
+      "rotation_deg": 30,
+      "scale_ratio": 1.3,
+      "reflection": false,
+      "sip": false,
+      "truth_count": 4,
+      "original_correct": 4,
+      "original_incorrect": 0,
+      "upgraded_correct": 4,
+      "upgraded_incorrect": 0,
+      "reference_correct": 4,
+      "reference_incorrect": 0,
+      "maximum_angular_error_arcsec": 1.574374567324441e-11,
+      "ambiguous_pairs": 0
+    },
+    {
+      "rotation_deg": 30,
+      "scale_ratio": 1,
+      "reflection": true,
+      "sip": false,
+      "truth_count": 4,
+      "original_correct": 4,
+      "original_incorrect": 0,
+      "upgraded_correct": 4,
+      "upgraded_incorrect": 0,
+      "reference_correct": 4,
+      "reference_incorrect": 0,
+      "maximum_angular_error_arcsec": 1.574374567324441e-11,
+      "ambiguous_pairs": 0
+    },
+    {
+      "rotation_deg": 30,
+      "scale_ratio": 1,
+      "reflection": false,
+      "sip": true,
+      "truth_count": 4,
+      "original_correct": 4,
+      "original_incorrect": 0,
+      "upgraded_correct": 4,
+      "upgraded_incorrect": 0,
+      "reference_correct": 4,
+      "reference_incorrect": 0,
+      "maximum_angular_error_arcsec": 9.266838133916289e-10,
+      "ambiguous_pairs": 0
+    }
+  ],
+  "limitations": [
+    "Noise-free repeated sources; not independent skies or measured completeness.",
+    "Truth uses the same WCS as the methods; not external calibration.",
+    "The original and upgraded paths both use Astropy search_around_sky."
+  ]
+}

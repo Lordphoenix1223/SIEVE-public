@@ -1,0 +1,14 @@
+{
+  "schema_version": "sieve.registration.timing.v1",
+  "repeats": 20,
+  "original_median_seconds": 0.0015280834631994367,
+  "upgraded_median_seconds": 0.0017659164732322097,
+  "original_pairs": 364,
+  "upgraded_pairs": 364,
+  "peak_rss_native_units": 163856384,
+  "peak_rss_note": "bytes on macOS, KiB on Linux; includes detection/imports",
+  "limitations": [
+    "Single process and field; not a throughput or scaling benchmark.",
+    "Both methods use Astropy sky search; reference candidates lack truth labels."
+  ]
+}

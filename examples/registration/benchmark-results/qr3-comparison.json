@@ -1,0 +1,34 @@
+{
+  "schema_version": "sieve.registration.baseline-comparison.v1",
+  "baseline_method": "existing pilot Astropy search_around_sky at 12 arcseconds",
+  "reference_method": "Astropy search_around_sky is the existing method; not independent",
+  "upgrade_method": "same WCS sky gate with ambiguity and scientific refusal states",
+  "input_sha256": [
+    "13434d8c4615a7b788594d3065809c61dfa5c28d5fae6590cf5d7e8b952a4117",
+    "0d6297702adcbb65786230b1ed7f9c4e6a58e1746885d8dd5ebbc46c8be24fc9"
+  ],
+  "baseline_profiles_sha256": "63fb63f8f45edcdd3af8f2c429d89d6e6db7132d891fb7b3a127d21a86204c4a",
+  "upgraded_sha256": "ca8fd67399b6269195e7d5b6b1feb0de035d01a6b839671725efdb09de8efa49",
+  "baseline_detected_peaks": [
+    418,
+    412
+  ],
+  "upgraded_detected_peaks": [
+    418,
+    412
+  ],
+  "baseline_pairs": 364,
+  "upgraded_pairs": 364,
+  "common_pairs": 364,
+  "baseline_only": 0,
+  "upgraded_only": 0,
+  "ambiguous_pairs": 0,
+  "baseline_scientific_result": "INCONCLUSIVE",
+  "upgraded_motion_claim": "REFUSED",
+  "upgraded_flux_variability_claim": "REFUSED",
+  "limitations": [
+    "Both paths use Astropy matching; agreement is not independent validation.",
+    "This field has no exhaustive reference identities or truth labels.",
+    "Pilot includes injections and identity; its runtime is not comparable to the CLI."
+  ]
+}

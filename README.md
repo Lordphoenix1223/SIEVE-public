@@ -46,3 +46,5 @@ NASA/JPL/Caltech products distributed by IPAC; Gaia data are ESA products proces
 by DPAC. See the [SPHEREx acknowledgment guidance](https://irsa.ipac.caltech.edu/Missions/spherex.html)
 and [Gaia DR3 credit instructions](https://gea.esac.esa.int/archive/documentation/GDR3/Miscellaneous/sec_credit_and_citation_instructions/)
 for published use.
+
+For experimental WCS comparison and refusal gates, see the [registration benchmark](examples/registration/BENCHMARK.md).

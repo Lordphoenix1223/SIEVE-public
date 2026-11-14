@@ -204,8 +204,29 @@ def main() -> int:
     loo.add_argument("--hypothesis", required=True)
     loo.add_argument("--heldout", required=True)
     loo.add_argument("--output", type=Path, required=True)
+    comparison = sub.add_parser(
+        "compare-qr3", help="experimental QR3 candidates with fail-closed science gates"
+    )
+    comparison.add_argument("--first", type=Path, required=True)
+    comparison.add_argument("--second", type=Path, required=True)
+    comparison.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     try:
+        if args.command == "compare-qr3":
+            from sieve.registration.pipeline import run_qr3_pair
+
+            result = run_qr3_pair(args.first, args.second, args.output)
+            print(
+                json.dumps(
+                    {
+                        "mode": result["mode"],
+                        "source_association": result["source_association"],
+                        "motion_claim": result["motion_claim"],
+                        "flux_variability_claim": result["flux_variability_claim"],
+                    }
+                )
+            )
+            return 0
         if args.command == "identity":
             from sieve.identity.graph import IdentityBudget
             from sieve.identity.workflow import run_identity

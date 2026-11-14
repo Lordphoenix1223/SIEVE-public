@@ -1,0 +1,31 @@
+{
+  "dataset": "SPHEREx Quick Release 3 spectral image MEF",
+  "collection": "spherex_qr3",
+  "exposure_id": "2026W30_1B_0001_1",
+  "band": "D1",
+  "detector": 1,
+  "processing_directory": "l2b-v27-2026-222",
+  "observation_mjd": 61241.004784375,
+  "observation_utc": "2026-07-20T00:06:53.370",
+  "original_shape_pixels": [2040, 2040],
+  "original_product_bytes": 65851200,
+  "original_product_sha256": "ba5262e965b35e617283d7f772f5551966237ffb191de276a35dc07201dd092d",
+  "sia_query": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr3&POS=circle+232.6636+-10.7213+0.02&RESPONSEFORMAT=CSV",
+  "original_product_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W30_1B/l2b-v27-2026-222/1/level2_2026W30_1B_0001_1D1_spx_l2b-v27-2026-222.fits",
+  "cutout": {
+    "method": "Astropy Cutout2D from the verified original product",
+    "numpy_y_slice": [892, 1148],
+    "numpy_x_slice": [892, 1148],
+    "included_extensions": ["IMAGE", "FLAGS", "VARIANCE", "ZODI", "WCS-WAVE"],
+    "omitted_extensions": ["EPSF"],
+    "sample_shape_pixels": [256, 256],
+    "sample_sha256": "9e905964b48a0f63f93c87a3ec00a7b472ba79d00aa8e08af8c5372298a8dd8a"
+  },
+  "notes": [
+    "The official IRSA cutout service returned HTTP 503 during acquisition; the complete product was read from the official public S3 mirror.",
+    "The sample keeps image, detector flags, variance, zodiacal model and the wavelength WCS table; it omits the ePSF table because the demonstrator does not perform PSF fitting.",
+    "Only the celestial cutout WCS is reconstructed; the retained original WCS-WAVE table is reference context and is not a validated cutout spectral WCS.",
+    "All extracted peak centers in this sample carry the upstream SOURCE mask bit; these outputs are not independent source-discovery evidence.",
+    "SPHEREx data acknowledgment and current QR release guidance are in the IRSA mission and archive documentation."
+  ]
+}

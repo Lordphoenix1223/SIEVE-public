@@ -1,0 +1,514 @@
+{
+  "$defs": {
+    "Entity": {
+      "additionalProperties": false,
+      "properties": {
+        "acknowledgements": {
+          "default": [],
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Acknowledgements",
+          "type": "array"
+        },
+        "citations": {
+          "default": [],
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Citations",
+          "type": "array"
+        },
+        "dataset_release": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dataset Release"
+        },
+        "hash_missing_reason": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Hash Missing Reason"
+        },
+        "id": {
+          "minLength": 1,
+          "pattern": "^\\S+$",
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "minLength": 1,
+          "title": "Kind",
+          "type": "string"
+        },
+        "provider": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Provider"
+        },
+        "provider_identifier": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Provider Identifier"
+        },
+        "schema_version": {
+          "const": "sieve.v0",
+          "default": "sieve.v0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "sha256": {
+          "anyOf": [
+            {
+              "pattern": "^[a-f0-9]{64}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sha256"
+        },
+        "uri": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Uri"
+        }
+      },
+      "required": [
+        "id",
+        "kind"
+      ],
+      "title": "Entity",
+      "type": "object"
+    },
+    "IdentityPrediction": {
+      "additionalProperties": false,
+      "description": "Operational evaluation projection; competing graph is retained separately.",
+      "properties": {
+        "assignments": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/ObjectAssignment"
+          },
+          "title": "Assignments",
+          "type": "array"
+        },
+        "case_id": {
+          "minLength": 1,
+          "pattern": "^\\S+$",
+          "title": "Case Id",
+          "type": "string"
+        },
+        "eligibility_reason": {
+          "default": "No additional evidence gate",
+          "minLength": 1,
+          "title": "Eligibility Reason",
+          "type": "string"
+        },
+        "heldout_normalized_residual": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Heldout Normalized Residual"
+        },
+        "hypothesis_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "pattern": "^\\S+$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Hypothesis Id"
+        },
+        "inspected": {
+          "default": false,
+          "title": "Inspected",
+          "type": "boolean"
+        },
+        "member_ids": {
+          "items": {
+            "minLength": 1,
+            "pattern": "^\\S+$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Member Ids",
+          "type": "array"
+        },
+        "raw_output_ref": {
+          "minLength": 1,
+          "pattern": "^\\S+$",
+          "title": "Raw Output Ref",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": "sieve.identity.v1",
+          "default": "sieve.identity.v1",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "score": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Score"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "state": {
+          "enum": [
+            "PROPOSED",
+            "UNRESOLVED",
+            "UNSUPPORTED"
+          ],
+          "title": "State",
+          "type": "string"
+        },
+        "test_eligible": {
+          "default": true,
+          "title": "Test Eligible",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "case_id",
+        "member_ids",
+        "state",
+        "raw_output_ref"
+      ],
+      "title": "IdentityPrediction",
+      "type": "object"
+    },
+    "MethodSpec": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "minLength": 1,
+          "pattern": "^\\S+$",
+          "title": "Name",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": "sieve.v0",
+          "default": "sieve.v0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "version": {
+          "minLength": 1,
+          "title": "Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "version"
+      ],
+      "title": "MethodSpec",
+      "type": "object"
+    },
+    "ObjectAssignment": {
+      "additionalProperties": false,
+      "properties": {
+        "known_record_ref": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "pattern": "^\\S+$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Known Record Ref"
+        },
+        "member_ids": {
+          "items": {
+            "minLength": 1,
+            "pattern": "^\\S+$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Member Ids",
+          "type": "array"
+        },
+        "schema_version": {
+          "const": "sieve.identity.v1",
+          "default": "sieve.identity.v1",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "slot_id": {
+          "minLength": 1,
+          "pattern": "^\\S+$",
+          "title": "Slot Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "slot_id",
+        "member_ids"
+      ],
+      "title": "ObjectAssignment",
+      "type": "object"
+    },
+    "Score": {
+      "additionalProperties": false,
+      "properties": {
+        "calibrated": {
+          "default": false,
+          "title": "Calibrated",
+          "type": "boolean"
+        },
+        "calibration_ref": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "pattern": "^\\S+$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Calibration Ref"
+        },
+        "direction": {
+          "enum": [
+            "higher",
+            "lower"
+          ],
+          "title": "Direction",
+          "type": "string"
+        },
+        "domain": {
+          "minLength": 1,
+          "title": "Domain",
+          "type": "string"
+        },
+        "event_or_null": {
+          "minLength": 1,
+          "title": "Event Or Null",
+          "type": "string"
+        },
+        "missing_reason": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Missing Reason"
+        },
+        "schema_version": {
+          "const": "sieve.v0",
+          "default": "sieve.v0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "semantics": {
+          "$ref": "#/$defs/ScoreSemantics"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Value"
+        }
+      },
+      "required": [
+        "value",
+        "semantics",
+        "direction",
+        "domain",
+        "event_or_null"
+      ],
+      "title": "Score",
+      "type": "object"
+    },
+    "ScoreSemantics": {
+      "enum": [
+        "RANKING_ONLY",
+        "CALIBRATED_PROBABILITY",
+        "LIKELIHOOD_LIKE",
+        "P_VALUE",
+        "PSEUDO_PROBABILITY",
+        "UNKNOWN_UNCALIBRATED"
+      ],
+      "title": "ScoreSemantics",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "astrometry_config_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Astrometry Config Sha256",
+      "type": "string"
+    },
+    "calibration_artifacts": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Entity"
+      },
+      "title": "Calibration Artifacts",
+      "type": "array"
+    },
+    "control_artifact_refs": {
+      "default": [],
+      "items": {
+        "minLength": 1,
+        "pattern": "^\\S+$",
+        "type": "string"
+      },
+      "title": "Control Artifact Refs",
+      "type": "array"
+    },
+    "evidence_protocol_artifacts": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Entity"
+      },
+      "title": "Evidence Protocol Artifacts",
+      "type": "array"
+    },
+    "factor_protocol_refs": {
+      "default": [],
+      "items": {
+        "minLength": 1,
+        "pattern": "^\\S+$",
+        "type": "string"
+      },
+      "title": "Factor Protocol Refs",
+      "type": "array"
+    },
+    "input_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Input Sha256",
+      "type": "string"
+    },
+    "limitations": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Limitations",
+      "type": "array"
+    },
+    "method": {
+      "$ref": "#/$defs/MethodSpec"
+    },
+    "peak_memory_bytes": {
+      "anyOf": [
+        {
+          "minimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Peak Memory Bytes"
+    },
+    "predictions": {
+      "items": {
+        "$ref": "#/$defs/IdentityPrediction"
+      },
+      "title": "Predictions",
+      "type": "array"
+    },
+    "runtime_seconds": {
+      "minimum": 0,
+      "title": "Runtime Seconds",
+      "type": "number"
+    },
+    "schema_version": {
+      "const": "sieve.identity.v1",
+      "default": "sieve.identity.v1",
+      "title": "Schema Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "method",
+    "input_sha256",
+    "astrometry_config_sha256",
+    "predictions",
+    "runtime_seconds",
+    "peak_memory_bytes",
+    "limitations"
+  ],
+  "title": "PredictionTable",
+  "type": "object"
+}

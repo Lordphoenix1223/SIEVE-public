@@ -1,0 +1,31 @@
+{
+  "schema_version": "sieve.qr3.photometry-method-protocol.v3",
+  "status": "FROZEN_BEFORE_EDGE_COHORT_EVALUATION",
+  "supersedes": "photometry-method-protocol-v2.json; preserves the frozen blend experiment and adds a full-cohort control for the 61 recovered positions.",
+  "edge_recovered_cohort": {
+    "seed": 20261015,
+    "selection": "Every DAO detection whose 11x11 stamp would have crossed the 256x256 cutout boundary under the pre-edge implementation: x0=floor(x-5), y0=floor(y-5), and x0<0 or y0<0 or x0+11>256 or y0+11>256.",
+    "expected_count": 61,
+    "per_exposure_expected_counts": [20, 21, 20],
+    "remaining_failure_cohort": "Retain all detections whose current fit fails; report positions, masks, coverage and reason. Do not impute a flux or silently replace a failure.",
+    "injector": "Use the next pinned exposure's nearest ePSF zone at the same WCS sky location, evaluated at the science-frame subpixel position; unit-sum finite stamp, no crop renormalization.",
+    "amplitude": "10 times current fitted-exposure conditional flux uncertainty derived from the registered variance and fit design; both injected and un-injected real image controls use independent diagonal-variance Gaussian perturbations.",
+    "replicates": 32,
+    "methods": [
+      "Current SIEVE fixed-position finite-ePSF plus constant local sky fit.",
+      "SIEVE one-source joint weighted fit with shared local planar background."
+    ],
+    "reported_metrics": [
+      "per-position median signed and absolute fractional injected-increment error",
+      "per-position noise-replicate scatter and standardized residual coverage",
+      "all fit failures and PSF-information coverage",
+      "paired summaries by cutout edge distance and ePSF fitting/injection zone identity"
+    ],
+    "limits": [
+      "The exact real-scene source flux remains unknown; paired on/off differences isolate injected increments only.",
+      "A cross-exposure ePSF is a release-independent template for the fitted exposure but is not independent instrument calibration.",
+      "Noise perturbations assume diagonal archive variance and omit source shot noise and detector covariance.",
+      "This tests conditional flux response at the 61 locations; it does not validate source identity or absolute real-scene flux."
+    ]
+  }
+}

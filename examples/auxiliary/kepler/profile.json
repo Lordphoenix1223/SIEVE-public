@@ -1,0 +1,27 @@
+{
+  "schema_version": "sieve.specialist.v1",
+  "task": "archive_label_7_RR_Lyrae_retrieval",
+  "domain": "KeplerLightCurves-11218015/interpolated-equal-length-v1",
+  "feature_version": "kepler-rrlyrae-fft-v1",
+  "series_length": 4767,
+  "score_semantics": "RANKING_ONLY",
+  "model_file": "model.skops",
+  "model_sha256": "eca56f8eccc599aed61cdb971deb39d29fa7d62521695cfe6604f00358d3bcb7",
+  "training_sha256": "0cfe5d5d8fc4aa5f21262e0eb5a60cd997cb1c53314ffa07b59221158426e13c",
+  "protocol_sha256": "1f5f35867f7724f4ce768ef41596f102266e9f1a54517013897981eeac4a35ea",
+  "features_sha256": "5a3144bff67a1230fe0f24f723fe38e26c487812b139905d6b5bab9ecf0c8e3b",
+  "selected_candidate": "extra-depth8-leaf1",
+  "packages": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "skops": "0.16.0"
+  },
+  "limitations": [
+    "Archive expert label retrieval; labels are not authoritative physical identity",
+    "Preprocessed equal-length benchmark domain only; no raw Fornax transfer qualification",
+    "Row-level holdout; original source/exposure groups unavailable",
+    "Ranking scores are not calibrated anomaly probabilities or case-level FDR",
+    "Small rare-class test denominator; no global best or discovery claim"
+  ]
+}

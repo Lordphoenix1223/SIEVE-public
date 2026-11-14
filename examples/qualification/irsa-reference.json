@@ -1,0 +1,38 @@
+{
+  "schema_version": "sieve.irsa.reference.v1",
+  "service": "https://irsa.ipac.caltech.edu/applications/spherex/",
+  "job_id": "THNmpVzTS59XB6Qwmw8K8G",
+  "created_utc": "2026-10-12T02:20:20Z",
+  "completed_utc": "2026-10-12T02:21:40Z",
+  "selection": "Highest aperture-sum source in historical scan with usable aperture and centroid inside [20,236] pixels",
+  "request": {
+    "ra_deg": 232.8219284670584,
+    "dec_deg": -10.644165580713109,
+    "morphology": "Point Source",
+    "band": 1,
+    "start_utc": "2026-07-20T00:06:50Z",
+    "end_utc": "2026-07-20T00:10:00Z",
+    "include_deep": false
+  },
+  "custody": "Original table export failed with MISSING_ENTRY:Table with name DATA does not exist!; retained text-view transcription of all 18 columns. Precision is limited to service display. Job may expire. Re-run the request independently; this is one selected bright source, not a calibration population.",
+  "rows": [
+    {
+      "obs_id": "2026W30_1B_0001_1", "obs_publisher_did": "ivo://irsa.ipac/spherex_qr3?2026W30_1B_0001_1/D1",
+      "mjd": 61241.005450564, "data_collection": "qr3", "deep_flg": false,
+      "det_id": 1, "flags": 2097152, "fit_ql": 5.730799,
+      "flux_bkg_MJy_sr": 0.298138, "x_image": 1095.5372, "y_image": 956.4086,
+      "ra": 232.8219285, "dec": -10.6441656, "lvf_id": 202630102000111,
+      "lambda_um": 0.91654646, "lambda_width_um": 0.022437314,
+      "flux_uJy": 113959.664, "flux_err_uJy": 3437.3145, "flux_err_tractor_uJy": 356.37967
+    },
+    {
+      "obs_id": "2026W30_1B_0001_2", "obs_publisher_did": "ivo://irsa.ipac/spherex_qr3?2026W30_1B_0001_2/D1",
+      "mjd": 61241.006942821, "data_collection": "qr3", "deep_flg": false,
+      "det_id": 1, "flags": 4297064517, "fit_ql": 6.2283406,
+      "flux_bkg_MJy_sr": 0.29807004, "x_image": 1092.6692, "y_image": 841.3762,
+      "ra": 232.8219285, "dec": -10.6441656, "lvf_id": 202630102000121,
+      "lambda_um": 0.93827343, "lambda_width_um": 0.024636067,
+      "flux_uJy": 116499.84, "flux_err_uJy": 3513.9314, "flux_err_tractor_uJy": 364.31207
+    }
+  ]
+}

@@ -1,0 +1,802 @@
+{
+  "schema_version": "sieve.identity.v1",
+  "observations": [
+    {
+      "id": "o0",
+      "source": {
+        "provider": "synthetic-reference",
+        "dataset": "identity-contract",
+        "release": "v1",
+        "exposure_id": "ex0",
+        "source_id": "row0"
+      },
+      "time": {
+        "jd1": 2461000.0,
+        "jd2": 0.0,
+        "scale": "tai"
+      },
+      "dependence_group": "ex0",
+      "raw_asset_ids": [
+        "raw-observations"
+      ],
+      "provenance_ref": "activity-observe"
+    },
+    {
+      "id": "o1",
+      "source": {
+        "provider": "synthetic-reference",
+        "dataset": "identity-contract",
+        "release": "v1",
+        "exposure_id": "ex1",
+        "source_id": "row1"
+      },
+      "time": {
+        "jd1": 2461000.0,
+        "jd2": 0.02,
+        "scale": "tai"
+      },
+      "dependence_group": "ex1",
+      "raw_asset_ids": [
+        "raw-observations"
+      ],
+      "provenance_ref": "activity-observe"
+    },
+    {
+      "id": "o2",
+      "source": {
+        "provider": "synthetic-reference",
+        "dataset": "identity-contract",
+        "release": "v1",
+        "exposure_id": "ex2",
+        "source_id": "row2"
+      },
+      "time": {
+        "jd1": 2461000.0,
+        "jd2": 0.04,
+        "scale": "tai"
+      },
+      "dependence_group": "ex2",
+      "raw_asset_ids": [
+        "raw-observations"
+      ],
+      "provenance_ref": "activity-observe"
+    },
+    {
+      "id": "o3",
+      "source": {
+        "provider": "synthetic-reference",
+        "dataset": "identity-contract",
+        "release": "v1",
+        "exposure_id": "ex3",
+        "source_id": "row3"
+      },
+      "time": {
+        "jd1": 2461000.0,
+        "jd2": 0.06,
+        "scale": "tai"
+      },
+      "dependence_group": "ex3",
+      "raw_asset_ids": [
+        "raw-observations"
+      ],
+      "provenance_ref": "activity-observe"
+    }
+  ],
+  "measurements": [
+    {
+      "id": "m0",
+      "observation_id": "o0",
+      "raw_source_id": "measurement-row0",
+      "position": {
+        "longitude_deg": 10.0,
+        "latitude_deg": 1.0,
+        "frame": "icrs"
+      },
+      "covariance": {
+        "values": [
+          [
+            0.04,
+            0.0
+          ],
+          [
+            0.0,
+            0.04
+          ]
+        ],
+        "unit": "arcsec2",
+        "basis": "tangent_longitude_cos_latitude_latitude"
+      },
+      "quantities": [],
+      "method": {
+        "name": "reference-contract",
+        "version": "v1"
+      },
+      "quality": {
+        "usable": false
+      },
+      "raw_output_asset_ids": [
+        "raw-measurements"
+      ],
+      "provenance_ref": "activity-measure"
+    },
+    {
+      "id": "m1",
+      "observation_id": "o1",
+      "raw_source_id": "measurement-row1",
+      "position": {
+        "longitude_deg": 10.0001,
+        "latitude_deg": 1.0,
+        "frame": "icrs"
+      },
+      "covariance": {
+        "values": [
+          [
+            0.04,
+            0.0
+          ],
+          [
+            0.0,
+            0.04
+          ]
+        ],
+        "unit": "arcsec2",
+        "basis": "tangent_longitude_cos_latitude_latitude"
+      },
+      "quantities": [],
+      "method": {
+        "name": "reference-contract",
+        "version": "v1"
+      },
+      "quality": {
+        "usable": false
+      },
+      "raw_output_asset_ids": [
+        "raw-measurements"
+      ],
+      "provenance_ref": "activity-measure"
+    },
+    {
+      "id": "m2",
+      "observation_id": "o2",
+      "raw_source_id": "measurement-row2",
+      "position": {
+        "longitude_deg": 10.0002,
+        "latitude_deg": 1.0,
+        "frame": "icrs"
+      },
+      "covariance": {
+        "values": [
+          [
+            0.04,
+            0.0
+          ],
+          [
+            0.0,
+            0.04
+          ]
+        ],
+        "unit": "arcsec2",
+        "basis": "tangent_longitude_cos_latitude_latitude"
+      },
+      "quantities": [],
+      "method": {
+        "name": "reference-contract",
+        "version": "v1"
+      },
+      "quality": {
+        "usable": false
+      },
+      "raw_output_asset_ids": [
+        "raw-measurements"
+      ],
+      "provenance_ref": "activity-measure"
+    },
+    {
+      "id": "m3",
+      "observation_id": "o3",
+      "raw_source_id": "measurement-row3",
+      "position": {
+        "longitude_deg": 10.0003,
+        "latitude_deg": 1.0,
+        "frame": "icrs"
+      },
+      "covariance": {
+        "values": [
+          [
+            0.04,
+            0.0
+          ],
+          [
+            0.0,
+            0.04
+          ]
+        ],
+        "unit": "arcsec2",
+        "basis": "tangent_longitude_cos_latitude_latitude"
+      },
+      "quantities": [],
+      "method": {
+        "name": "reference-contract",
+        "version": "v1"
+      },
+      "quality": {
+        "usable": false
+      },
+      "raw_output_asset_ids": [
+        "raw-measurements"
+      ],
+      "provenance_ref": "activity-measure"
+    }
+  ],
+  "proposals": [
+    {
+      "id": "proposal",
+      "member_ids": [
+        "m0",
+        "m1",
+        "m2",
+        "m3"
+      ],
+      "method": {
+        "name": "reference-contract",
+        "version": "v1"
+      },
+      "generation_input_ids": [
+        "m0",
+        "m1",
+        "m2",
+        "m3"
+      ],
+      "raw_output_asset_ids": [
+        "raw-proposal"
+      ],
+      "rationale": "Fixed synthetic candidate; no identity claim",
+      "provenance_ref": "activity-propose"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "h-one",
+      "proposal_ids": [
+        "proposal"
+      ],
+      "member_ids": [
+        "m0",
+        "m1",
+        "m2",
+        "m3"
+      ],
+      "explanation": "ONE_OBJECT",
+      "assignments": [
+        {
+          "slot_id": "h-one:slot0",
+          "member_ids": [
+            "m0",
+            "m1",
+            "m2",
+            "m3"
+          ],
+          "known_record_ref": null
+        }
+      ],
+      "unassigned_member_ids": [],
+      "generation_input_ids": [
+        "m0",
+        "m1",
+        "m2",
+        "m3"
+      ],
+      "rationale": "Conditional synthetic explanation; retained alongside alternatives",
+      "provenance_ref": "activity-hypothesize"
+    },
+    {
+      "id": "h-unresolved",
+      "proposal_ids": [
+        "proposal"
+      ],
+      "member_ids": [
+        "m0",
+        "m1",
+        "m2",
+        "m3"
+      ],
+      "explanation": "UNRESOLVED",
+      "assignments": [],
+      "unassigned_member_ids": [
+        "m0",
+        "m1",
+        "m2",
+        "m3"
+      ],
+      "generation_input_ids": [
+        "m0",
+        "m1",
+        "m2",
+        "m3"
+      ],
+      "rationale": "Conditional synthetic explanation; retained alongside alternatives",
+      "provenance_ref": "activity-hypothesize"
+    },
+    {
+      "id": "h-artifact",
+      "proposal_ids": [
+        "proposal"
+      ],
+      "member_ids": [
+        "m0",
+        "m1",
+        "m2",
+        "m3"
+      ],
+      "explanation": "ARTIFACT",
+      "assignments": [],
+      "unassigned_member_ids": [
+        "m0",
+        "m1",
+        "m2",
+        "m3"
+      ],
+      "generation_input_ids": [
+        "m0",
+        "m1",
+        "m2",
+        "m3"
+      ],
+      "rationale": "Conditional synthetic explanation; retained alongside alternatives",
+      "provenance_ref": "activity-hypothesize"
+    }
+  ],
+  "evidence_results": [
+    {
+      "request": {
+        "id": "test-request",
+        "hypothesis_id": "h-one",
+        "method": {
+          "name": "reference-contract",
+          "version": "v1"
+        },
+        "purpose": "TEST",
+        "input_ids": [
+          "physical-test-input"
+        ],
+        "tested_claim": "synthetic one-object diagnostic",
+        "dependence": "DISJOINT_INPUTS",
+        "provenance_ref": "activity-request"
+      },
+      "status": "SUCCESS",
+      "factors": [
+        {
+          "id": "test-factor",
+          "request_id": "test-request",
+          "hypothesis_id": "h-one",
+          "method": {
+            "name": "reference-contract",
+            "version": "v1"
+          },
+          "purpose": "TEST",
+          "input_ids": [
+            "physical-test-input"
+          ],
+          "tested_claim": "synthetic one-object diagnostic",
+          "verdict": "INSUFFICIENT",
+          "quantities": [
+            {
+              "name": "contract_statistic",
+              "quantity": {
+                "value": 0.0,
+                "unit": "1"
+              }
+            }
+          ],
+          "test_protocol_ref": "test-protocol",
+          "rationale": "Injected interface test, not scientific evidence",
+          "limitations": [
+            "No physical factor measured; contract fixture only"
+          ],
+          "provenance_ref": "activity-evidence"
+        }
+      ],
+      "reason": "contract-only fixture",
+      "raw_output_asset_ids": [
+        "raw-test-output"
+      ]
+    }
+  ],
+  "provenance": {
+    "entities": [
+      {
+        "id": "raw-observations",
+        "kind": "synthetic_raw_or_protocol",
+        "uri": "repo://SIEVE/examples/identity/raw/artifact/raw-observations.json",
+        "sha256": "6611d55a21e9f26bfc44ca6a390f80a1ce8f11dabfbbcb39f7b222e14cf093f1"
+      },
+      {
+        "id": "raw-measurements",
+        "kind": "synthetic_raw_or_protocol",
+        "uri": "repo://SIEVE/examples/identity/raw/artifact/raw-measurements.json",
+        "sha256": "e6a9e2d541dbc8ba701ed30cd9dc217d06a1ec5dba55254e953d0323392cdb6a"
+      },
+      {
+        "id": "raw-proposal",
+        "kind": "synthetic_raw_or_protocol",
+        "uri": "repo://SIEVE/examples/identity/raw/artifact/raw-proposal.json",
+        "sha256": "0e5f44ee8d5572265f6973092e23e2f0860b3b97b69e897717b1d83b34b60d89"
+      },
+      {
+        "id": "raw-test-output",
+        "kind": "synthetic_raw_or_protocol",
+        "uri": "repo://SIEVE/examples/identity/raw/artifact/raw-test-output.json",
+        "sha256": "160b235aac1dd8f38530b1eea21155b2c38be60bbfb9407241422bc1fe1b9961"
+      },
+      {
+        "id": "physical-test-input",
+        "kind": "synthetic_raw_or_protocol",
+        "uri": "repo://SIEVE/examples/identity/raw/artifact/physical-test-input.json",
+        "sha256": "2fef6b11f24c65d42468c0c7f9224e7d0e521cabfb8eec7e5cfbe45695589395"
+      },
+      {
+        "id": "test-protocol",
+        "kind": "synthetic_raw_or_protocol",
+        "uri": "repo://SIEVE/examples/identity/raw/artifact/test-protocol.json",
+        "sha256": "7e0a2b78c6ff22b1635e4b27f75e4283f52911e134579e9ebbaca69225ee31c9"
+      },
+      {
+        "id": "dependence-control",
+        "kind": "synthetic_raw_or_protocol",
+        "uri": "repo://SIEVE/examples/identity/raw/artifact/dependence-control.json",
+        "sha256": "c134c3c5731c670715a67b793c673e205370e6be64d567ff14d9ec9ec960480c"
+      },
+      {
+        "id": "catalog-record-a",
+        "kind": "synthetic_raw_or_protocol",
+        "uri": "repo://SIEVE/examples/identity/raw/artifact/catalog-record-a.json",
+        "sha256": "772360e9111514cfbc78db20fd482a99d432a6de10e119c324a1d773c5347655"
+      },
+      {
+        "id": "catalog-record-b",
+        "kind": "synthetic_raw_or_protocol",
+        "uri": "repo://SIEVE/examples/identity/raw/artifact/catalog-record-b.json",
+        "sha256": "a90427780ba49e96698b9551478dd7a8b26fef5492ef03435d5bb2896e2d873e"
+      },
+      {
+        "id": "o0",
+        "kind": "observe",
+        "sha256": "8822ee28fef056c3db8cea46e8d6c2b44aca5b368758ddbcf34e6399ba26d428"
+      },
+      {
+        "id": "o1",
+        "kind": "observe",
+        "sha256": "a52a841ac38585b036547ad5c3d004d53232a68de630bc69d3b1dffd5517f916"
+      },
+      {
+        "id": "o2",
+        "kind": "observe",
+        "sha256": "b35bedaf0e9b693ba23639d954f64da593bb0bcb404764678685a576eb0c5e9a"
+      },
+      {
+        "id": "o3",
+        "kind": "observe",
+        "sha256": "41d7494e01ccb58d11183b2154f25b7c816d629cf9bc2862da40a2de5750aea0"
+      },
+      {
+        "id": "m0",
+        "kind": "measure",
+        "sha256": "da6d20401c7ecceb9da5df09510b0655a10b735aff6cc5590b6a3924d9f0f6f0"
+      },
+      {
+        "id": "m1",
+        "kind": "measure",
+        "sha256": "31e875e3fc6d9b275c34dade7bd190fdca2d3aabd2ca9be1d3cd4867eb34535c"
+      },
+      {
+        "id": "m2",
+        "kind": "measure",
+        "sha256": "b08d5694a821b77b748a49b6c6c3c45d60a592c5b8561bcc93b543c0cf01a0d9"
+      },
+      {
+        "id": "m3",
+        "kind": "measure",
+        "sha256": "71e04cd2738ab60a72a6512e2681856197f94347819a9aa7d9116e770246fbc7"
+      },
+      {
+        "id": "proposal",
+        "kind": "propose",
+        "sha256": "5f98cd20322ac607fa71f591b2d7dbc415d83ca599177e49e13b32b067806af2"
+      },
+      {
+        "id": "h-one",
+        "kind": "hypothesize",
+        "sha256": "89c5cc825f56c956bf8553998155e892b21820bcbf0c985921a20b0e44eaff47"
+      },
+      {
+        "id": "h-unresolved",
+        "kind": "hypothesize",
+        "sha256": "a6ec9247ef10d9159b5664009f285651df39f9fbfa9f91cb5d7b2904b0cb3ca0"
+      },
+      {
+        "id": "h-artifact",
+        "kind": "hypothesize",
+        "sha256": "d5453bde11cd7347f71c6d1c98ce713bcbbe44d43bc06e3cc254608d2722c797"
+      },
+      {
+        "id": "test-request",
+        "kind": "request",
+        "sha256": "6c65ccd46078712a3f6c7d5155bcc1fd0cce90df838b1f376ae059592731ba2a"
+      },
+      {
+        "id": "test-factor",
+        "kind": "evidence",
+        "sha256": "118264230d88067640fa622c17d106ae6cbbf43ab4ba5ae5ab841607e4a1074a"
+      }
+    ],
+    "agents": [
+      {
+        "id": "fixture-author",
+        "name": "fixture-author",
+        "role": "contract-fixture-author"
+      }
+    ],
+    "records": [
+      {
+        "id": "activity-observe",
+        "activity": "synthetic-observe",
+        "method_version": "contract.v1",
+        "agent_ids": [
+          "fixture-author"
+        ],
+        "used_entity_ids": [
+          "raw-observations"
+        ],
+        "generated_entity_ids": [
+          "o0",
+          "o1",
+          "o2",
+          "o3"
+        ],
+        "derivations": {
+          "o0": [
+            "raw-observations"
+          ],
+          "o1": [
+            "raw-observations"
+          ],
+          "o2": [
+            "raw-observations"
+          ],
+          "o3": [
+            "raw-observations"
+          ]
+        },
+        "code_commit": "REFERENCE_CONTRACT_V1",
+        "software_version": "identity.v1",
+        "configuration": {
+          "synthetic": true
+        },
+        "request_parameters": {},
+        "random_seeds": {
+          "fixture": 0
+        },
+        "environment_id": "stdlib-json-reference",
+        "started_at": "2026-10-06T00:00:00Z",
+        "ended_at": "2026-10-06T00:00:00Z"
+      },
+      {
+        "id": "activity-measure",
+        "activity": "synthetic-measure",
+        "method_version": "contract.v1",
+        "agent_ids": [
+          "fixture-author"
+        ],
+        "used_entity_ids": [
+          "o0",
+          "o1",
+          "o2",
+          "o3",
+          "raw-measurements"
+        ],
+        "generated_entity_ids": [
+          "m0",
+          "m1",
+          "m2",
+          "m3"
+        ],
+        "derivations": {
+          "m0": [
+            "o0",
+            "raw-measurements"
+          ],
+          "m1": [
+            "o1",
+            "raw-measurements"
+          ],
+          "m2": [
+            "o2",
+            "raw-measurements"
+          ],
+          "m3": [
+            "o3",
+            "raw-measurements"
+          ]
+        },
+        "code_commit": "REFERENCE_CONTRACT_V1",
+        "software_version": "identity.v1",
+        "configuration": {
+          "synthetic": true
+        },
+        "request_parameters": {},
+        "random_seeds": {
+          "fixture": 0
+        },
+        "environment_id": "stdlib-json-reference",
+        "started_at": "2026-10-06T00:00:00Z",
+        "ended_at": "2026-10-06T00:00:00Z"
+      },
+      {
+        "id": "activity-propose",
+        "activity": "synthetic-propose",
+        "method_version": "contract.v1",
+        "agent_ids": [
+          "fixture-author"
+        ],
+        "used_entity_ids": [
+          "m0",
+          "m1",
+          "m2",
+          "m3",
+          "raw-proposal"
+        ],
+        "generated_entity_ids": [
+          "proposal"
+        ],
+        "derivations": {
+          "proposal": [
+            "m0",
+            "m1",
+            "m2",
+            "m3",
+            "raw-proposal"
+          ]
+        },
+        "code_commit": "REFERENCE_CONTRACT_V1",
+        "software_version": "identity.v1",
+        "configuration": {
+          "synthetic": true
+        },
+        "request_parameters": {},
+        "random_seeds": {
+          "fixture": 0
+        },
+        "environment_id": "stdlib-json-reference",
+        "started_at": "2026-10-06T00:00:00Z",
+        "ended_at": "2026-10-06T00:00:00Z"
+      },
+      {
+        "id": "activity-hypothesize",
+        "activity": "synthetic-hypothesize",
+        "method_version": "contract.v1",
+        "agent_ids": [
+          "fixture-author"
+        ],
+        "used_entity_ids": [
+          "m0",
+          "m1",
+          "m2",
+          "m3",
+          "proposal"
+        ],
+        "generated_entity_ids": [
+          "h-one",
+          "h-unresolved",
+          "h-artifact"
+        ],
+        "derivations": {
+          "h-one": [
+            "proposal",
+            "m0",
+            "m1",
+            "m2",
+            "m3"
+          ],
+          "h-unresolved": [
+            "proposal",
+            "m0",
+            "m1",
+            "m2",
+            "m3"
+          ],
+          "h-artifact": [
+            "proposal",
+            "m0",
+            "m1",
+            "m2",
+            "m3"
+          ]
+        },
+        "code_commit": "REFERENCE_CONTRACT_V1",
+        "software_version": "identity.v1",
+        "configuration": {
+          "synthetic": true
+        },
+        "request_parameters": {},
+        "random_seeds": {
+          "fixture": 0
+        },
+        "environment_id": "stdlib-json-reference",
+        "started_at": "2026-10-06T00:00:00Z",
+        "ended_at": "2026-10-06T00:00:00Z"
+      },
+      {
+        "id": "activity-request",
+        "activity": "synthetic-request",
+        "method_version": "contract.v1",
+        "agent_ids": [
+          "fixture-author"
+        ],
+        "used_entity_ids": [
+          "h-one",
+          "physical-test-input"
+        ],
+        "generated_entity_ids": [
+          "test-request"
+        ],
+        "derivations": {
+          "test-request": [
+            "h-one",
+            "physical-test-input"
+          ]
+        },
+        "code_commit": "REFERENCE_CONTRACT_V1",
+        "software_version": "identity.v1",
+        "configuration": {
+          "synthetic": true
+        },
+        "request_parameters": {},
+        "random_seeds": {
+          "fixture": 0
+        },
+        "environment_id": "stdlib-json-reference",
+        "started_at": "2026-10-06T00:00:00Z",
+        "ended_at": "2026-10-06T00:00:00Z"
+      },
+      {
+        "id": "activity-evidence",
+        "activity": "synthetic-evidence",
+        "method_version": "contract.v1",
+        "agent_ids": [
+          "fixture-author"
+        ],
+        "used_entity_ids": [
+          "h-one",
+          "physical-test-input",
+          "raw-test-output",
+          "test-protocol",
+          "test-request"
+        ],
+        "generated_entity_ids": [
+          "test-factor"
+        ],
+        "derivations": {
+          "test-factor": [
+            "test-request",
+            "h-one",
+            "physical-test-input",
+            "test-protocol",
+            "raw-test-output"
+          ]
+        },
+        "code_commit": "REFERENCE_CONTRACT_V1",
+        "software_version": "identity.v1",
+        "configuration": {
+          "synthetic": true
+        },
+        "request_parameters": {},
+        "random_seeds": {
+          "fixture": 0
+        },
+        "environment_id": "stdlib-json-reference",
+        "started_at": "2026-10-06T00:00:00Z",
+        "ended_at": "2026-10-06T00:00:00Z"
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": "sieve.qr3.assets.v1",
+  "release": "qr3",
+  "sky_center_deg": [
+    232.663579354,
+    -10.7213238583
+  ],
+  "parents": [
+    {
+      "id": "exposure_1",
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W30_1B/l2b-v27-2026-222/1/level2_2026W30_1B_0001_1D1_spx_l2b-v27-2026-222.fits",
+      "size": 65851200,
+      "sha256": "ba5262e965b35e617283d7f772f5551966237ffb191de276a35dc07201dd092d"
+    },
+    {
+      "id": "exposure_2",
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W30_1B/l2b-v27-2026-222/1/level2_2026W30_1B_0001_2D1_spx_l2b-v27-2026-222.fits",
+      "size": 66150720,
+      "sha256": "8dc69024d51c5bc258f6dfb7f2c529808efe31df7d50de80e1ad35e96df999b9"
+    },
+    {
+      "id": "solid_angle",
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/solid_angle_pixel_map/cal-sapm-v3-2026-191/1/solid_angle_pixel_map_D1_spx_cal-sapm-v3-2026-191.fits",
+      "size": 16652160,
+      "sha256": "f2439d694c68766d0c488af6f051924aea886c2c015af80f10dc5f760a0aa193"
+    },
+    {
+      "id": "spectral_wcs",
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/spectral_wcs/cal-swcs-v5-2026-191/1/spectral_wcs_D1_spx_cal-swcs-v5-2026-191.fits",
+      "size": 33312960,
+      "sha256": "44fb48b236e25a99d42c8986da0064cc58359527e1fc76e182eda52371a1ae23"
+    },
+    {
+      "id": "exposure_3",
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W30_1B/l2b-v27-2026-222/1/level2_2026W30_1B_0001_3D1_spx_l2b-v27-2026-222.fits",
+      "size": 66381120,
+      "sha256": "9e7872cc3747e9f0411c76dc0133ac57a448a4241eb6b608530234dc3ce0229d"
+    }
+  ],
+  "exposures": [
+    {
+      "parent_id": "exposure_1",
+      "file": "qr3-d1-exposure-1.fits",
+      "size": 5806080,
+      "sha256": "13434d8c4615a7b788594d3065809c61dfa5c28d5fae6590cf5d7e8b952a4117",
+      "origin_xy": [
+        892,
+        893
+      ],
+      "obs_id": "2026W30_1B_0001_1",
+      "mjd_avg": 61241.005450564,
+      "detector": 1
+    },
+    {
+      "parent_id": "exposure_2",
+      "file": "qr3-d1-exposure-2.fits",
+      "size": 5806080,
+      "sha256": "0d6297702adcbb65786230b1ed7f9c4e6a58e1746885d8dd5ebbc46c8be24fc9",
+      "origin_xy": [
+        889,
+        778
+      ],
+      "obs_id": "2026W30_1B_0001_2",
+      "mjd_avg": 61241.006942821,
+      "detector": 1
+    },
+    {
+      "parent_id": "exposure_3",
+      "file": "qr3-d1-exposure-3.fits",
+      "size": 5806080,
+      "sha256": "faff32a95ac0afdaed8d2bbf46f5d4324b774a43a74382b9b482adb3a8849d01",
+      "origin_xy": [
+        886,
+        663
+      ],
+      "obs_id": "2026W30_1B_0001_3",
+      "mjd_avg": 61241.008435078,
+      "detector": 1
+    }
+  ],
+  "calibration_note": "QR3 D1 sky detector coordinates; embedded EPSF from each pinned exposure; no QR2/QR3 gain mixing"
+}

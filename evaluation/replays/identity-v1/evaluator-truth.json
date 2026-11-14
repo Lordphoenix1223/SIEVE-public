@@ -1,0 +1,813 @@
+{
+  "schema_version": "sieve.identity.v1",
+  "role": "HELD_OUT",
+  "task_scope": "membership",
+  "input_sha256": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "cases": [
+    {
+      "schema_version": "sieve.identity.v1",
+      "id": "test:0:clean",
+      "member_ids": [
+        "test:0:a0",
+        "test:0:a1"
+      ],
+      "dependence_groups": [
+        "test:ex:0"
+      ]
+    },
+    {
+      "schema_version": "sieve.identity.v1",
+      "id": "test:0:merge",
+      "member_ids": [
+        "test:0:a0",
+        "test:0:a1",
+        "test:0:b0",
+        "test:0:b1"
+      ],
+      "dependence_groups": [
+        "test:ex:0"
+      ]
+    },
+    {
+      "schema_version": "sieve.identity.v1",
+      "id": "test:1:clean",
+      "member_ids": [
+        "test:1:a0",
+        "test:1:a1"
+      ],
+      "dependence_groups": [
+        "test:ex:1"
+      ]
+    },
+    {
+      "schema_version": "sieve.identity.v1",
+      "id": "test:1:merge",
+      "member_ids": [
+        "test:1:a0",
+        "test:1:a1",
+        "test:1:b0",
+        "test:1:b1"
+      ],
+      "dependence_groups": [
+        "test:ex:1"
+      ]
+    },
+    {
+      "schema_version": "sieve.identity.v1",
+      "id": "test:2:clean",
+      "member_ids": [
+        "test:2:a0",
+        "test:2:a1"
+      ],
+      "dependence_groups": [
+        "test:ex:2"
+      ]
+    },
+    {
+      "schema_version": "sieve.identity.v1",
+      "id": "test:2:merge",
+      "member_ids": [
+        "test:2:a0",
+        "test:2:a1",
+        "test:2:b0",
+        "test:2:b1"
+      ],
+      "dependence_groups": [
+        "test:ex:2"
+      ]
+    },
+    {
+      "schema_version": "sieve.identity.v1",
+      "id": "test:3:clean",
+      "member_ids": [
+        "test:3:a0",
+        "test:3:a1"
+      ],
+      "dependence_groups": [
+        "test:ex:3"
+      ]
+    },
+    {
+      "schema_version": "sieve.identity.v1",
+      "id": "test:3:merge",
+      "member_ids": [
+        "test:3:a0",
+        "test:3:a1",
+        "test:3:b0",
+        "test:3:b1"
+      ],
+      "dependence_groups": [
+        "test:ex:3"
+      ]
+    },
+    {
+      "schema_version": "sieve.identity.v1",
+      "id": "test:4:clean",
+      "member_ids": [
+        "test:4:a0",
+        "test:4:a1"
+      ],
+      "dependence_groups": [
+        "test:ex:4"
+      ]
+    },
+    {
+      "schema_version": "sieve.identity.v1",
+      "id": "test:4:merge",
+      "member_ids": [
+        "test:4:a0",
+        "test:4:a1",
+        "test:4:b0",
+        "test:4:b1"
+      ],
+      "dependence_groups": [
+        "test:ex:4"
+      ]
+    },
+    {
+      "schema_version": "sieve.identity.v1",
+      "id": "test:5:clean",
+      "member_ids": [
+        "test:5:a0",
+        "test:5:a1"
+      ],
+      "dependence_groups": [
+        "test:ex:5"
+      ]
+    },
+    {
+      "schema_version": "sieve.identity.v1",
+      "id": "test:5:merge",
+      "member_ids": [
+        "test:5:a0",
+        "test:5:a1",
+        "test:5:b0",
+        "test:5:b1"
+      ],
+      "dependence_groups": [
+        "test:ex:5"
+      ]
+    },
+    {
+      "schema_version": "sieve.identity.v1",
+      "id": "test:6:clean",
+      "member_ids": [
+        "test:6:a0",
+        "test:6:a1"
+      ],
+      "dependence_groups": [
+        "test:ex:6"
+      ]
+    },
+    {
+      "schema_version": "sieve.identity.v1",
+      "id": "test:6:merge",
+      "member_ids": [
+        "test:6:a0",
+        "test:6:a1",
+        "test:6:b0",
+        "test:6:b1"
+      ],
+      "dependence_groups": [
+        "test:ex:6"
+      ]
+    },
+    {
+      "schema_version": "sieve.identity.v1",
+      "id": "test:7:clean",
+      "member_ids": [
+        "test:7:a0",
+        "test:7:a1"
+      ],
+      "dependence_groups": [
+        "test:ex:7"
+      ]
+    },
+    {
+      "schema_version": "sieve.identity.v1",
+      "id": "test:7:merge",
+      "member_ids": [
+        "test:7:a0",
+        "test:7:a1",
+        "test:7:b0",
+        "test:7:b1"
+      ],
+      "dependence_groups": [
+        "test:ex:7"
+      ]
+    }
+  ],
+  "records": [
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:0:a0",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:0:a0"
+      ],
+      "object_ids": [
+        "test:physical:0:A"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:0:a1",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:0:a1"
+      ],
+      "object_ids": [
+        "test:physical:0:A"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:0:b0",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:0:b0"
+      ],
+      "object_ids": [
+        "test:physical:0:B"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:0:b1",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:0:b1"
+      ],
+      "object_ids": [
+        "test:physical:0:B"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:1:a0",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:1:a0"
+      ],
+      "object_ids": [
+        "test:physical:1:A"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:1:a1",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:1:a1"
+      ],
+      "object_ids": [
+        "test:physical:1:A"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:1:b0",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:1:b0"
+      ],
+      "object_ids": [
+        "test:physical:1:B"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:1:b1",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:1:b1"
+      ],
+      "object_ids": [
+        "test:physical:1:B"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:2:a0",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:2:a0"
+      ],
+      "object_ids": [
+        "test:physical:2:A"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:2:a1",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:2:a1"
+      ],
+      "object_ids": [
+        "test:physical:2:A"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:2:b0",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:2:b0"
+      ],
+      "object_ids": [
+        "test:physical:2:B"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:2:b1",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:2:b1"
+      ],
+      "object_ids": [
+        "test:physical:2:B"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:3:a0",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:3:a0"
+      ],
+      "object_ids": [
+        "test:physical:3:A"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:3:a1",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:3:a1"
+      ],
+      "object_ids": [
+        "test:physical:3:A"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:3:b0",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:3:b0"
+      ],
+      "object_ids": [
+        "test:physical:3:B"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:3:b1",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:3:b1"
+      ],
+      "object_ids": [
+        "test:physical:3:B"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:4:a0",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:4:a0"
+      ],
+      "object_ids": [
+        "test:physical:4:A"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:4:a1",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:4:a1"
+      ],
+      "object_ids": [
+        "test:physical:4:A"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:4:b0",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:4:b0"
+      ],
+      "object_ids": [
+        "test:physical:4:B"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:4:b1",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:4:b1"
+      ],
+      "object_ids": [
+        "test:physical:4:B"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:5:a0",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:5:a0"
+      ],
+      "object_ids": [
+        "test:physical:5:A"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:5:a1",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:5:a1"
+      ],
+      "object_ids": [
+        "test:physical:5:A"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:5:b0",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:5:b0"
+      ],
+      "object_ids": [
+        "test:physical:5:B"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:5:b1",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:5:b1"
+      ],
+      "object_ids": [
+        "test:physical:5:B"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:6:a0",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:6:a0"
+      ],
+      "object_ids": [
+        "test:physical:6:A"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:6:a1",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:6:a1"
+      ],
+      "object_ids": [
+        "test:physical:6:A"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:6:b0",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:6:b0"
+      ],
+      "object_ids": [
+        "test:physical:6:B"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:6:b1",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:6:b1"
+      ],
+      "object_ids": [
+        "test:physical:6:B"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:7:a0",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:7:a0"
+      ],
+      "object_ids": [
+        "test:physical:7:A"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:7:a1",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:7:a1"
+      ],
+      "object_ids": [
+        "test:physical:7:A"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:7:b0",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:7:b0"
+      ],
+      "object_ids": [
+        "test:physical:7:B"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:test:7:b1",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "test:7:b1"
+      ],
+      "object_ids": [
+        "test:physical:7:B"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    }
+  ],
+  "limitations": [
+    "Synthetic evaluator inputs, not scientific evidence"
+  ]
+}

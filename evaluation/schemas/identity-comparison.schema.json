@@ -1,0 +1,286 @@
+{
+  "$defs": {
+    "FrozenThreshold": {
+      "additionalProperties": false,
+      "properties": {
+        "astrometry_config_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Astrometry Config Sha256",
+          "type": "string"
+        },
+        "definition": {
+          "$ref": "#/$defs/ScoreDefinition"
+        },
+        "schema_version": {
+          "const": "sieve.identity.v1",
+          "default": "sieve.identity.v1",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "selection_rule": {
+          "const": "least_permissive_validation_threshold_meeting_recall",
+          "default": "least_permissive_validation_threshold_meeting_recall",
+          "title": "Selection Rule",
+          "type": "string"
+        },
+        "target_true_link_recall": {
+          "exclusiveMinimum": 0,
+          "maximum": 1,
+          "title": "Target True Link Recall",
+          "type": "number"
+        },
+        "threshold": {
+          "title": "Threshold",
+          "type": "number"
+        },
+        "validation_dependence_groups": {
+          "items": {
+            "minLength": 1,
+            "pattern": "^\\S+$",
+            "type": "string"
+          },
+          "title": "Validation Dependence Groups",
+          "type": "array"
+        },
+        "validation_input_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Validation Input Sha256",
+          "type": "string"
+        },
+        "validation_member_ids": {
+          "items": {
+            "minLength": 1,
+            "pattern": "^\\S+$",
+            "type": "string"
+          },
+          "title": "Validation Member Ids",
+          "type": "array"
+        },
+        "validation_object_ids": {
+          "items": {
+            "minLength": 1,
+            "pattern": "^\\S+$",
+            "type": "string"
+          },
+          "title": "Validation Object Ids",
+          "type": "array"
+        },
+        "validation_prediction_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Validation Prediction Sha256",
+          "type": "string"
+        },
+        "validation_true_link_recall": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Validation True Link Recall",
+          "type": "number"
+        },
+        "validation_truth_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Validation Truth Sha256",
+          "type": "string"
+        }
+      },
+      "required": [
+        "definition",
+        "threshold",
+        "target_true_link_recall",
+        "validation_true_link_recall",
+        "astrometry_config_sha256",
+        "validation_input_sha256",
+        "validation_truth_sha256",
+        "validation_prediction_sha256",
+        "validation_object_ids",
+        "validation_member_ids",
+        "validation_dependence_groups"
+      ],
+      "title": "FrozenThreshold",
+      "type": "object"
+    },
+    "ScoreDefinition": {
+      "additionalProperties": false,
+      "properties": {
+        "calibration_ref": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "pattern": "^\\S+$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Calibration Ref"
+        },
+        "direction": {
+          "enum": [
+            "higher",
+            "lower"
+          ],
+          "title": "Direction",
+          "type": "string"
+        },
+        "domain": {
+          "minLength": 1,
+          "title": "Domain",
+          "type": "string"
+        },
+        "event_or_null": {
+          "minLength": 1,
+          "title": "Event Or Null",
+          "type": "string"
+        },
+        "method_name": {
+          "minLength": 1,
+          "pattern": "^\\S+$",
+          "title": "Method Name",
+          "type": "string"
+        },
+        "method_version": {
+          "minLength": 1,
+          "title": "Method Version",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": "sieve.identity.v1",
+          "default": "sieve.identity.v1",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "semantics": {
+          "$ref": "#/$defs/ScoreSemantics"
+        }
+      },
+      "required": [
+        "method_name",
+        "method_version",
+        "semantics",
+        "direction",
+        "domain",
+        "event_or_null",
+        "calibration_ref"
+      ],
+      "title": "ScoreDefinition",
+      "type": "object"
+    },
+    "ScoreSemantics": {
+      "enum": [
+        "RANKING_ONLY",
+        "CALIBRATED_PROBABILITY",
+        "LIKELIHOOD_LIKE",
+        "P_VALUE",
+        "PSEUDO_PROBABILITY",
+        "UNKNOWN_UNCALIBRATED"
+      ],
+      "title": "ScoreSemantics",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "added_physical_factor_count": {
+      "const": 1,
+      "default": 1,
+      "title": "Added Physical Factor Count",
+      "type": "integer"
+    },
+    "baseline": {
+      "$ref": "#/$defs/FrozenThreshold"
+    },
+    "bootstrap_replicates": {
+      "default": 2000,
+      "maximum": 10000,
+      "minimum": 100,
+      "title": "Bootstrap Replicates",
+      "type": "integer"
+    },
+    "bootstrap_seed": {
+      "default": 42,
+      "title": "Bootstrap Seed",
+      "type": "integer"
+    },
+    "control_artifact_ref": {
+      "minLength": 1,
+      "pattern": "^\\S+$",
+      "title": "Control Artifact Ref",
+      "type": "string"
+    },
+    "control_artifact_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Control Artifact Sha256",
+      "type": "string"
+    },
+    "limitations": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Limitations",
+      "type": "array"
+    },
+    "minimum_absolute_merge_reduction": {
+      "default": 0.05,
+      "exclusiveMinimum": 0,
+      "maximum": 1,
+      "title": "Minimum Absolute Merge Reduction",
+      "type": "number"
+    },
+    "minimum_independent_groups": {
+      "default": 8,
+      "maximum": 1000,
+      "minimum": 2,
+      "title": "Minimum Independent Groups",
+      "type": "integer"
+    },
+    "physical_factor_ref": {
+      "minLength": 1,
+      "pattern": "^\\S+$",
+      "title": "Physical Factor Ref",
+      "type": "string"
+    },
+    "physical_factor_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Physical Factor Sha256",
+      "type": "string"
+    },
+    "qualification": {
+      "default": "CONTRACT_ONLY",
+      "enum": [
+        "CONTRACT_ONLY",
+        "EXTERNAL_RESEARCH"
+      ],
+      "title": "Qualification",
+      "type": "string"
+    },
+    "recall_tolerance": {
+      "default": 0.0,
+      "maximum": 0.05,
+      "minimum": 0,
+      "title": "Recall Tolerance",
+      "type": "number"
+    },
+    "schema_version": {
+      "const": "sieve.identity.v1",
+      "default": "sieve.identity.v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "treatment": {
+      "$ref": "#/$defs/FrozenThreshold"
+    }
+  },
+  "required": [
+    "baseline",
+    "treatment",
+    "physical_factor_ref",
+    "physical_factor_sha256",
+    "control_artifact_ref",
+    "control_artifact_sha256",
+    "limitations"
+  ],
+  "title": "ComparisonProtocol",
+  "type": "object"
+}

@@ -1,0 +1,121 @@
+[
+  {
+    "source_type": "SIMULATED_TRUTH",
+    "source_ref": "fixture-generator.v0",
+    "task_scope": "membership",
+    "frozen": true,
+    "complete_for_scope": true,
+    "limitations": [
+      "Synthetic object assignments only"
+    ],
+    "id": "truth-a0",
+    "member_ids": [
+      "d-a0"
+    ],
+    "object_ids": [
+      "object-A"
+    ]
+  },
+  {
+    "source_type": "SIMULATED_TRUTH",
+    "source_ref": "fixture-generator.v0",
+    "task_scope": "membership",
+    "frozen": true,
+    "complete_for_scope": true,
+    "limitations": [
+      "Synthetic object assignments only"
+    ],
+    "id": "truth-a1",
+    "member_ids": [
+      "d-a1"
+    ],
+    "object_ids": [
+      "object-A"
+    ]
+  },
+  {
+    "source_type": "SIMULATED_TRUTH",
+    "source_ref": "fixture-generator.v0",
+    "task_scope": "membership",
+    "frozen": true,
+    "complete_for_scope": true,
+    "limitations": [
+      "Synthetic object assignments only"
+    ],
+    "id": "truth-a2",
+    "member_ids": [
+      "d-a2"
+    ],
+    "object_ids": [
+      "object-A"
+    ]
+  },
+  {
+    "source_type": "SIMULATED_TRUTH",
+    "source_ref": "fixture-generator.v0",
+    "task_scope": "membership",
+    "frozen": true,
+    "complete_for_scope": true,
+    "limitations": [
+      "Synthetic object assignments only"
+    ],
+    "id": "truth-a3",
+    "member_ids": [
+      "d-a3"
+    ],
+    "object_ids": [
+      "object-A"
+    ]
+  },
+  {
+    "source_type": "SIMULATED_TRUTH",
+    "source_ref": "fixture-generator.v0",
+    "task_scope": "membership",
+    "frozen": true,
+    "complete_for_scope": true,
+    "limitations": [
+      "Synthetic object assignments only"
+    ],
+    "id": "truth-b0",
+    "member_ids": [
+      "d-b0"
+    ],
+    "object_ids": [
+      "object-B"
+    ]
+  },
+  {
+    "source_type": "SIMULATED_TRUTH",
+    "source_ref": "fixture-generator.v0",
+    "task_scope": "membership",
+    "frozen": true,
+    "complete_for_scope": true,
+    "limitations": [
+      "Synthetic object assignments only"
+    ],
+    "id": "truth-b1",
+    "member_ids": [
+      "d-b1"
+    ],
+    "object_ids": [
+      "object-B"
+    ]
+  },
+  {
+    "source_type": "SIMULATED_TRUTH",
+    "source_ref": "fixture-generator.v0",
+    "task_scope": "membership",
+    "frozen": true,
+    "complete_for_scope": true,
+    "limitations": [
+      "Synthetic object assignments only"
+    ],
+    "id": "truth-b2",
+    "member_ids": [
+      "d-b2"
+    ],
+    "object_ids": [
+      "object-B"
+    ]
+  }
+]

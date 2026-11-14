@@ -1,0 +1,413 @@
+{
+  "schema_version": "sieve.learning_evidence.v1",
+  "catalog": {
+    "name": "Gaia DR3",
+    "service": "https://gea.esac.esa.int/tap-server/tap/sync",
+    "cone_center_deg": [
+      232.64278847144752,
+      -10.546006460187737
+    ],
+    "radius_arcsec": 20,
+    "adql": "SELECT TOP 100 source_id,ra,dec,ra_error,dec_error,ra_dec_corr,pmra,pmdec,pmra_error,pmdec_error,ref_epoch,phot_g_mean_mag,ruwe FROM gaiadr3.gaia_source WHERE 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',232.64278847144752,-10.546006460187737,0.00555555556))",
+    "epoch_filter": "catalog positions at epoch 2016; high proper motion sources outside cone may be missed",
+    "raw_file": "gaia-dr3-cone.csv",
+    "raw_sha256": "69395c68563b17afec52117c73f229a68f96b7840d92862efcdabc94198c42f0"
+  },
+  "cases": [
+    {
+      "id": "A",
+      "kind": "real_observation",
+      "status": "TENTATIVE_ASSOCIATION",
+      "ra_deg": 232.64278847144752,
+      "dec_deg": -10.546006460187737,
+      "observation": {
+        "release": "QR3",
+        "obs_id": "2026W30_1B_0001_1",
+        "detector": 1,
+        "mjd_avg_utc": 61241.005450564,
+        "input_file": "qr3-d1-exposure-1.fits",
+        "input_sha256": "13434d8c4615a7b788594d3065809c61dfa5c28d5fae6590cf5d7e8b952a4117",
+        "parent_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W30_1B/l2b-v27-2026-222/1/level2_2026W30_1B_0001_1D1_spx_l2b-v27-2026-222.fits",
+        "parent_sha256": "ba5262e965b35e617283d7f772f5551966237ffb191de276a35dc07201dd092d",
+        "frame": "ICRS",
+        "position_uncertainty_arcsec": null,
+        "input_exposures": [
+          {
+            "obs_id": "2026W30_1B_0001_1",
+            "mjd_avg_utc": 61241.005450564,
+            "cutout_file": "qr3-d1-exposure-1.fits",
+            "cutout_sha256": "13434d8c4615a7b788594d3065809c61dfa5c28d5fae6590cf5d7e8b952a4117",
+            "parent_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W30_1B/l2b-v27-2026-222/1/level2_2026W30_1B_0001_1D1_spx_l2b-v27-2026-222.fits",
+            "parent_sha256": "ba5262e965b35e617283d7f772f5551966237ffb191de276a35dc07201dd092d"
+          },
+          {
+            "obs_id": "2026W30_1B_0001_2",
+            "mjd_avg_utc": 61241.006942821,
+            "cutout_file": "qr3-d1-exposure-2.fits",
+            "cutout_sha256": "0d6297702adcbb65786230b1ed7f9c4e6a58e1746885d8dd5ebbc46c8be24fc9",
+            "parent_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W30_1B/l2b-v27-2026-222/1/level2_2026W30_1B_0001_2D1_spx_l2b-v27-2026-222.fits",
+            "parent_sha256": "8dc69024d51c5bc258f6dfb7f2c529808efe31df7d50de80e1ad35e96df999b9"
+          }
+        ]
+      },
+      "measurements": [
+        {
+          "x_pixel": 89.13766691441688,
+          "y_pixel": 30.15688100807286,
+          "status": "MEASURED_CONDITIONAL",
+          "flux_uJy": 1878.444547249621,
+          "flux_error_uJy": 57.8776089894236,
+          "limitations": [
+            "independent archive variance only",
+            "finite ePSF normalization; missing wings unqualified",
+            "neighbors not jointly fitted",
+            "position fixed; no astrometric covariance"
+          ],
+          "epsf_zone": 199,
+          "valid_pixels": 121,
+          "masked_pixels": 0,
+          "psf_edge_information_coverage": 1.0,
+          "psf_information_coverage": 1.0,
+          "flag_bits": 2097152,
+          "reason": "fixed-position point-source profile",
+          "background_uJy_per_pixel": 245.76200076169994,
+          "background_error_uJy_per_pixel": 1.592011578695433,
+          "flux_background_covariance": -10.91446832633505,
+          "chi2": 181.36055853605723,
+          "degrees_of_freedom": 119,
+          "reduced_chi2": 1.5240383070256909,
+          "cwave_um": 0.9229422807693481,
+          "cband_um": 0.023679349571466446,
+          "zodi_uJy_per_pixel": 208.24621752225102,
+          "ra_deg": 232.64278847144752,
+          "dec_deg": -10.546006460187737,
+          "source_flag_at_centroid": true,
+          "measurement_id": "measurement:2026W30_1B_0001_1:00051",
+          "obs_id": "2026W30_1B_0001_1",
+          "mjd_avg_utc": 61241.005450564
+        },
+        {
+          "x_pixel": 89.15549268693789,
+          "y_pixel": 30.090935238797076,
+          "status": "MEASURED_CONDITIONAL",
+          "flux_uJy": 1804.9999202539118,
+          "flux_error_uJy": 57.02009408465129,
+          "limitations": [
+            "independent archive variance only",
+            "finite ePSF normalization; missing wings unqualified",
+            "neighbors not jointly fitted",
+            "position fixed; no astrometric covariance"
+          ],
+          "epsf_zone": 178,
+          "valid_pixels": 121,
+          "masked_pixels": 0,
+          "psf_edge_information_coverage": 1.0,
+          "psf_information_coverage": 1.0,
+          "flag_bits": 2097152,
+          "reason": "fixed-position point-source profile",
+          "background_uJy_per_pixel": 251.28674428465268,
+          "background_error_uJy_per_pixel": 1.5992228592490383,
+          "flux_background_covariance": -10.78612518051049,
+          "chi2": 170.95391653148624,
+          "degrees_of_freedom": 119,
+          "reduced_chi2": 1.4365875338780356,
+          "cwave_um": 0.9446461200714111,
+          "cband_um": 0.024130724370479584,
+          "zodi_uJy_per_pixel": 209.22140177080567,
+          "ra_deg": 232.64270505973357,
+          "dec_deg": -10.545896836148158,
+          "source_flag_at_centroid": true,
+          "measurement_id": "measurement:2026W30_1B_0001_2:00047",
+          "obs_id": "2026W30_1B_0001_2",
+          "mjd_avg_utc": 61241.006942821
+        }
+      ],
+      "catalog_candidates": [
+        {
+          "catalog": "Gaia DR3",
+          "source_id": "6316705404065320832",
+          "catalog_ra_deg": 232.64282091417954,
+          "catalog_dec_deg": -10.546147155981748,
+          "ref_epoch_jyear": 2016.0,
+          "pmra_mas_per_year": 8.852732204838638,
+          "pmdec_mas_per_year": -4.449388474888922,
+          "ra_error_mas": 0.043155234,
+          "dec_error_mas": 0.034385372,
+          "ra_dec_correlation": -0.069415905,
+          "phot_g_mean_mag": 16.249092,
+          "ruwe": 0.983885,
+          "pmra_error_mas_per_year": 0.05616174,
+          "pmdec_error_mas_per_year": 0.044424776,
+          "propagated_ra_deg": 232.6428472973403,
+          "propagated_dec_deg": -10.54616019217878,
+          "separation_arcsec": 0.5913002927006811,
+          "warning": "No distance or radial velocity; covariance propagation and SPHEREx positional errors unavailable."
+        }
+      ],
+      "checks": [
+        {
+          "verdict": "INCONCLUSIVE",
+          "question": "Are two detections astrometrically consistent with a persistent source?",
+          "method": "Photutils centroid_com on nonnegative background-subtracted 11x11 pixels with border-median background",
+          "input_sha256": [
+            "13434d8c4615a7b788594d3065809c61dfa5c28d5fae6590cf5d7e8b952a4117",
+            "0d6297702adcbb65786230b1ed7f9c4e6a58e1746885d8dd5ebbc46c8be24fc9"
+          ],
+          "centroids": [
+            {
+              "obs_id": "2026W30_1B_0001_1",
+              "ra_deg": 232.64245731331474,
+              "dec_deg": -10.545730616014348,
+              "background_uJy_per_pixel": 258.40372771881425,
+              "window_pixels": 11
+            },
+            {
+              "obs_id": "2026W30_1B_0001_2",
+              "ra_deg": 232.6422767012721,
+              "dec_deg": -10.545599654203878,
+              "background_uJy_per_pixel": 250.86018629345799,
+              "window_pixels": 11
+            }
+          ],
+          "separation_arcsec": 0.7942797929757911,
+          "uncertainty_arcsec": null,
+          "reasons": [
+            "No calibrated centroid or registration covariance; shared instrumental calibration.",
+            "Distinct wavelengths and structured backgrounds can change centroids.",
+            "Clipping negative pixels biases moment centroids; method is exploratory."
+          ]
+        }
+      ],
+      "reasons": [
+        "One Gaia DR3 candidate in the 20 arcsec epoch-2016 cone.",
+        "No SPHEREx astrometric covariance or calibrated chance-association probability; identification is tentative."
+      ]
+    },
+    {
+      "id": "B",
+      "kind": "controlled_injection",
+      "status": "ARTIFACT_UNRESOLVED",
+      "ra_deg": 232.7672802883842,
+      "dec_deg": -10.667469271350393,
+      "observation": {
+        "release": "QR3",
+        "obs_id": "2026W30_1B_0001_1",
+        "detector": 1,
+        "mjd_avg_utc": 61241.005450564,
+        "input_file": "qr3-d1-exposure-1.fits",
+        "input_sha256": "13434d8c4615a7b788594d3065809c61dfa5c28d5fae6590cf5d7e8b952a4117",
+        "parent_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W30_1B/l2b-v27-2026-222/1/level2_2026W30_1B_0001_1D1_spx_l2b-v27-2026-222.fits",
+        "parent_sha256": "ba5262e965b35e617283d7f772f5551966237ffb191de276a35dc07201dd092d",
+        "frame": "ICRS",
+        "position_uncertainty_arcsec": null,
+        "input_exposures": [
+          {
+            "obs_id": "2026W30_1B_0001_1",
+            "mjd_avg_utc": 61241.005450564,
+            "cutout_file": "qr3-d1-exposure-1.fits",
+            "cutout_sha256": "13434d8c4615a7b788594d3065809c61dfa5c28d5fae6590cf5d7e8b952a4117",
+            "parent_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W30_1B/l2b-v27-2026-222/1/level2_2026W30_1B_0001_1D1_spx_l2b-v27-2026-222.fits",
+            "parent_sha256": "ba5262e965b35e617283d7f772f5551966237ffb191de276a35dc07201dd092d"
+          },
+          {
+            "obs_id": "2026W30_1B_0001_2",
+            "mjd_avg_utc": 61241.006942821,
+            "cutout_file": "qr3-d1-exposure-2.fits",
+            "cutout_sha256": "0d6297702adcbb65786230b1ed7f9c4e6a58e1746885d8dd5ebbc46c8be24fc9",
+            "parent_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W30_1B/l2b-v27-2026-222/1/level2_2026W30_1B_0001_2D1_spx_l2b-v27-2026-222.fits",
+            "parent_sha256": "8dc69024d51c5bc258f6dfb7f2c529808efe31df7d50de80e1ad35e96df999b9"
+          }
+        ]
+      },
+      "measurements": [
+        {
+          "site_id": 0,
+          "arm": "one-pixel injection in Gaussian noise using archive variance",
+          "concentration": 0.998812123525792,
+          "unit": "dimensionless"
+        }
+      ],
+      "catalog_candidates": [],
+      "checks": [
+        {
+          "verdict": "INCONCLUSIVE",
+          "method": "development-frozen 3x3 concentration diagnostic",
+          "threshold": 0.6956420320806482,
+          "reason": "Injected label is known but the threshold is not calibrated on independent real artifacts."
+        }
+      ],
+      "reasons": [
+        "Synthetic injection, not a detected celestial object."
+      ]
+    },
+    {
+      "id": "C",
+      "kind": "real_observation",
+      "status": "INCONCLUSIVE",
+      "ra_deg": 232.64278847144752,
+      "dec_deg": -10.546006460187737,
+      "observation": {
+        "release": "QR3",
+        "obs_id": "2026W30_1B_0001_1",
+        "detector": 1,
+        "mjd_avg_utc": 61241.005450564,
+        "input_file": "qr3-d1-exposure-1.fits",
+        "input_sha256": "13434d8c4615a7b788594d3065809c61dfa5c28d5fae6590cf5d7e8b952a4117",
+        "parent_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W30_1B/l2b-v27-2026-222/1/level2_2026W30_1B_0001_1D1_spx_l2b-v27-2026-222.fits",
+        "parent_sha256": "ba5262e965b35e617283d7f772f5551966237ffb191de276a35dc07201dd092d",
+        "frame": "ICRS",
+        "position_uncertainty_arcsec": null,
+        "input_exposures": [
+          {
+            "obs_id": "2026W30_1B_0001_1",
+            "mjd_avg_utc": 61241.005450564,
+            "cutout_file": "qr3-d1-exposure-1.fits",
+            "cutout_sha256": "13434d8c4615a7b788594d3065809c61dfa5c28d5fae6590cf5d7e8b952a4117",
+            "parent_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W30_1B/l2b-v27-2026-222/1/level2_2026W30_1B_0001_1D1_spx_l2b-v27-2026-222.fits",
+            "parent_sha256": "ba5262e965b35e617283d7f772f5551966237ffb191de276a35dc07201dd092d"
+          },
+          {
+            "obs_id": "2026W30_1B_0001_2",
+            "mjd_avg_utc": 61241.006942821,
+            "cutout_file": "qr3-d1-exposure-2.fits",
+            "cutout_sha256": "0d6297702adcbb65786230b1ed7f9c4e6a58e1746885d8dd5ebbc46c8be24fc9",
+            "parent_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W30_1B/l2b-v27-2026-222/1/level2_2026W30_1B_0001_2D1_spx_l2b-v27-2026-222.fits",
+            "parent_sha256": "8dc69024d51c5bc258f6dfb7f2c529808efe31df7d50de80e1ad35e96df999b9"
+          }
+        ]
+      },
+      "measurements": [
+        {
+          "x_pixel": 89.13766691441688,
+          "y_pixel": 30.15688100807286,
+          "status": "MEASURED_CONDITIONAL",
+          "flux_uJy": 1878.444547249621,
+          "flux_error_uJy": 57.8776089894236,
+          "limitations": [
+            "independent archive variance only",
+            "finite ePSF normalization; missing wings unqualified",
+            "neighbors not jointly fitted",
+            "position fixed; no astrometric covariance"
+          ],
+          "epsf_zone": 199,
+          "valid_pixels": 121,
+          "masked_pixels": 0,
+          "psf_edge_information_coverage": 1.0,
+          "psf_information_coverage": 1.0,
+          "flag_bits": 2097152,
+          "reason": "fixed-position point-source profile",
+          "background_uJy_per_pixel": 245.76200076169994,
+          "background_error_uJy_per_pixel": 1.592011578695433,
+          "flux_background_covariance": -10.91446832633505,
+          "chi2": 181.36055853605723,
+          "degrees_of_freedom": 119,
+          "reduced_chi2": 1.5240383070256909,
+          "cwave_um": 0.9229422807693481,
+          "cband_um": 0.023679349571466446,
+          "zodi_uJy_per_pixel": 208.24621752225102,
+          "ra_deg": 232.64278847144752,
+          "dec_deg": -10.546006460187737,
+          "source_flag_at_centroid": true,
+          "measurement_id": "measurement:2026W30_1B_0001_1:00051",
+          "obs_id": "2026W30_1B_0001_1",
+          "mjd_avg_utc": 61241.005450564
+        },
+        {
+          "x_pixel": 89.15549268693789,
+          "y_pixel": 30.090935238797076,
+          "status": "MEASURED_CONDITIONAL",
+          "flux_uJy": 1804.9999202539118,
+          "flux_error_uJy": 57.02009408465129,
+          "limitations": [
+            "independent archive variance only",
+            "finite ePSF normalization; missing wings unqualified",
+            "neighbors not jointly fitted",
+            "position fixed; no astrometric covariance"
+          ],
+          "epsf_zone": 178,
+          "valid_pixels": 121,
+          "masked_pixels": 0,
+          "psf_edge_information_coverage": 1.0,
+          "psf_information_coverage": 1.0,
+          "flag_bits": 2097152,
+          "reason": "fixed-position point-source profile",
+          "background_uJy_per_pixel": 251.28674428465268,
+          "background_error_uJy_per_pixel": 1.5992228592490383,
+          "flux_background_covariance": -10.78612518051049,
+          "chi2": 170.95391653148624,
+          "degrees_of_freedom": 119,
+          "reduced_chi2": 1.4365875338780356,
+          "cwave_um": 0.9446461200714111,
+          "cband_um": 0.024130724370479584,
+          "zodi_uJy_per_pixel": 209.22140177080567,
+          "ra_deg": 232.64270505973357,
+          "dec_deg": -10.545896836148158,
+          "source_flag_at_centroid": true,
+          "measurement_id": "measurement:2026W30_1B_0001_2:00047",
+          "obs_id": "2026W30_1B_0001_2",
+          "mjd_avg_utc": 61241.006942821
+        }
+      ],
+      "catalog_candidates": [
+        {
+          "catalog": "Gaia DR3",
+          "source_id": "6316705404065320832",
+          "catalog_ra_deg": 232.64282091417954,
+          "catalog_dec_deg": -10.546147155981748,
+          "ref_epoch_jyear": 2016.0,
+          "pmra_mas_per_year": 8.852732204838638,
+          "pmdec_mas_per_year": -4.449388474888922,
+          "ra_error_mas": 0.043155234,
+          "dec_error_mas": 0.034385372,
+          "ra_dec_correlation": -0.069415905,
+          "phot_g_mean_mag": 16.249092,
+          "ruwe": 0.983885,
+          "pmra_error_mas_per_year": 0.05616174,
+          "pmdec_error_mas_per_year": 0.044424776,
+          "propagated_ra_deg": 232.6428472973403,
+          "propagated_dec_deg": -10.54616019217878,
+          "separation_arcsec": 0.5913002927006811,
+          "warning": "No distance or radial velocity; covariance propagation and SPHEREx positional errors unavailable."
+        }
+      ],
+      "checks": [
+        {
+          "verdict": "INCONCLUSIVE",
+          "question": "Are two detections astrometrically consistent with a persistent source?",
+          "method": "Photutils centroid_com on nonnegative background-subtracted 11x11 pixels with border-median background",
+          "input_sha256": [
+            "13434d8c4615a7b788594d3065809c61dfa5c28d5fae6590cf5d7e8b952a4117",
+            "0d6297702adcbb65786230b1ed7f9c4e6a58e1746885d8dd5ebbc46c8be24fc9"
+          ],
+          "centroids": [
+            {
+              "obs_id": "2026W30_1B_0001_1",
+              "ra_deg": 232.64245731331474,
+              "dec_deg": -10.545730616014348,
+              "background_uJy_per_pixel": 258.40372771881425,
+              "window_pixels": 11
+            },
+            {
+              "obs_id": "2026W30_1B_0001_2",
+              "ra_deg": 232.6422767012721,
+              "dec_deg": -10.545599654203878,
+              "background_uJy_per_pixel": 250.86018629345799,
+              "window_pixels": 11
+            }
+          ],
+          "separation_arcsec": 0.7942797929757911,
+          "uncertainty_arcsec": null,
+          "reasons": [
+            "No calibrated centroid or registration covariance; shared instrumental calibration.",
+            "Distinct wavelengths and structured backgrounds can change centroids.",
+            "Clipping negative pixels biases moment centroids; method is exploratory."
+          ]
+        }
+      ],
+      "reasons": [
+        "Same real source as A, illustrating the separate question of temporal persistence.",
+        "The 129-second pair has unqualified astrometric uncertainty and differing wavelengths."
+      ]
+    }
+  ]
+}

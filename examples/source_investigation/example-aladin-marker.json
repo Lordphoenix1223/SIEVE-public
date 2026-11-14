@@ -1,0 +1,10 @@
+{
+  "schema_version": "sieve.aladin.marker.v1",
+  "id": "measurement:2026W30_1B_0001_1:00051",
+  "ra_deg": 232.64278847144752,
+  "dec_deg": -10.546006460187737,
+  "frame": "ICRS",
+  "status": "TENTATIVE_ASSOCIATION",
+  "inspector_case_id": "A",
+  "inspector_file": "evidence.json"
+}

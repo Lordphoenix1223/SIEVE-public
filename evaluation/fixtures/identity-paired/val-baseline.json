@@ -1,0 +1,204 @@
+{
+  "schema_version": "sieve.identity.v1",
+  "method": {
+    "schema_version": "sieve.v0",
+    "name": "baseline",
+    "version": "v1"
+  },
+  "input_sha256": "97dfc65f74283f60c606bda3f75a6a6bec3fc1e513b8b40797b5ecb86c824ee2",
+  "astrometry_config_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "predictions": [
+    {
+      "schema_version": "sieve.identity.v1",
+      "case_id": "val:0:clean",
+      "hypothesis_id": "conditional:val:0:clean",
+      "member_ids": [
+        "val:0:a0",
+        "val:0:a1"
+      ],
+      "assignments": [
+        {
+          "schema_version": "sieve.identity.v1",
+          "slot_id": "slot:0",
+          "member_ids": [
+            "val:0:a0",
+            "val:0:a1"
+          ],
+          "known_record_ref": null
+        }
+      ],
+      "score": {
+        "schema_version": "sieve.v0",
+        "value": 0.8,
+        "semantics": "RANKING_ONLY",
+        "direction": "higher",
+        "calibrated": false,
+        "calibration_ref": null,
+        "domain": "contract-fixture",
+        "event_or_null": "identity consistency",
+        "missing_reason": null
+      },
+      "state": "PROPOSED",
+      "test_eligible": true,
+      "eligibility_reason": "No additional evidence gate",
+      "inspected": true,
+      "heldout_normalized_residual": null,
+      "raw_output_ref": "raw:val:0:clean"
+    },
+    {
+      "schema_version": "sieve.identity.v1",
+      "case_id": "val:0:merge",
+      "hypothesis_id": "conditional:val:0:merge",
+      "member_ids": [
+        "val:0:a0",
+        "val:0:a1",
+        "val:0:b0",
+        "val:0:b1"
+      ],
+      "assignments": [
+        {
+          "schema_version": "sieve.identity.v1",
+          "slot_id": "slot:0",
+          "member_ids": [
+            "val:0:a0",
+            "val:0:a1",
+            "val:0:b0",
+            "val:0:b1"
+          ],
+          "known_record_ref": null
+        }
+      ],
+      "score": {
+        "schema_version": "sieve.v0",
+        "value": 0.8,
+        "semantics": "RANKING_ONLY",
+        "direction": "higher",
+        "calibrated": false,
+        "calibration_ref": null,
+        "domain": "contract-fixture",
+        "event_or_null": "identity consistency",
+        "missing_reason": null
+      },
+      "state": "PROPOSED",
+      "test_eligible": true,
+      "eligibility_reason": "No additional evidence gate",
+      "inspected": true,
+      "heldout_normalized_residual": null,
+      "raw_output_ref": "raw:val:0:merge"
+    },
+    {
+      "schema_version": "sieve.identity.v1",
+      "case_id": "val:1:clean",
+      "hypothesis_id": "conditional:val:1:clean",
+      "member_ids": [
+        "val:1:a0",
+        "val:1:a1"
+      ],
+      "assignments": [
+        {
+          "schema_version": "sieve.identity.v1",
+          "slot_id": "slot:0",
+          "member_ids": [
+            "val:1:a0",
+            "val:1:a1"
+          ],
+          "known_record_ref": null
+        }
+      ],
+      "score": {
+        "schema_version": "sieve.v0",
+        "value": 0.8,
+        "semantics": "RANKING_ONLY",
+        "direction": "higher",
+        "calibrated": false,
+        "calibration_ref": null,
+        "domain": "contract-fixture",
+        "event_or_null": "identity consistency",
+        "missing_reason": null
+      },
+      "state": "PROPOSED",
+      "test_eligible": true,
+      "eligibility_reason": "No additional evidence gate",
+      "inspected": true,
+      "heldout_normalized_residual": null,
+      "raw_output_ref": "raw:val:1:clean"
+    },
+    {
+      "schema_version": "sieve.identity.v1",
+      "case_id": "val:1:merge",
+      "hypothesis_id": "conditional:val:1:merge",
+      "member_ids": [
+        "val:1:a0",
+        "val:1:a1",
+        "val:1:b0",
+        "val:1:b1"
+      ],
+      "assignments": [
+        {
+          "schema_version": "sieve.identity.v1",
+          "slot_id": "slot:0",
+          "member_ids": [
+            "val:1:a0",
+            "val:1:a1",
+            "val:1:b0",
+            "val:1:b1"
+          ],
+          "known_record_ref": null
+        }
+      ],
+      "score": {
+        "schema_version": "sieve.v0",
+        "value": 0.8,
+        "semantics": "RANKING_ONLY",
+        "direction": "higher",
+        "calibrated": false,
+        "calibration_ref": null,
+        "domain": "contract-fixture",
+        "event_or_null": "identity consistency",
+        "missing_reason": null
+      },
+      "state": "PROPOSED",
+      "test_eligible": true,
+      "eligibility_reason": "No additional evidence gate",
+      "inspected": true,
+      "heldout_normalized_residual": null,
+      "raw_output_ref": "raw:val:1:merge"
+    }
+  ],
+  "calibration_artifacts": [],
+  "factor_protocol_refs": [],
+  "control_artifact_refs": [],
+  "evidence_protocol_artifacts": [
+    {
+      "schema_version": "sieve.v0",
+      "id": "single-factor",
+      "kind": "test-protocol",
+      "uri": null,
+      "provider": null,
+      "provider_identifier": null,
+      "dataset_release": null,
+      "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "hash_missing_reason": null,
+      "citations": [],
+      "acknowledgements": []
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "factor-control",
+      "kind": "control",
+      "uri": null,
+      "provider": null,
+      "provider_identifier": null,
+      "dataset_release": null,
+      "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "hash_missing_reason": null,
+      "citations": [],
+      "acknowledgements": []
+    }
+  ],
+  "runtime_seconds": 1.0,
+  "peak_memory_bytes": 1000,
+  "limitations": [
+    "Manually authored evaluator test predictions"
+  ]
+}

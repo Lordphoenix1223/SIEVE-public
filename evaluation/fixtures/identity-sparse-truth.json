@@ -1,0 +1,36 @@
+[
+  {
+    "id": "truth-0",
+    "source_type": "SIMULATED_TRUTH",
+    "source_ref": "reference-contract.v1",
+    "task_scope": "membership",
+    "member_ids": [
+      "m0"
+    ],
+    "object_ids": [
+      "synthetic-A"
+    ],
+    "frozen": true,
+    "complete_for_scope": true,
+    "limitations": [
+      "Contract-only synthetic memberships"
+    ]
+  },
+  {
+    "id": "truth-1",
+    "source_type": "SIMULATED_TRUTH",
+    "source_ref": "reference-contract.v1",
+    "task_scope": "membership",
+    "member_ids": [
+      "m1"
+    ],
+    "object_ids": [
+      "synthetic-A"
+    ],
+    "frozen": true,
+    "complete_for_scope": true,
+    "limitations": [
+      "Contract-only synthetic memberships"
+    ]
+  }
+]

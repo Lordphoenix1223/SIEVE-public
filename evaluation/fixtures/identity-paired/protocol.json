@@ -1,0 +1,99 @@
+{
+  "schema_version": "sieve.identity.v1",
+  "baseline": {
+    "schema_version": "sieve.identity.v1",
+    "definition": {
+      "schema_version": "sieve.identity.v1",
+      "method_name": "baseline",
+      "method_version": "v1",
+      "semantics": "RANKING_ONLY",
+      "direction": "higher",
+      "domain": "contract-fixture",
+      "event_or_null": "identity consistency",
+      "calibration_ref": null
+    },
+    "threshold": 0.8,
+    "target_true_link_recall": 1.0,
+    "validation_true_link_recall": 1.0,
+    "astrometry_config_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "validation_input_sha256": "97dfc65f74283f60c606bda3f75a6a6bec3fc1e513b8b40797b5ecb86c824ee2",
+    "validation_truth_sha256": "9e38573edb5f842dbf45e5c7c551e3d28e3cc59a5785535966fba50e973e2a2c",
+    "validation_prediction_sha256": "0a4231df9156f3ca6679da10c2f8fbbafccf68689f6b81037f9985705db1be47",
+    "validation_object_ids": [
+      "val:physical:0:A",
+      "val:physical:0:B",
+      "val:physical:1:A",
+      "val:physical:1:B"
+    ],
+    "validation_member_ids": [
+      "val:0:a0",
+      "val:0:a1",
+      "val:0:b0",
+      "val:0:b1",
+      "val:1:a0",
+      "val:1:a1",
+      "val:1:b0",
+      "val:1:b1"
+    ],
+    "validation_dependence_groups": [
+      "val:ex:0",
+      "val:ex:1"
+    ],
+    "selection_rule": "least_permissive_validation_threshold_meeting_recall"
+  },
+  "treatment": {
+    "schema_version": "sieve.identity.v1",
+    "definition": {
+      "schema_version": "sieve.identity.v1",
+      "method_name": "treatment",
+      "method_version": "v1",
+      "semantics": "RANKING_ONLY",
+      "direction": "higher",
+      "domain": "contract-fixture",
+      "event_or_null": "identity consistency",
+      "calibration_ref": null
+    },
+    "threshold": 0.8,
+    "target_true_link_recall": 1.0,
+    "validation_true_link_recall": 1.0,
+    "astrometry_config_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "validation_input_sha256": "97dfc65f74283f60c606bda3f75a6a6bec3fc1e513b8b40797b5ecb86c824ee2",
+    "validation_truth_sha256": "9e38573edb5f842dbf45e5c7c551e3d28e3cc59a5785535966fba50e973e2a2c",
+    "validation_prediction_sha256": "2e73ea4c9fb8164bbdb72bc263d1b297f9411cc744629fb208c99d694855c874",
+    "validation_object_ids": [
+      "val:physical:0:A",
+      "val:physical:0:B",
+      "val:physical:1:A",
+      "val:physical:1:B"
+    ],
+    "validation_member_ids": [
+      "val:0:a0",
+      "val:0:a1",
+      "val:0:b0",
+      "val:0:b1",
+      "val:1:a0",
+      "val:1:a1",
+      "val:1:b0",
+      "val:1:b1"
+    ],
+    "validation_dependence_groups": [
+      "val:ex:0",
+      "val:ex:1"
+    ],
+    "selection_rule": "least_permissive_validation_threshold_meeting_recall"
+  },
+  "recall_tolerance": 0.0,
+  "minimum_absolute_merge_reduction": 0.05,
+  "bootstrap_replicates": 100,
+  "bootstrap_seed": 42,
+  "minimum_independent_groups": 8,
+  "physical_factor_ref": "single-factor",
+  "physical_factor_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "added_physical_factor_count": 1,
+  "control_artifact_ref": "factor-control",
+  "control_artifact_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+  "qualification": "CONTRACT_ONLY",
+  "limitations": [
+    "Only checks evaluator arithmetic; no treatment implementation"
+  ]
+}

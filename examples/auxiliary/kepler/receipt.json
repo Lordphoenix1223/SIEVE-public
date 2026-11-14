@@ -1,0 +1,124 @@
+{
+  "artifacts": {
+    "benchmark.json": "897cd40c08e8ca5298e7946a3d35f75fac798b5d168222cb28a43e7b1fa8fc40",
+    "model.skops": "eca56f8eccc599aed61cdb971deb39d29fa7d62521695cfe6604f00358d3bcb7",
+    "profile.json": "860521ae18c2e51d13ada0a9dbd43ebc7fc92f66f261437f3091e590a2c41b36",
+    "protocol.json": "f6431b2df4ebd1a4cbf1dec2681d12d7e7a2129ecbc340c7fcffe4a399448b78",
+    "selection.json": "c3bef9728b73b63fa0cc887bef107e1eade5e36534268f4d80c04dd933071b10",
+    "test.curves.jsonl": "937156b7a15c617c35b6d41be75b85bdfdb0c4b6804904f9c0e76c101ffb7586",
+    "test.evaluator-labels.jsonl": "643c71a7f135483c4d45009880e833bf4c429dc62cebc49afcc9671b6e524c01",
+    "test.manifest.json": "ecc616f08b51668eab8b8435bad1d5c0e39f6b15183443355861cd0aaaf263b7",
+    "test.scores.jsonl": "1df88b0572f894a062d1df54b5181a1061963527235b55ad7a4d329d40145b65"
+  },
+  "report": {
+    "code_commit": "e81a9c9ce2c21b37fa4c10edcf30ad2c998912a0",
+    "code_tree_sha256": "bb8f17ddd21f1da53365dd6b9b3c4aea7fea9fe333fc1d7a36a2e586a4a5c1e6",
+    "dirty": false,
+    "environment_id": "env:d4fe308e23cdf91e27f92f8af41565418ae394d9b599b143b452e456fc46b9d8",
+    "limitations": [
+      "Archive expert label retrieval; labels are not authoritative physical identity",
+      "Preprocessed equal-length benchmark domain only; no raw Fornax transfer qualification",
+      "Row-level holdout; original source/exposure groups unavailable",
+      "Ranking scores are not calibrated anomaly probabilities or case-level FDR",
+      "Small rare-class test denominator; no global best or discovery claim"
+    ],
+    "metrics": {
+      "IsolationForest_reference_only": {
+        "average_precision": 0.1348403103699855,
+        "budget": 20,
+        "positives": 8,
+        "precision_at_budget": 0.15,
+        "recall_at_budget": 0.375,
+        "recall_wilson95": [
+          0.13684428582359742,
+          0.6942576053973727
+        ],
+        "recovered": 3,
+        "roc_auc": 0.9101662404092071,
+        "rows": 399
+      },
+      "fixed_balanced_logistic_C1": {
+        "average_precision": 0.9583333333333333,
+        "budget": 20,
+        "positives": 8,
+        "precision_at_budget": 0.4,
+        "recall_at_budget": 1.0,
+        "recall_wilson95": [
+          0.6755924351161198,
+          1.0
+        ],
+        "recovered": 8,
+        "roc_auc": 0.9987212276214834,
+        "rows": 399
+      },
+      "seeded_random": {
+        "average_precision": 0.019076871406010262,
+        "budget": 20,
+        "positives": 8,
+        "precision_at_budget": 0.0,
+        "recall_at_budget": 0.0,
+        "recall_wilson95": [
+          0.0,
+          0.32440756488388023
+        ],
+        "recovered": 0,
+        "roc_auc": 0.42998721227621484,
+        "rows": 399
+      },
+      "selected_train_cv": {
+        "average_precision": 0.9861111111111112,
+        "budget": 20,
+        "positives": 8,
+        "precision_at_budget": 0.4,
+        "recall_at_budget": 1.0,
+        "recall_wilson95": [
+          0.6755924351161198,
+          1.0
+        ],
+        "recovered": 8,
+        "roc_auc": 0.9996803069053709,
+        "rows": 399
+      },
+      "shuffled_training_labels_control": {
+        "average_precision": 0.2622004366562224,
+        "budget": 20,
+        "positives": 8,
+        "precision_at_budget": 0.1,
+        "recall_at_budget": 0.25,
+        "recall_wilson95": [
+          0.071479212752109,
+          0.5907245696898311
+        ],
+        "recovered": 2,
+        "roc_auc": 0.8177749360613811,
+        "rows": 399
+      },
+      "spectral_concentration": {
+        "average_precision": 0.0755575335062472,
+        "budget": 20,
+        "positives": 8,
+        "precision_at_budget": 0.05,
+        "recall_at_budget": 0.125,
+        "recall_wilson95": [
+          0.02241749145005667,
+          0.4708881822128535
+        ],
+        "recovered": 1,
+        "roc_auc": 0.8618925831202046,
+        "rows": 399
+      }
+    },
+    "profile_sha256": "860521ae18c2e51d13ada0a9dbd43ebc7fc92f66f261437f3091e590a2c41b36",
+    "protocol_sha256": "1f5f35867f7724f4ce768ef41596f102266e9f1a54517013897981eeac4a35ea",
+    "qualification": "OFFICIAL_ARCHIVE_ROW_HOLDOUT_ONLY",
+    "remote_ci": "UNRUN",
+    "seconds": 7.470071375006228,
+    "selected_candidate": {
+      "depth": 8,
+      "id": "extra-depth8-leaf1",
+      "kind": "extra",
+      "leaf": 1
+    },
+    "test_exposed": true
+  }
+}

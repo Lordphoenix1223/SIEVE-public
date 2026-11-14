@@ -1,0 +1,87 @@
+{
+  "baselines": [
+    "seeded_random",
+    "spectral_concentration",
+    "IsolationForest_reference_only",
+    "fixed_balanced_logistic_C1",
+    "shuffled_training_labels_control"
+  ],
+  "candidates": [
+    {
+      "C": 0.1,
+      "id": "logistic-C0.1",
+      "kind": "logistic"
+    },
+    {
+      "C": 1.0,
+      "id": "logistic-C1.0",
+      "kind": "logistic"
+    },
+    {
+      "C": 10.0,
+      "id": "logistic-C10.0",
+      "kind": "logistic"
+    },
+    {
+      "C": 0.1,
+      "id": "svc-C0.1",
+      "kind": "svc"
+    },
+    {
+      "C": 1.0,
+      "id": "svc-C1.0",
+      "kind": "svc"
+    },
+    {
+      "C": 10.0,
+      "id": "svc-C10.0",
+      "kind": "svc"
+    },
+    {
+      "C": 100.0,
+      "id": "svc-C100.0",
+      "kind": "svc"
+    },
+    {
+      "depth": 8,
+      "id": "extra-depth8-leaf1",
+      "kind": "extra",
+      "leaf": 1
+    },
+    {
+      "depth": 8,
+      "id": "extra-depth8-leaf3",
+      "kind": "extra",
+      "leaf": 3
+    },
+    {
+      "depth": null,
+      "id": "extra-depthNone-leaf1",
+      "kind": "extra",
+      "leaf": 1
+    },
+    {
+      "depth": null,
+      "id": "extra-depthNone-leaf3",
+      "kind": "extra",
+      "leaf": 3
+    }
+  ],
+  "evaluator_sha256": "3a3f635058cff79821633f1ce4da80718c8d21c66dca9cbea33501dea4c66432",
+  "feature_version": "kepler-rrlyrae-fft-v1",
+  "features_sha256": "5a3144bff67a1230fe0f24f723fe38e26c487812b139905d6b5bab9ecf0c8e3b",
+  "folds": 3,
+  "packages": {
+    "numpy": "2.5.3",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "skops": "0.16.0"
+  },
+  "primary": "mean fold Recall@ceil(5%); tie mean AP; then candidate ID",
+  "review_fraction": 0.05,
+  "seed": 42,
+  "splitter": "StratifiedGroupKFold(exact-curve-hash)",
+  "task": "archive_label_7_RR_Lyrae_retrieval",
+  "test_sha256": "119d63dddfe5f1fa2ea0399f91a3ca549c2fa1585551c59463cc56a332709b50",
+  "train_sha256": "0cfe5d5d8fc4aa5f21262e0eb5a60cd997cb1c53314ffa07b59221158426e13c"
+}

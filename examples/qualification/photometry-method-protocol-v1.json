@@ -1,0 +1,65 @@
+{
+  "schema_version": "sieve.qr3.photometry-method-protocol.v1",
+  "status": "FROZEN_BEFORE_METHOD_IMPLEMENTATION",
+  "scope": "Fixed-position PSF photometry method comparison on the three retained QR3 D1 cutouts",
+  "inputs": {
+    "manifest": "examples/qualification/source.json",
+    "manifest_sha256": "computed_by_runner_and_retained_in_result",
+    "exposure_sha256": [
+      "13434d8c4615a7b788594d3065809c61dfa5c28d5fae6590cf5d7e8b952a4117",
+      "0d6297702adcbb65786230b1ed7f9c4e6a58e1746885d8dd5ebbc46c8be24fc9",
+      "faff32a95ac0afdaed8d2bbf46d5d4324b774a43a74382b9b482adb3a8849d01"
+    ],
+    "science_unit": "microjansky per native detector pixel; released SOLIDANGLE converts MJy/sr IMAGE and VARIANCE planes",
+    "flags": "existing QR3 D1 conservative bad-pixel policy; invalid pixels excluded from all compared fits"
+  },
+  "question": "Does fitting the known components together with a shared sloped local background reduce incremental-flux error for crowded sources relative to independent fixed-position fits, under a QR3 real-image background and an ePSF template withheld from the fitted exposure?",
+  "frozen_design": {
+    "seed": 20261015,
+    "spatial_holdout": "Four equal detector-coordinate quadrants are reported separately; all are evaluation regions and no method or threshold is tuned on their outcomes.",
+    "groups_per_exposure": 8,
+    "blend_separations_pixels": [1.0, 1.5, 2.5, 4.0],
+    "flux_ratios_bright_to_faint": [1.0, 3.0],
+    "nominal_faint_component_snr": 10.0,
+    "truth": "known additive component flux; unknown pre-existing scene flux is eliminated by paired on/off amplitude differences, not treated as zero or independently known",
+    "injection_profile": "for each science exposure use the nearest ePSF from the next exposure in the pinned three-exposure cycle, transformed through its own WCS at the same sky coordinate; normalize the finite released ePSF to unit sum; record injection and fit zone identifiers",
+    "randomness": "Seeded site choice and independent archive-variance Gaussian perturbations; random draw seeds and every fit status retained",
+    "crowding": "real image pixels are retained beneath both injected components; only injection truth is controlled"
+  },
+  "frozen_methods": [
+    {
+      "id": "sieve_independent_v1",
+      "description": "Current SIEVE fit_flux called independently at each known component position; released same-exposure ePSF and a local constant sky."
+    },
+    {
+      "id": "sieve_joint_plane_v1",
+      "description": "Proposed grouped weighted linear fit of all known component amplitudes plus one shared local planar background, on identical valid pixels and fixed positions."
+    },
+    {
+      "id": "photutils_grouped_fixed_v1",
+      "description": "Photutils PSFPhotometry with the same group positions, same fitted-exposure ImagePSF, fixed x/y, same fit window, and local background removed using the shared fit's nuisance-plane solution; used as an implementation baseline, not independent truth."
+    }
+  ],
+  "primary_endpoint": {
+    "population": "paired injection groups with separations 1.0, 1.5, or 2.5 pixels and all components returning finite estimates in both methods",
+    "metric": "median absolute component fractional incremental-flux error; group-level paired bootstrap over injection sites, 10000 resamples, seeded from protocol seed",
+    "comparison": "joint versus independent SIEVE fit; report absolute effect, ratio, 95 percent group-bootstrap interval, denominator and all failures",
+    "interpretation_gate": "call an improvement only if the upper 95 percent interval of the joint-to-independent error ratio is below 1 and the point ratio is at most 0.8; otherwise report no demonstrated improvement or insufficient precision"
+  },
+  "secondary_metrics": [
+    "per-method signed and absolute incremental-flux bias and scatter by separation, flux ratio, SNR and spatial quadrant",
+    "finite-fit and rank/condition failures",
+    "formal uncertainty calibration under independent archive-variance Gaussian perturbations, using the variance of the paired difference and propagated formal covariance; this is conditional on diagonal variance and does not validate unknown detector covariance",
+    "position is fixed by design; no astrometric accuracy or detection completeness claim",
+    "false detections and identity correctness are not estimable because no independent source-label catalog is provided",
+    "median, p95 and maximum wall time, CPU time, peak RSS, logical I/O and pixels fitted for each method and budget"
+  ],
+  "limits": [
+    "This is a three-cutout QR3 D1 pilot, not an independent sky cohort or production survey validation.",
+    "The cross-exposure injection ePSF is independent of the fitted exposure's selected template but is still from the same release and instrument pipeline.",
+    "Real-image differencing isolates additive injected response; it does not validate the unknown baseline scene's total source flux.",
+    "Archive variance is diagonal; source Poisson noise and pixel covariance are not added or modeled.",
+    "Photutils shares the fitted-exposure ePSF and input pixels, so it is a strong implementation reference, not independent astrophysical truth.",
+    "No unconfirmed source identity, discovery, FDR, or sky sensitivity claim is allowed."
+  ]
+}

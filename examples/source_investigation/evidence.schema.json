@@ -1,0 +1,121 @@
+{
+  "$defs": {
+    "Case": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "real_observation",
+            "controlled_injection"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "TENTATIVE_ASSOCIATION",
+            "ARTIFACT_UNRESOLVED",
+            "INCONCLUSIVE"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "ra_deg": {
+          "exclusiveMaximum": 360,
+          "minimum": 0,
+          "title": "Ra Deg",
+          "type": "number"
+        },
+        "dec_deg": {
+          "maximum": 90,
+          "minimum": -90,
+          "title": "Dec Deg",
+          "type": "number"
+        },
+        "observation": {
+          "additionalProperties": true,
+          "title": "Observation",
+          "type": "object"
+        },
+        "measurements": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Measurements",
+          "type": "array"
+        },
+        "catalog_candidates": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Catalog Candidates",
+          "type": "array"
+        },
+        "checks": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Checks",
+          "type": "array"
+        },
+        "reasons": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Reasons",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "status",
+        "ra_deg",
+        "dec_deg",
+        "observation",
+        "measurements",
+        "catalog_candidates",
+        "checks",
+        "reasons"
+      ],
+      "title": "Case",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "sieve.learning_evidence.v1",
+      "default": "sieve.learning_evidence.v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "catalog": {
+      "additionalProperties": true,
+      "title": "Catalog",
+      "type": "object"
+    },
+    "cases": {
+      "items": {
+        "$ref": "#/$defs/Case"
+      },
+      "maxItems": 3,
+      "minItems": 3,
+      "title": "Cases",
+      "type": "array"
+    }
+  },
+  "required": [
+    "catalog",
+    "cases"
+  ],
+  "title": "Package",
+  "type": "object"
+}

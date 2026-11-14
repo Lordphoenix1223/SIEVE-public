@@ -1,0 +1,31 @@
+{
+  "code_commit": "fc70009d40b74eb22f4b17d9c8ae1547cf9bd94e",
+  "core_tree_sha256": "2113e45d51636d02b888ad12fcb791899df396e24b1dd5cfa81c6f10c2b28577",
+  "dirty": false,
+  "ended_at": "2026-10-06T17:56:36.835735+00:00",
+  "environment_id": "env:d4fe308e23cdf91e27f92f8af41565418ae394d9b599b143b452e456fc46b9d8",
+  "evaluator_source_sha256": "1c56a10fcce3cea5ba714ee857b2aa844a2a458db4b4164f3ac225e380f771be",
+  "evaluator_sources": {
+    "__init__.py": "7ec800941151ba64ceda489dce2c14b29ac4b86055db470ba2cd4259a2b2f5cf",
+    "catalog_controls.py": "36d888240f6602fb67e8228c88df3afdf7ee8f502cd6b33cb4fc4e21c79f48b3",
+    "identity.py": "aba8aa1f0c36a06f4a66f851ecb06071380d73824076796639e866e45aeb00c3",
+    "identity_cli.py": "6e2ffc452aa62040480e8c002d661285043498700189cd3d2c033d974aa3d9bb",
+    "kepler_specialist.py": "3a3f635058cff79821633f1ce4da80718c8d21c66dca9cbea33501dea4c66432",
+    "truth.py": "deb9ce755cdfbcd7a4629e37861372328cc32d57128cd509924cbc9e6e9b1ca0"
+  },
+  "input_file_sha256": {
+    "baseline.json": "e686b7c0b5c236f7940953737390db626eb6828650cd5e352dacae41cddcc420",
+    "evaluator-truth.json": "69e1aa1e2e243cf30ce1ab8e36addb5be31ebdaa45f2f141c86a40a5d864b7bb",
+    "protocol.json": "4e1645b26f5cdc815760420a3153a14bb5bed6d447bdc4d63a476acb8a3a59dd",
+    "treatment.json": "ad7528810144beaeb7ef9ea27154cdd3f8d38a7fa10cdf8e2e5e7e0fbd8f9c73"
+  },
+  "limitations": [
+    "Local receipts do not enforce a blind external holdout or authenticate producer claims"
+  ],
+  "output_metrics_sha256": "de52f89fdb3bf5189b6b97b257d0c6bb43287f344275bc8608caec0f0fe40121",
+  "random_seeds": {
+    "bootstrap": 42
+  },
+  "schema_version": "sieve.identity.evaluation.v1",
+  "started_at": "2026-10-06T17:56:36.695157+00:00"
+}

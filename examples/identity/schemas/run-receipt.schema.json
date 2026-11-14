@@ -1,0 +1,101 @@
+{
+  "$defs": {
+    "JsonValue": {}
+  },
+  "additionalProperties": false,
+  "properties": {
+    "code_commit": {
+      "minLength": 1,
+      "title": "Code Commit",
+      "type": "string"
+    },
+    "code_tree_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Code Tree Sha256",
+      "type": "string"
+    },
+    "configuration": {
+      "additionalProperties": {
+        "$ref": "#/$defs/JsonValue"
+      },
+      "title": "Configuration",
+      "type": "object"
+    },
+    "dirty": {
+      "title": "Dirty",
+      "type": "boolean"
+    },
+    "ended_at": {
+      "format": "date-time",
+      "title": "Ended At",
+      "type": "string"
+    },
+    "environment_id": {
+      "minLength": 1,
+      "title": "Environment Id",
+      "type": "string"
+    },
+    "id": {
+      "minLength": 1,
+      "pattern": "^\\S+$",
+      "title": "Id",
+      "type": "string"
+    },
+    "input_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Input Sha256",
+      "type": "string"
+    },
+    "output_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Output Sha256",
+      "type": "string"
+    },
+    "provenance_ref": {
+      "minLength": 1,
+      "pattern": "^\\S+$",
+      "title": "Provenance Ref",
+      "type": "string"
+    },
+    "random_seeds": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Random Seeds",
+      "type": "object"
+    },
+    "schema_version": {
+      "const": "sieve.v0",
+      "default": "sieve.v0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "software_version": {
+      "minLength": 1,
+      "title": "Software Version",
+      "type": "string"
+    },
+    "started_at": {
+      "format": "date-time",
+      "title": "Started At",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "provenance_ref",
+    "input_sha256",
+    "output_sha256",
+    "code_commit",
+    "code_tree_sha256",
+    "dirty",
+    "software_version",
+    "environment_id",
+    "configuration",
+    "random_seeds",
+    "started_at",
+    "ended_at"
+  ],
+  "title": "RunReceipt",
+  "type": "object"
+}

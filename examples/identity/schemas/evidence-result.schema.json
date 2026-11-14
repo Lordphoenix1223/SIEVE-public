@@ -1,0 +1,487 @@
+{
+  "$defs": {
+    "EvidenceFactor": {
+      "additionalProperties": false,
+      "properties": {
+        "hypothesis_id": {
+          "minLength": 1,
+          "pattern": "^\\S+$",
+          "title": "Hypothesis Id",
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "pattern": "^\\S+$",
+          "title": "Id",
+          "type": "string"
+        },
+        "input_ids": {
+          "items": {
+            "minLength": 1,
+            "pattern": "^\\S+$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Input Ids",
+          "type": "array"
+        },
+        "limitations": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Limitations",
+          "type": "array"
+        },
+        "method": {
+          "$ref": "#/$defs/MethodSpec"
+        },
+        "provenance_ref": {
+          "minLength": 1,
+          "pattern": "^\\S+$",
+          "title": "Provenance Ref",
+          "type": "string"
+        },
+        "purpose": {
+          "enum": [
+            "GENERATE",
+            "TEST"
+          ],
+          "title": "Purpose",
+          "type": "string"
+        },
+        "quantities": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/ScalarMeasurement"
+          },
+          "title": "Quantities",
+          "type": "array"
+        },
+        "rationale": {
+          "minLength": 1,
+          "title": "Rationale",
+          "type": "string"
+        },
+        "request_id": {
+          "minLength": 1,
+          "pattern": "^\\S+$",
+          "title": "Request Id",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": "sieve.identity.v1",
+          "default": "sieve.identity.v1",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "score": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Score"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "test_protocol_ref": {
+          "minLength": 1,
+          "pattern": "^\\S+$",
+          "title": "Test Protocol Ref",
+          "type": "string"
+        },
+        "tested_claim": {
+          "minLength": 1,
+          "title": "Tested Claim",
+          "type": "string"
+        },
+        "verdict": {
+          "$ref": "#/$defs/EvidenceVerdict"
+        }
+      },
+      "required": [
+        "id",
+        "request_id",
+        "hypothesis_id",
+        "method",
+        "purpose",
+        "input_ids",
+        "tested_claim",
+        "verdict",
+        "test_protocol_ref",
+        "rationale",
+        "limitations",
+        "provenance_ref"
+      ],
+      "title": "EvidenceFactor",
+      "type": "object"
+    },
+    "EvidenceRequest": {
+      "additionalProperties": false,
+      "properties": {
+        "control_ref": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "pattern": "^\\S+$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Control Ref"
+        },
+        "dependence": {
+          "enum": [
+            "UNKNOWN",
+            "DISJOINT_INPUTS",
+            "CONTROLLED_SHARED_INPUTS"
+          ],
+          "title": "Dependence",
+          "type": "string"
+        },
+        "hypothesis_id": {
+          "minLength": 1,
+          "pattern": "^\\S+$",
+          "title": "Hypothesis Id",
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "pattern": "^\\S+$",
+          "title": "Id",
+          "type": "string"
+        },
+        "input_ids": {
+          "items": {
+            "minLength": 1,
+            "pattern": "^\\S+$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Input Ids",
+          "type": "array"
+        },
+        "method": {
+          "$ref": "#/$defs/MethodSpec"
+        },
+        "provenance_ref": {
+          "minLength": 1,
+          "pattern": "^\\S+$",
+          "title": "Provenance Ref",
+          "type": "string"
+        },
+        "purpose": {
+          "enum": [
+            "GENERATE",
+            "TEST"
+          ],
+          "title": "Purpose",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": "sieve.identity.v1",
+          "default": "sieve.identity.v1",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "tested_claim": {
+          "minLength": 1,
+          "title": "Tested Claim",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "hypothesis_id",
+        "method",
+        "purpose",
+        "input_ids",
+        "tested_claim",
+        "dependence",
+        "provenance_ref"
+      ],
+      "title": "EvidenceRequest",
+      "type": "object"
+    },
+    "EvidenceVerdict": {
+      "enum": [
+        "CONSISTENT",
+        "CONTRADICTS",
+        "INSUFFICIENT"
+      ],
+      "title": "EvidenceVerdict",
+      "type": "string"
+    },
+    "ExecutionStatus": {
+      "enum": [
+        "SUCCESS",
+        "ERROR",
+        "TIMEOUT",
+        "UNSUPPORTED",
+        "MISSING"
+      ],
+      "title": "ExecutionStatus",
+      "type": "string"
+    },
+    "MethodSpec": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "minLength": 1,
+          "pattern": "^\\S+$",
+          "title": "Name",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": "sieve.v0",
+          "default": "sieve.v0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "version": {
+          "minLength": 1,
+          "title": "Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "version"
+      ],
+      "title": "MethodSpec",
+      "type": "object"
+    },
+    "QuantityValue": {
+      "additionalProperties": false,
+      "properties": {
+        "missing_reason": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Missing Reason"
+        },
+        "schema_version": {
+          "const": "sieve.v0",
+          "default": "sieve.v0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "uncertainty": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Uncertainty"
+        },
+        "unit": {
+          "minLength": 1,
+          "title": "Unit",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Value"
+        }
+      },
+      "required": [
+        "value",
+        "unit"
+      ],
+      "title": "QuantityValue",
+      "type": "object"
+    },
+    "ScalarMeasurement": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "minLength": 1,
+          "pattern": "^\\S+$",
+          "title": "Name",
+          "type": "string"
+        },
+        "quantity": {
+          "$ref": "#/$defs/QuantityValue"
+        },
+        "schema_version": {
+          "const": "sieve.identity.v1",
+          "default": "sieve.identity.v1",
+          "title": "Schema Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "quantity"
+      ],
+      "title": "ScalarMeasurement",
+      "type": "object"
+    },
+    "Score": {
+      "additionalProperties": false,
+      "properties": {
+        "calibrated": {
+          "default": false,
+          "title": "Calibrated",
+          "type": "boolean"
+        },
+        "calibration_ref": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "pattern": "^\\S+$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Calibration Ref"
+        },
+        "direction": {
+          "enum": [
+            "higher",
+            "lower"
+          ],
+          "title": "Direction",
+          "type": "string"
+        },
+        "domain": {
+          "minLength": 1,
+          "title": "Domain",
+          "type": "string"
+        },
+        "event_or_null": {
+          "minLength": 1,
+          "title": "Event Or Null",
+          "type": "string"
+        },
+        "missing_reason": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Missing Reason"
+        },
+        "schema_version": {
+          "const": "sieve.v0",
+          "default": "sieve.v0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "semantics": {
+          "$ref": "#/$defs/ScoreSemantics"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Value"
+        }
+      },
+      "required": [
+        "value",
+        "semantics",
+        "direction",
+        "domain",
+        "event_or_null"
+      ],
+      "title": "Score",
+      "type": "object"
+    },
+    "ScoreSemantics": {
+      "enum": [
+        "RANKING_ONLY",
+        "CALIBRATED_PROBABILITY",
+        "LIKELIHOOD_LIKE",
+        "P_VALUE",
+        "PSEUDO_PROBABILITY",
+        "UNKNOWN_UNCALIBRATED"
+      ],
+      "title": "ScoreSemantics",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "factors": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/EvidenceFactor"
+      },
+      "title": "Factors",
+      "type": "array"
+    },
+    "raw_output_asset_ids": {
+      "default": [],
+      "items": {
+        "minLength": 1,
+        "pattern": "^\\S+$",
+        "type": "string"
+      },
+      "title": "Raw Output Asset Ids",
+      "type": "array"
+    },
+    "reason": {
+      "minLength": 1,
+      "title": "Reason",
+      "type": "string"
+    },
+    "request": {
+      "$ref": "#/$defs/EvidenceRequest"
+    },
+    "schema_version": {
+      "const": "sieve.identity.v1",
+      "default": "sieve.identity.v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "status": {
+      "$ref": "#/$defs/ExecutionStatus"
+    }
+  },
+  "required": [
+    "request",
+    "status",
+    "reason"
+  ],
+  "title": "EvidenceResult",
+  "type": "object"
+}

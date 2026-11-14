@@ -1,0 +1,48 @@
+{
+  "schema_version": "sieve.qr3.qualification.protocol.v1",
+  "scope": "Independent pre-existing SIEVE research; not a Space Apps event submission",
+  "status": "PILOT_PROTOCOL_NOT_CONFIRMATORY_PREREGISTRATION",
+  "foundation_commit": "7addcc32b5e8b2420ac7abfc5aad9b748cc48222",
+  "detector": 1,
+  "release": "qr3",
+  "sky_center_deg": [232.663579354, -10.7213238583],
+  "cutout_size_pixels": 256,
+  "background_box_pixels": 32,
+  "bad_flag_policy": "existing conservative SIEVE scanner; SOURCE excluded only from background",
+  "detection": {
+    "methods": ["photutils.DAOStarFinder", "photutils.IRAFStarFinder"],
+    "fwhm_pixels": 2.0,
+    "threshold_sigma": 5.0,
+    "recovery_radius_pixels": 2.0,
+    "association": "one-to-one minimum-distance assignment; no reused detections",
+    "irsa_source_discovery": "SExtractor reference required separately; Photutils comparisons are not IRSA equivalence"
+  },
+  "injection": {
+    "seed": 20261011,
+    "sites": 32,
+    "snr_levels": [3.0, 5.0, 10.0, 20.0],
+    "stamp_size_pixels": 11,
+    "psf": "nearest released QR3 EPSF zone; Photutils ImagePSF rendered at native subpixel phase and unit-stamp normalized",
+    "arms": ["real_image", "archive_variance_gaussian_blank", "two_source_blend", "masked_core", "one_pixel_artifact"],
+    "noise": "real-image addition retains original noise; Gaussian blank draws archive variance, no source shot noise added",
+    "source_groups": "site IDs keep all SNR levels and controls together; no threshold tuning on these sites",
+    "limitations": ["Model-matched injection cannot establish real sensitivity", "Gaussian archive noise excludes covariance and source shot noise", "Real-image unmatched peaks are not false detections", "Blend components and masks remain in denominators"]
+  },
+  "measurement": {
+    "profile": "QR3 D1 finite-ePSF point-source fixed-position flux plus constant background; weighted scipy least squares",
+    "units": "uJy using released pixel solid-angle map; scientific CWAVE/CBAND maps",
+    "reference": "known injected flux for conditional recovery; official IRSA same-source forced photometry is a separate external check",
+    "metrics": ["fractional_bias", "fractional_scatter", "standardized_residual", "crowding", "coverage", "failures"]
+  },
+  "identity": {
+    "chosen_factor": "held-out pixel spatial-profile predictive evidence for one versus multiple sources",
+    "A": "Nway-quality positional likelihood with independently qualified astrometric covariance and density/no-counterpart model",
+    "B": "A plus ordinary photometry with wavelength-dependent prediction and shared covariance",
+    "C": "B plus competing one/multiple/artifact hypotheses tested on an exposure excluded from A/B and hypothesis generation",
+    "evaluation": "physical-source-disjoint validation and test; freeze thresholds on validation at matched true-link recall; grouped paired uncertainty",
+    "metrics": ["false_mergers", "false_splits", "abstentions", "calibration", "runtime", "failures"],
+    "claim_gate": ["independent reference identities", "qualified positional covariance", "source-disjoint labels and frozen matched-recall thresholds", "independent held-out exposure", "moving and artifact controls", "strong A/B baselines executed"],
+    "missing_prerequisite_behavior": "INCONCLUSIVE; metrics null with reasons, never zero or NO_IMPROVEMENT"
+  },
+  "forbidden_claims": ["discovery", "real SPHEREx sensitivity", "calibrated anomaly probability", "case-level FDR", "million-detection scalability", "standards compliance", "real identity improvement from injection alone"]
+}

@@ -1,0 +1,105 @@
+{
+  "$defs": {
+    "TruthType": {
+      "enum": [
+        "SIMULATED_TRUTH",
+        "BENCHMARK_TRUTH",
+        "FROZEN_HISTORICAL_TRUTH",
+        "AUTHORITATIVE_EXTERNAL_RECORD",
+        "HUMAN_ANNOTATION",
+        "UNKNOWN"
+      ],
+      "title": "TruthType",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "audit_ref": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Audit Ref"
+    },
+    "complete_for_scope": {
+      "title": "Complete For Scope",
+      "type": "boolean"
+    },
+    "frozen": {
+      "title": "Frozen",
+      "type": "boolean"
+    },
+    "id": {
+      "minLength": 1,
+      "pattern": "^\\S+$",
+      "title": "Id",
+      "type": "string"
+    },
+    "limitations": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "title": "Limitations",
+      "type": "array"
+    },
+    "member_ids": {
+      "items": {
+        "minLength": 1,
+        "pattern": "^\\S+$",
+        "type": "string"
+      },
+      "title": "Member Ids",
+      "type": "array"
+    },
+    "object_ids": {
+      "items": {
+        "minLength": 1,
+        "pattern": "^\\S+$",
+        "type": "string"
+      },
+      "title": "Object Ids",
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "sieve.v0",
+      "default": "sieve.v0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "source_ref": {
+      "minLength": 1,
+      "title": "Source Ref",
+      "type": "string"
+    },
+    "source_type": {
+      "$ref": "#/$defs/TruthType"
+    },
+    "task_scope": {
+      "minLength": 1,
+      "pattern": "^\\S+$",
+      "title": "Task Scope",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "source_type",
+    "source_ref",
+    "task_scope",
+    "member_ids",
+    "object_ids",
+    "frozen",
+    "complete_for_scope",
+    "limitations"
+  ],
+  "title": "TruthRecord",
+  "type": "object"
+}

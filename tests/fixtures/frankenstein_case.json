@@ -1,0 +1,2330 @@
+{
+  "observations": [
+    {
+      "id": "o-a0",
+      "exposure_id": "ex-a0",
+      "dataset": "synthetic",
+      "provider": "reference",
+      "release": "v0",
+      "time": {
+        "jd1": 2461000,
+        "jd2": 0.0,
+        "scale": "tai"
+      },
+      "position": {
+        "longitude_deg": 10.0,
+        "latitude_deg": 0,
+        "frame": "icrs"
+      },
+      "dependence_group": "ex-a0",
+      "wavelengths": [
+        {
+          "value": 1.5,
+          "unit": "um"
+        }
+      ],
+      "asset_ids": [
+        "fixture-seed"
+      ],
+      "provenance_ref": "activity-observe"
+    },
+    {
+      "id": "o-a1",
+      "exposure_id": "ex-a1",
+      "dataset": "synthetic",
+      "provider": "reference",
+      "release": "v0",
+      "time": {
+        "jd1": 2461000,
+        "jd2": 0.1,
+        "scale": "tai"
+      },
+      "position": {
+        "longitude_deg": 10.001,
+        "latitude_deg": 0,
+        "frame": "icrs"
+      },
+      "dependence_group": "ex-a1",
+      "wavelengths": [
+        {
+          "value": 1.5,
+          "unit": "um"
+        }
+      ],
+      "asset_ids": [
+        "fixture-seed"
+      ],
+      "provenance_ref": "activity-observe"
+    },
+    {
+      "id": "o-a2",
+      "exposure_id": "ex-a2",
+      "dataset": "synthetic",
+      "provider": "reference",
+      "release": "v0",
+      "time": {
+        "jd1": 2461000,
+        "jd2": 0.2,
+        "scale": "tai"
+      },
+      "position": {
+        "longitude_deg": 10.002,
+        "latitude_deg": 0,
+        "frame": "icrs"
+      },
+      "dependence_group": "ex-a2",
+      "wavelengths": [
+        {
+          "value": 1.5,
+          "unit": "um"
+        }
+      ],
+      "asset_ids": [
+        "fixture-seed"
+      ],
+      "provenance_ref": "activity-observe"
+    },
+    {
+      "id": "o-a3",
+      "exposure_id": "ex-a3",
+      "dataset": "synthetic",
+      "provider": "reference",
+      "release": "v0",
+      "time": {
+        "jd1": 2461000,
+        "jd2": 0.3,
+        "scale": "tai"
+      },
+      "position": {
+        "longitude_deg": 10.003,
+        "latitude_deg": 0,
+        "frame": "icrs"
+      },
+      "dependence_group": "ex-a3",
+      "wavelengths": [
+        {
+          "value": 1.5,
+          "unit": "um"
+        }
+      ],
+      "asset_ids": [
+        "fixture-seed"
+      ],
+      "provenance_ref": "activity-observe"
+    },
+    {
+      "id": "o-b0",
+      "exposure_id": "ex-b0",
+      "dataset": "synthetic",
+      "provider": "reference",
+      "release": "v0",
+      "time": {
+        "jd1": 2461000,
+        "jd2": 0.0,
+        "scale": "tai"
+      },
+      "position": {
+        "longitude_deg": 11.0,
+        "latitude_deg": 0,
+        "frame": "icrs"
+      },
+      "dependence_group": "ex-b0",
+      "wavelengths": [
+        {
+          "value": 1.5,
+          "unit": "um"
+        }
+      ],
+      "asset_ids": [
+        "fixture-seed"
+      ],
+      "provenance_ref": "activity-observe"
+    },
+    {
+      "id": "o-b1",
+      "exposure_id": "ex-b1",
+      "dataset": "synthetic",
+      "provider": "reference",
+      "release": "v0",
+      "time": {
+        "jd1": 2461000,
+        "jd2": 0.1,
+        "scale": "tai"
+      },
+      "position": {
+        "longitude_deg": 10.998,
+        "latitude_deg": 0,
+        "frame": "icrs"
+      },
+      "dependence_group": "ex-b1",
+      "wavelengths": [
+        {
+          "value": 1.5,
+          "unit": "um"
+        }
+      ],
+      "asset_ids": [
+        "fixture-seed"
+      ],
+      "provenance_ref": "activity-observe"
+    },
+    {
+      "id": "o-b2",
+      "exposure_id": "ex-b2",
+      "dataset": "synthetic",
+      "provider": "reference",
+      "release": "v0",
+      "time": {
+        "jd1": 2461000,
+        "jd2": 0.2,
+        "scale": "tai"
+      },
+      "position": {
+        "longitude_deg": 10.996,
+        "latitude_deg": 0,
+        "frame": "icrs"
+      },
+      "dependence_group": "ex-b2",
+      "wavelengths": [
+        {
+          "value": 1.5,
+          "unit": "um"
+        }
+      ],
+      "asset_ids": [
+        "fixture-seed"
+      ],
+      "provenance_ref": "activity-observe"
+    },
+    {
+      "id": "o-noise0",
+      "exposure_id": "ex-noise0",
+      "dataset": "synthetic",
+      "provider": "reference",
+      "release": "v0",
+      "time": {
+        "jd1": 2461000,
+        "jd2": 0.0,
+        "scale": "tai"
+      },
+      "position": {
+        "longitude_deg": 80,
+        "latitude_deg": 0,
+        "frame": "icrs"
+      },
+      "dependence_group": "ex-noise0",
+      "wavelengths": [
+        {
+          "value": 1.5,
+          "unit": "um"
+        }
+      ],
+      "asset_ids": [
+        "fixture-seed"
+      ],
+      "provenance_ref": "activity-observe"
+    },
+    {
+      "id": "o-noise1",
+      "exposure_id": "ex-noise1",
+      "dataset": "synthetic",
+      "provider": "reference",
+      "release": "v0",
+      "time": {
+        "jd1": 2461000,
+        "jd2": 0.1,
+        "scale": "tai"
+      },
+      "position": {
+        "longitude_deg": 82,
+        "latitude_deg": 0,
+        "frame": "icrs"
+      },
+      "dependence_group": "ex-noise1",
+      "wavelengths": [
+        {
+          "value": 1.5,
+          "unit": "um"
+        }
+      ],
+      "asset_ids": [
+        "fixture-seed"
+      ],
+      "provenance_ref": "activity-observe"
+    },
+    {
+      "id": "o-anomaly",
+      "exposure_id": "ex-anomaly",
+      "dataset": "synthetic",
+      "provider": "reference",
+      "release": "v0",
+      "time": {
+        "jd1": 2461000,
+        "jd2": 0.1,
+        "scale": "tai"
+      },
+      "position": {
+        "longitude_deg": 140,
+        "latitude_deg": 0,
+        "frame": "icrs"
+      },
+      "dependence_group": "ex-anomaly",
+      "wavelengths": [
+        {
+          "value": 1.5,
+          "unit": "um"
+        }
+      ],
+      "asset_ids": [
+        "fixture-seed"
+      ],
+      "provenance_ref": "activity-observe"
+    },
+    {
+      "id": "o-insufficient",
+      "exposure_id": "ex-insufficient",
+      "dataset": "synthetic",
+      "provider": "reference",
+      "release": "v0",
+      "time": {
+        "jd1": 2461000,
+        "jd2": 0.1,
+        "scale": "tai"
+      },
+      "position": {
+        "longitude_deg": 200,
+        "latitude_deg": 0,
+        "frame": "icrs"
+      },
+      "dependence_group": "ex-insufficient",
+      "wavelengths": [
+        {
+          "value": 1.5,
+          "unit": "um"
+        }
+      ],
+      "asset_ids": [
+        "fixture-seed"
+      ],
+      "provenance_ref": "activity-observe"
+    },
+    {
+      "id": "o-static",
+      "exposure_id": "ex-static",
+      "dataset": "synthetic",
+      "provider": "reference",
+      "release": "v0",
+      "time": {
+        "jd1": 2461000,
+        "jd2": 0.1,
+        "scale": "tai"
+      },
+      "position": {
+        "longitude_deg": 30,
+        "latitude_deg": 0,
+        "frame": "icrs"
+      },
+      "dependence_group": "ex-static",
+      "wavelengths": [
+        {
+          "value": 1.5,
+          "unit": "um"
+        }
+      ],
+      "asset_ids": [
+        "fixture-seed"
+      ],
+      "provenance_ref": "activity-observe"
+    },
+    {
+      "id": "o-unusable",
+      "exposure_id": "ex-unusable",
+      "dataset": "synthetic",
+      "provider": "reference",
+      "release": "v0",
+      "time": {
+        "jd1": 2461000,
+        "jd2": 0.1,
+        "scale": "tai"
+      },
+      "position": {
+        "longitude_deg": 40,
+        "latitude_deg": 0,
+        "frame": "icrs"
+      },
+      "dependence_group": "ex-unusable",
+      "wavelengths": [
+        {
+          "value": 1.5,
+          "unit": "um"
+        }
+      ],
+      "asset_ids": [
+        "fixture-seed"
+      ],
+      "provenance_ref": "activity-observe"
+    },
+    {
+      "id": "o-a0",
+      "exposure_id": "ex-a0",
+      "dataset": "synthetic",
+      "provider": "reference",
+      "release": "v0",
+      "time": {
+        "jd1": 2461000,
+        "jd2": 0.0,
+        "scale": "tai"
+      },
+      "position": {
+        "longitude_deg": 10.0,
+        "latitude_deg": 0,
+        "frame": "icrs"
+      },
+      "dependence_group": "ex-a0",
+      "wavelengths": [
+        {
+          "value": 1.5,
+          "unit": "um"
+        }
+      ],
+      "asset_ids": [
+        "fixture-seed"
+      ],
+      "provenance_ref": "activity-observe"
+    }
+  ],
+  "detections": [
+    {
+      "id": "d-a0",
+      "observation_id": "o-a0",
+      "position": {
+        "longitude_deg": 10.0,
+        "latitude_deg": 0,
+        "frame": "icrs"
+      },
+      "measurements": {
+        "flux": {
+          "value": 10,
+          "unit": "uJy",
+          "uncertainty": 1
+        }
+      },
+      "method": {
+        "name": "reference",
+        "version": "fixture.v0"
+      },
+      "quality": {
+        "flags": [],
+        "usable": true
+      },
+      "asset_ids": [
+        "fixture-seed"
+      ],
+      "provenance_ref": "activity-detect"
+    },
+    {
+      "id": "d-a1",
+      "observation_id": "o-a1",
+      "position": {
+        "longitude_deg": 10.001,
+        "latitude_deg": 0,
+        "frame": "icrs"
+      },
+      "measurements": {
+        "flux": {
+          "value": 10,
+          "unit": "uJy",
+          "uncertainty": 1
+        }
+      },
+      "method": {
+        "name": "reference",
+        "version": "fixture.v0"
+      },
+      "quality": {
+        "flags": [],
+        "usable": true
+      },
+      "asset_ids": [
+        "fixture-seed"
+      ],
+      "provenance_ref": "activity-detect"
+    },
+    {
+      "id": "d-a2",
+      "observation_id": "o-a2",
+      "position": {
+        "longitude_deg": 10.002,
+        "latitude_deg": 0,
+        "frame": "icrs"
+      },
+      "measurements": {
+        "flux": {
+          "value": 10,
+          "unit": "uJy",
+          "uncertainty": 1
+        }
+      },
+      "method": {
+        "name": "reference",
+        "version": "fixture.v0"
+      },
+      "quality": {
+        "flags": [],
+        "usable": true
+      },
+      "asset_ids": [
+        "fixture-seed"
+      ],
+      "provenance_ref": "activity-detect"
+    },
+    {
+      "id": "d-a3",
+      "observation_id": "o-a3",
+      "position": {
+        "longitude_deg": 10.003,
+        "latitude_deg": 0,
+        "frame": "icrs"
+      },
+      "measurements": {
+        "flux": {
+          "value": 10,
+          "unit": "uJy",
+          "uncertainty": 1
+        }
+      },
+      "method": {
+        "name": "reference",
+        "version": "fixture.v0"
+      },
+      "quality": {
+        "flags": [],
+        "usable": true
+      },
+      "asset_ids": [
+        "fixture-seed"
+      ],
+      "provenance_ref": "activity-detect"
+    },
+    {
+      "id": "d-b0",
+      "observation_id": "o-b0",
+      "position": {
+        "longitude_deg": 11.0,
+        "latitude_deg": 0,
+        "frame": "icrs"
+      },
+      "measurements": {
+        "flux": {
+          "value": 10,
+          "unit": "uJy",
+          "uncertainty": 1
+        }
+      },
+      "method": {
+        "name": "reference",
+        "version": "fixture.v0"
+      },
+      "quality": {
+        "flags": [],
+        "usable": true
+      },
+      "asset_ids": [
+        "fixture-seed"
+      ],
+      "provenance_ref": "activity-detect"
+    },
+    {
+      "id": "d-b1",
+      "observation_id": "o-b1",
+      "position": {
+        "longitude_deg": 10.998,
+        "latitude_deg": 0,
+        "frame": "icrs"
+      },
+      "measurements": {
+        "flux": {
+          "value": 10,
+          "unit": "uJy",
+          "uncertainty": 1
+        }
+      },
+      "method": {
+        "name": "reference",
+        "version": "fixture.v0"
+      },
+      "quality": {
+        "flags": [],
+        "usable": true
+      },
+      "asset_ids": [
+        "fixture-seed"
+      ],
+      "provenance_ref": "activity-detect"
+    },
+    {
+      "id": "d-b2",
+      "observation_id": "o-b2",
+      "position": {
+        "longitude_deg": 10.996,
+        "latitude_deg": 0,
+        "frame": "icrs"
+      },
+      "measurements": {
+        "flux": {
+          "value": 10,
+          "unit": "uJy",
+          "uncertainty": 1
+        }
+      },
+      "method": {
+        "name": "reference",
+        "version": "fixture.v0"
+      },
+      "quality": {
+        "flags": [],
+        "usable": true
+      },
+      "asset_ids": [
+        "fixture-seed"
+      ],
+      "provenance_ref": "activity-detect"
+    },
+    {
+      "id": "d-noise0",
+      "observation_id": "o-noise0",
+      "position": {
+        "longitude_deg": 80,
+        "latitude_deg": 0,
+        "frame": "icrs"
+      },
+      "measurements": {
+        "flux": {
+          "value": 10,
+          "unit": "uJy",
+          "uncertainty": 1
+        }
+      },
+      "method": {
+        "name": "reference",
+        "version": "fixture.v0"
+      },
+      "quality": {
+        "flags": [],
+        "usable": true
+      },
+      "asset_ids": [
+        "fixture-seed"
+      ],
+      "provenance_ref": "activity-detect"
+    },
+    {
+      "id": "d-noise1",
+      "observation_id": "o-noise1",
+      "position": {
+        "longitude_deg": 82,
+        "latitude_deg": 0,
+        "frame": "icrs"
+      },
+      "measurements": {
+        "flux": {
+          "value": 10,
+          "unit": "uJy",
+          "uncertainty": 1
+        }
+      },
+      "method": {
+        "name": "reference",
+        "version": "fixture.v0"
+      },
+      "quality": {
+        "flags": [],
+        "usable": true
+      },
+      "asset_ids": [
+        "fixture-seed"
+      ],
+      "provenance_ref": "activity-detect"
+    },
+    {
+      "id": "d-anomaly",
+      "observation_id": "o-anomaly",
+      "position": {
+        "longitude_deg": 140,
+        "latitude_deg": 0,
+        "frame": "icrs"
+      },
+      "measurements": {
+        "flux": {
+          "value": 10,
+          "unit": "uJy",
+          "uncertainty": 1
+        }
+      },
+      "method": {
+        "name": "reference",
+        "version": "fixture.v0"
+      },
+      "quality": {
+        "flags": [],
+        "usable": true
+      },
+      "asset_ids": [
+        "fixture-seed"
+      ],
+      "provenance_ref": "activity-detect"
+    },
+    {
+      "id": "d-insufficient",
+      "observation_id": "o-insufficient",
+      "position": {
+        "longitude_deg": 200,
+        "latitude_deg": 0,
+        "frame": "icrs"
+      },
+      "measurements": {
+        "flux": {
+          "value": 10,
+          "unit": "uJy",
+          "uncertainty": 1
+        }
+      },
+      "method": {
+        "name": "reference",
+        "version": "fixture.v0"
+      },
+      "quality": {
+        "flags": [],
+        "usable": true
+      },
+      "asset_ids": [
+        "fixture-seed"
+      ],
+      "provenance_ref": "activity-detect"
+    },
+    {
+      "id": "d-static",
+      "observation_id": "o-static",
+      "position": {
+        "longitude_deg": 30,
+        "latitude_deg": 0,
+        "frame": "icrs"
+      },
+      "measurements": {
+        "flux": {
+          "value": 10,
+          "unit": "uJy",
+          "uncertainty": 1
+        }
+      },
+      "method": {
+        "name": "reference",
+        "version": "fixture.v0"
+      },
+      "quality": {
+        "flags": [
+          "REFERENCE_STATIC"
+        ],
+        "usable": true
+      },
+      "asset_ids": [
+        "fixture-seed"
+      ],
+      "provenance_ref": "activity-detect"
+    },
+    {
+      "id": "d-unusable",
+      "observation_id": "o-unusable",
+      "position": {
+        "longitude_deg": 40,
+        "latitude_deg": 0,
+        "frame": "icrs"
+      },
+      "measurements": {
+        "flux": {
+          "value": 10,
+          "unit": "uJy",
+          "uncertainty": 1
+        }
+      },
+      "method": {
+        "name": "reference",
+        "version": "fixture.v0"
+      },
+      "quality": {
+        "flags": [],
+        "usable": false
+      },
+      "asset_ids": [
+        "fixture-seed"
+      ],
+      "provenance_ref": "activity-detect"
+    }
+  ],
+  "proposals": [
+    {
+      "id": "p-clean",
+      "member_ids": [
+        "d-a0",
+        "d-a1",
+        "d-a2",
+        "d-a3"
+      ],
+      "method": {
+        "name": "reference",
+        "version": "fixture.v0"
+      },
+      "task_type": "moving",
+      "explanation_key": "one-object",
+      "equivalence_family": "a-sampling",
+      "score": {
+        "value": 5,
+        "semantics": "RANKING_ONLY",
+        "direction": "higher",
+        "calibrated": false,
+        "domain": "synthetic-fixture-only",
+        "event_or_null": "review-interest-ranking"
+      },
+      "provenance_ref": "activity-propose"
+    },
+    {
+      "id": "p-exact",
+      "member_ids": [
+        "d-a3",
+        "d-a2",
+        "d-a1",
+        "d-a0"
+      ],
+      "method": {
+        "name": "reference",
+        "version": "fixture.v0"
+      },
+      "task_type": "moving",
+      "explanation_key": "one-object",
+      "equivalence_family": "a-sampling",
+      "score": {
+        "value": 4,
+        "semantics": "RANKING_ONLY",
+        "direction": "higher",
+        "calibrated": false,
+        "domain": "synthetic-fixture-only",
+        "event_or_null": "review-interest-ranking"
+      },
+      "provenance_ref": "activity-propose"
+    },
+    {
+      "id": "p-overlap",
+      "member_ids": [
+        "d-a0",
+        "d-a1",
+        "d-a2"
+      ],
+      "method": {
+        "name": "reference",
+        "version": "fixture.v0"
+      },
+      "task_type": "moving",
+      "explanation_key": "one-object",
+      "equivalence_family": "a-sampling",
+      "score": {
+        "value": 3,
+        "semantics": "RANKING_ONLY",
+        "direction": "higher",
+        "calibrated": false,
+        "domain": "synthetic-fixture-only",
+        "event_or_null": "review-interest-ranking"
+      },
+      "provenance_ref": "activity-propose"
+    },
+    {
+      "id": "p-frankenstein",
+      "member_ids": [
+        "d-a0",
+        "d-a1",
+        "d-b1",
+        "d-b2"
+      ],
+      "method": {
+        "name": "reference",
+        "version": "fixture.v0"
+      },
+      "task_type": "moving",
+      "explanation_key": "one-object",
+      "equivalence_family": null,
+      "score": {
+        "value": 8,
+        "semantics": "RANKING_ONLY",
+        "direction": "higher",
+        "calibrated": false,
+        "domain": "synthetic-fixture-only",
+        "event_or_null": "review-interest-ranking"
+      },
+      "provenance_ref": "activity-propose"
+    },
+    {
+      "id": "p-alternative",
+      "member_ids": [
+        "d-a0",
+        "d-a1",
+        "d-a2"
+      ],
+      "method": {
+        "name": "reference",
+        "version": "fixture.v0"
+      },
+      "task_type": "moving",
+      "explanation_key": "two-objects",
+      "equivalence_family": null,
+      "score": {
+        "value": 2,
+        "semantics": "RANKING_ONLY",
+        "direction": "higher",
+        "calibrated": false,
+        "domain": "synthetic-fixture-only",
+        "event_or_null": "review-interest-ranking"
+      },
+      "provenance_ref": "activity-propose"
+    },
+    {
+      "id": "p-artifact",
+      "member_ids": [
+        "d-noise0",
+        "d-noise1"
+      ],
+      "method": {
+        "name": "reference",
+        "version": "fixture.v0"
+      },
+      "task_type": "moving",
+      "explanation_key": "one-object",
+      "equivalence_family": null,
+      "score": {
+        "value": 900,
+        "semantics": "RANKING_ONLY",
+        "direction": "higher",
+        "calibrated": false,
+        "domain": "synthetic-fixture-only",
+        "event_or_null": "review-interest-ranking"
+      },
+      "provenance_ref": "activity-propose"
+    },
+    {
+      "id": "p-high-anomaly",
+      "member_ids": [
+        "d-anomaly"
+      ],
+      "method": {
+        "name": "reference",
+        "version": "fixture.v0"
+      },
+      "task_type": "anomaly",
+      "explanation_key": "one-object",
+      "equivalence_family": null,
+      "score": {
+        "value": 1000000,
+        "semantics": "RANKING_ONLY",
+        "direction": "higher",
+        "calibrated": false,
+        "domain": "synthetic-fixture-only",
+        "event_or_null": "review-interest-ranking"
+      },
+      "provenance_ref": "activity-propose"
+    },
+    {
+      "id": "p-insufficient",
+      "member_ids": [
+        "d-insufficient"
+      ],
+      "method": {
+        "name": "reference",
+        "version": "fixture.v0"
+      },
+      "task_type": "moving",
+      "explanation_key": "one-object",
+      "equivalence_family": null,
+      "score": {
+        "value": 1.0,
+        "semantics": "RANKING_ONLY",
+        "direction": "higher",
+        "calibrated": false,
+        "domain": "synthetic-fixture-only",
+        "event_or_null": "review-interest-ranking"
+      },
+      "provenance_ref": "activity-propose"
+    },
+    {
+      "id": "p-static",
+      "member_ids": [
+        "d-static"
+      ],
+      "method": {
+        "name": "reference",
+        "version": "fixture.v0"
+      },
+      "task_type": "moving",
+      "explanation_key": "one-object",
+      "equivalence_family": null,
+      "score": {
+        "value": 1.0,
+        "semantics": "RANKING_ONLY",
+        "direction": "higher",
+        "calibrated": false,
+        "domain": "synthetic-fixture-only",
+        "event_or_null": "review-interest-ranking"
+      },
+      "provenance_ref": "activity-propose"
+    },
+    {
+      "id": "p-unusable",
+      "member_ids": [
+        "d-unusable"
+      ],
+      "method": {
+        "name": "reference",
+        "version": "fixture.v0"
+      },
+      "task_type": "moving",
+      "explanation_key": "one-object",
+      "equivalence_family": null,
+      "score": {
+        "value": 1.0,
+        "semantics": "RANKING_ONLY",
+        "direction": "higher",
+        "calibrated": false,
+        "domain": "synthetic-fixture-only",
+        "event_or_null": "review-interest-ranking"
+      },
+      "provenance_ref": "activity-propose"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "h-clean",
+      "proposal_ids": [
+        "p-clean"
+      ],
+      "member_ids": [
+        "d-a0",
+        "d-a1",
+        "d-a2",
+        "d-a3"
+      ],
+      "object_count": 1,
+      "explanation": "Single coherent synthetic moving source",
+      "provenance_ref": "activity-hypothesize"
+    },
+    {
+      "id": "h-exact",
+      "proposal_ids": [
+        "p-exact"
+      ],
+      "member_ids": [
+        "d-a0",
+        "d-a1",
+        "d-a2",
+        "d-a3"
+      ],
+      "object_count": 1,
+      "explanation": "Repeated proposal of the same measurement set",
+      "provenance_ref": "activity-hypothesize"
+    },
+    {
+      "id": "h-overlap",
+      "proposal_ids": [
+        "p-overlap"
+      ],
+      "member_ids": [
+        "d-a0",
+        "d-a1",
+        "d-a2"
+      ],
+      "object_count": 1,
+      "explanation": "Alternative sampling of source A",
+      "provenance_ref": "activity-hypothesize"
+    },
+    {
+      "id": "h-frankenstein-one",
+      "proposal_ids": [
+        "p-frankenstein"
+      ],
+      "member_ids": [
+        "d-a0",
+        "d-a1",
+        "d-b1",
+        "d-b2"
+      ],
+      "object_count": 1,
+      "explanation": "Possible single-source false merge",
+      "provenance_ref": "activity-hypothesize"
+    },
+    {
+      "id": "h-frankenstein-two",
+      "proposal_ids": [
+        "p-frankenstein"
+      ],
+      "member_ids": [
+        "d-a0",
+        "d-a1",
+        "d-b1",
+        "d-b2"
+      ],
+      "object_count": 2,
+      "explanation": "Possible mixture of two objects",
+      "provenance_ref": "activity-hypothesize"
+    },
+    {
+      "id": "h-alternative",
+      "proposal_ids": [
+        "p-alternative"
+      ],
+      "member_ids": [
+        "d-a0",
+        "d-a1",
+        "d-a2"
+      ],
+      "object_count": 2,
+      "explanation": "Competing multi-object explanation",
+      "provenance_ref": "activity-hypothesize"
+    },
+    {
+      "id": "h-artifact",
+      "proposal_ids": [
+        "p-artifact"
+      ],
+      "member_ids": [
+        "d-noise0",
+        "d-noise1"
+      ],
+      "object_count": 0,
+      "explanation": "Possible artifact explanation",
+      "provenance_ref": "activity-hypothesize"
+    },
+    {
+      "id": "h-high-anomaly",
+      "proposal_ids": [
+        "p-high-anomaly"
+      ],
+      "member_ids": [
+        "d-anomaly"
+      ],
+      "object_count": null,
+      "explanation": "High rank is not physical truth",
+      "provenance_ref": "activity-hypothesize"
+    },
+    {
+      "id": "h-insufficient",
+      "proposal_ids": [
+        "p-insufficient"
+      ],
+      "member_ids": [
+        "d-insufficient"
+      ],
+      "object_count": null,
+      "explanation": "Insufficient measurements",
+      "provenance_ref": "activity-hypothesize"
+    }
+  ],
+  "evidence_results": [
+    {
+      "request": {
+        "id": "request-clean",
+        "hypothesis_id": "h-clean",
+        "method": {
+          "name": "reference",
+          "version": "fixture.v0"
+        },
+        "input_ids": [
+          "d-a0",
+          "d-a1",
+          "d-a2",
+          "d-a3"
+        ],
+        "provenance_ref": "activity-request"
+      },
+      "status": "SUCCESS",
+      "factors": [
+        {
+          "id": "factor-clean",
+          "hypothesis_id": "h-clean",
+          "method": {
+            "name": "reference",
+            "version": "fixture.v0"
+          },
+          "input_ids": [
+            "d-a0",
+            "d-a1",
+            "d-a2",
+            "d-a3"
+          ],
+          "measurements": {
+            "diagnostic": {
+              "value": null,
+              "unit": "1",
+              "missing_reason": "not_measured_in_fixture"
+            }
+          },
+          "polarity": "for",
+          "interpretation": "MOTION_CONSISTENT",
+          "rationale": "Injected synthetic narrative, not a measured scientific result",
+          "calibrated": false,
+          "provenance_ref": "activity-evidence",
+          "limitations": [
+            "Synthetic evidence; no measurement or orbit fitting"
+          ]
+        }
+      ],
+      "reason": "synthetic_reference_result"
+    },
+    {
+      "request": {
+        "id": "request-exact",
+        "hypothesis_id": "h-exact",
+        "method": {
+          "name": "reference",
+          "version": "fixture.v0"
+        },
+        "input_ids": [
+          "d-a0",
+          "d-a1",
+          "d-a2",
+          "d-a3"
+        ],
+        "provenance_ref": "activity-request"
+      },
+      "status": "SUCCESS",
+      "factors": [],
+      "reason": "synthetic_reference_result"
+    },
+    {
+      "request": {
+        "id": "request-overlap",
+        "hypothesis_id": "h-overlap",
+        "method": {
+          "name": "reference",
+          "version": "fixture.v0"
+        },
+        "input_ids": [
+          "d-a0",
+          "d-a1",
+          "d-a2"
+        ],
+        "provenance_ref": "activity-request"
+      },
+      "status": "SUCCESS",
+      "factors": [],
+      "reason": "synthetic_reference_result"
+    },
+    {
+      "request": {
+        "id": "request-frankenstein-one",
+        "hypothesis_id": "h-frankenstein-one",
+        "method": {
+          "name": "reference",
+          "version": "fixture.v0"
+        },
+        "input_ids": [
+          "d-a0",
+          "d-a1",
+          "d-b1",
+          "d-b2"
+        ],
+        "provenance_ref": "activity-request"
+      },
+      "status": "SUCCESS",
+      "factors": [
+        {
+          "id": "factor-frankenstein-one",
+          "hypothesis_id": "h-frankenstein-one",
+          "method": {
+            "name": "reference",
+            "version": "fixture.v0"
+          },
+          "input_ids": [
+            "d-a0",
+            "d-a1",
+            "d-b1",
+            "d-b2"
+          ],
+          "measurements": {
+            "diagnostic": {
+              "value": null,
+              "unit": "1",
+              "missing_reason": "not_measured_in_fixture"
+            }
+          },
+          "polarity": "for",
+          "interpretation": "AMBIGUOUS_IDENTITY",
+          "rationale": "Injected synthetic narrative, not a measured scientific result",
+          "calibrated": false,
+          "provenance_ref": "activity-evidence",
+          "limitations": [
+            "Synthetic evidence; no measurement or orbit fitting"
+          ]
+        }
+      ],
+      "reason": "synthetic_reference_result"
+    },
+    {
+      "request": {
+        "id": "request-frankenstein-two",
+        "hypothesis_id": "h-frankenstein-two",
+        "method": {
+          "name": "reference",
+          "version": "fixture.v0"
+        },
+        "input_ids": [
+          "d-a0",
+          "d-a1",
+          "d-b1",
+          "d-b2"
+        ],
+        "provenance_ref": "activity-request"
+      },
+      "status": "SUCCESS",
+      "factors": [
+        {
+          "id": "factor-frankenstein-two",
+          "hypothesis_id": "h-frankenstein-two",
+          "method": {
+            "name": "reference",
+            "version": "fixture.v0"
+          },
+          "input_ids": [
+            "d-a0",
+            "d-a1",
+            "d-b1",
+            "d-b2"
+          ],
+          "measurements": {
+            "diagnostic": {
+              "value": null,
+              "unit": "1",
+              "missing_reason": "not_measured_in_fixture"
+            }
+          },
+          "polarity": "for",
+          "interpretation": "AMBIGUOUS_IDENTITY",
+          "rationale": "Injected synthetic narrative, not a measured scientific result",
+          "calibrated": false,
+          "provenance_ref": "activity-evidence",
+          "limitations": [
+            "Synthetic evidence; no measurement or orbit fitting"
+          ]
+        }
+      ],
+      "reason": "synthetic_reference_result"
+    },
+    {
+      "request": {
+        "id": "request-alternative",
+        "hypothesis_id": "h-alternative",
+        "method": {
+          "name": "reference",
+          "version": "fixture.v0"
+        },
+        "input_ids": [
+          "d-a0",
+          "d-a1",
+          "d-a2"
+        ],
+        "provenance_ref": "activity-request"
+      },
+      "status": "SUCCESS",
+      "factors": [],
+      "reason": "synthetic_reference_result"
+    },
+    {
+      "request": {
+        "id": "request-artifact",
+        "hypothesis_id": "h-artifact",
+        "method": {
+          "name": "reference",
+          "version": "fixture.v0"
+        },
+        "input_ids": [
+          "d-noise0",
+          "d-noise1"
+        ],
+        "provenance_ref": "activity-request"
+      },
+      "status": "SUCCESS",
+      "factors": [
+        {
+          "id": "factor-artifact",
+          "hypothesis_id": "h-artifact",
+          "method": {
+            "name": "reference",
+            "version": "fixture.v0"
+          },
+          "input_ids": [
+            "d-noise0",
+            "d-noise1"
+          ],
+          "measurements": {
+            "diagnostic": {
+              "value": null,
+              "unit": "1",
+              "missing_reason": "not_measured_in_fixture"
+            }
+          },
+          "polarity": "for",
+          "interpretation": "ARTIFACT_SUGGESTIVE",
+          "rationale": "Injected synthetic narrative, not a measured scientific result",
+          "calibrated": false,
+          "provenance_ref": "activity-evidence",
+          "limitations": [
+            "Synthetic evidence; no measurement or orbit fitting"
+          ]
+        }
+      ],
+      "reason": "synthetic_reference_result"
+    },
+    {
+      "request": {
+        "id": "request-high-anomaly",
+        "hypothesis_id": "h-high-anomaly",
+        "method": {
+          "name": "reference",
+          "version": "fixture.v0"
+        },
+        "input_ids": [
+          "d-anomaly"
+        ],
+        "provenance_ref": "activity-request"
+      },
+      "status": "SUCCESS",
+      "factors": [
+        {
+          "id": "factor-high-anomaly",
+          "hypothesis_id": "h-high-anomaly",
+          "method": {
+            "name": "reference",
+            "version": "fixture.v0"
+          },
+          "input_ids": [
+            "d-anomaly"
+          ],
+          "measurements": {
+            "diagnostic": {
+              "value": null,
+              "unit": "1",
+              "missing_reason": "not_measured_in_fixture"
+            }
+          },
+          "polarity": "for",
+          "interpretation": "CATALOG_NO_MATCH",
+          "rationale": "Injected synthetic narrative, not a measured scientific result",
+          "calibrated": false,
+          "provenance_ref": "activity-evidence",
+          "limitations": [
+            "Synthetic evidence; no measurement or orbit fitting"
+          ]
+        }
+      ],
+      "reason": "synthetic_reference_result"
+    },
+    {
+      "request": {
+        "id": "request-insufficient",
+        "hypothesis_id": "h-insufficient",
+        "method": {
+          "name": "reference",
+          "version": "fixture.v0"
+        },
+        "input_ids": [
+          "d-insufficient"
+        ],
+        "provenance_ref": "activity-request"
+      },
+      "status": "SUCCESS",
+      "factors": [],
+      "reason": "synthetic_reference_result"
+    }
+  ],
+  "provenance": {
+    "entities": [
+      {
+        "id": "fixture-seed",
+        "kind": "synthetic_source",
+        "uri": "synthetic://sieve/v0",
+        "provider": "SIEVE-reference",
+        "provider_identifier": "seed-0",
+        "dataset_release": "fixture.v0",
+        "sha256": "ea95ef6ca559c06a635e398ca38e68ea0a48881c27e666aa0d45b7e046e15a21",
+        "citations": [
+          "Synthetic fixture; no telescope data"
+        ]
+      },
+      {
+        "id": "o-a0",
+        "kind": "observe",
+        "sha256": "6136ccaaeae0460ca33b6d504eb4c676778b0bbe7970a3de19259f6fc96f1f9a"
+      },
+      {
+        "id": "o-a1",
+        "kind": "observe",
+        "sha256": "849455bef8821cf91eaf80aaaf08e93d47d91d4ffa7c7700f3e6ca2515d27f3d"
+      },
+      {
+        "id": "o-a2",
+        "kind": "observe",
+        "sha256": "461d9ff43b5a9bfdcc3cba602c1360e080a5bcd5e0ebd4f2182061ba181cebca"
+      },
+      {
+        "id": "o-a3",
+        "kind": "observe",
+        "sha256": "3fae86d6e87570fe2bcf23b1ead2f903183fa059cdfa2999be3a0a20e6ad22fb"
+      },
+      {
+        "id": "o-anomaly",
+        "kind": "observe",
+        "sha256": "9bc9549a73d050a539ad999d8cd3d558916cc8064867469b6a01c11f927f7a7d"
+      },
+      {
+        "id": "o-b0",
+        "kind": "observe",
+        "sha256": "e5f3f88c5cc1dfda8087a1168b6f60a2d44725bf60aa6f4a4ce41e2aaf0aa508"
+      },
+      {
+        "id": "o-b1",
+        "kind": "observe",
+        "sha256": "cb5a4cf3456b0e953779bd48163a42218c33b1aa6bcd6c4475811d58f9c2309e"
+      },
+      {
+        "id": "o-b2",
+        "kind": "observe",
+        "sha256": "531aa1f576213bd95da4b4762f6e093028d96a7f2740f4df2380663fac91c518"
+      },
+      {
+        "id": "o-insufficient",
+        "kind": "observe",
+        "sha256": "d2760c4be894a2c2fbd60bcc5e6a81d1be9a4915b0843f5b5c3033850b9d3e2a"
+      },
+      {
+        "id": "o-noise0",
+        "kind": "observe",
+        "sha256": "1dbd505447bb8f7b1ed57ccc6fcc246a93755c55b563c9568ae242b78a3b02a5"
+      },
+      {
+        "id": "o-noise1",
+        "kind": "observe",
+        "sha256": "486cea3a249904e326bf3fb890dc41bde935ec08a71f043912b8dffcfee51ed3"
+      },
+      {
+        "id": "o-static",
+        "kind": "observe",
+        "sha256": "03e739de48da5b8351fc4907cfd1d7c8229612054d7d10ad9a41b6cb33851b59"
+      },
+      {
+        "id": "o-unusable",
+        "kind": "observe",
+        "sha256": "c501b1cb1e820db58a0ebffc754d90b97483a7ff441a4da4e731eff8e399f3eb"
+      },
+      {
+        "id": "d-a0",
+        "kind": "detect",
+        "sha256": "f2edaa92379a9be4c0ce02ecf48c35dc67e902deb5a7b473ea85b143fe284331"
+      },
+      {
+        "id": "d-a1",
+        "kind": "detect",
+        "sha256": "ed143afc96e8caaf793d11b1804ce62edf6090a8324137a0e52191a95a91ef8c"
+      },
+      {
+        "id": "d-a2",
+        "kind": "detect",
+        "sha256": "6dc3003c0812897a259c99b8501255f65e514452a3d8162641d07dbca1a819bc"
+      },
+      {
+        "id": "d-a3",
+        "kind": "detect",
+        "sha256": "fb5d8f8a1aa27ee5f273632dd5993ee52d57b8aaecca3caca8b03a52f273b7f9"
+      },
+      {
+        "id": "d-anomaly",
+        "kind": "detect",
+        "sha256": "e4d9dbcb6ebdb4f9d935c7f4d8fd362730c3d5e1caf3d418709051ffca5ffb9d"
+      },
+      {
+        "id": "d-b0",
+        "kind": "detect",
+        "sha256": "2fd9443d80bfa1a16ab451fb9e1a60aab666625ea6d426694c465ba0e5c7f88e"
+      },
+      {
+        "id": "d-b1",
+        "kind": "detect",
+        "sha256": "e88fc0ea7685e70c9cd66e85651bfa6767cd4c30fdb0a9e11d22049c1ae0fcbb"
+      },
+      {
+        "id": "d-b2",
+        "kind": "detect",
+        "sha256": "827f1f954a00c36f74a09ee5a0074d70918a8a83c42aa44dc5606d9257879155"
+      },
+      {
+        "id": "d-insufficient",
+        "kind": "detect",
+        "sha256": "dc4e849055b93a59fc81bb1783365bbd8236c9a8b4c7210260c5000cc38a349d"
+      },
+      {
+        "id": "d-noise0",
+        "kind": "detect",
+        "sha256": "48bcfaec50c4dea01612807d16945ff38dd9f47ed8a1664e3115ffc3866ddd7b"
+      },
+      {
+        "id": "d-noise1",
+        "kind": "detect",
+        "sha256": "c1010c64f4e0eb9328046e3d6f3413b5f1ec8309eee5115763201a8fd81a9ead"
+      },
+      {
+        "id": "d-static",
+        "kind": "detect",
+        "sha256": "8e28cc37769924d430f5ded6b394ba347c35f3eaf3649604df7765fcae426078"
+      },
+      {
+        "id": "d-unusable",
+        "kind": "detect",
+        "sha256": "c41f3160aa724dfd1978fbe64d0eb00c8e7bf6712792a0a20b1d3f6ab03dabd3"
+      },
+      {
+        "id": "p-alternative",
+        "kind": "propose",
+        "sha256": "f5fd7046b1eba59f5d7b793a33faf94097c2f2cb2ccdcad18c9a4aab7a84070c"
+      },
+      {
+        "id": "p-artifact",
+        "kind": "propose",
+        "sha256": "fac6ee3d682830ca1169bb28f71524844857a0f6677e0967ccb4aa87742a189a"
+      },
+      {
+        "id": "p-clean",
+        "kind": "propose",
+        "sha256": "9b065cb080374a8c196fdaf5c9e02576e03f683bcfbe3465a3db19e22e6e2fd6"
+      },
+      {
+        "id": "p-exact",
+        "kind": "propose",
+        "sha256": "8c6db42041730e1f23761d66b9825bf676b0d105471c2a397e9e46703a9ae1fe"
+      },
+      {
+        "id": "p-frankenstein",
+        "kind": "propose",
+        "sha256": "ad1f098a5cb43c022fd658c332a49f1d65378fca077dcc8084beec8d035138ae"
+      },
+      {
+        "id": "p-high-anomaly",
+        "kind": "propose",
+        "sha256": "5313a4799428a1e53ffae2b162c1cd0a81f73b363787c8ab8f4cf65ffd4bd560"
+      },
+      {
+        "id": "p-insufficient",
+        "kind": "propose",
+        "sha256": "21ec10ce3ea2a6df6036d3b1df7e45b40c9259fce1949d83ec0bc274dddf9e20"
+      },
+      {
+        "id": "p-overlap",
+        "kind": "propose",
+        "sha256": "8df23dee035a9f32e33addb65288b485822c136c26615114eda3f22161d3997e"
+      },
+      {
+        "id": "p-static",
+        "kind": "propose",
+        "sha256": "0f8efbb5a9b0271036bdec746ed8b699fc8fb5ec322c39cb49c58b669ac4c7da"
+      },
+      {
+        "id": "p-unusable",
+        "kind": "propose",
+        "sha256": "e934a7a834bc306126e7d488dcabc43b719c5656f216249c97980766cda0f273"
+      },
+      {
+        "id": "h-alternative",
+        "kind": "hypothesize",
+        "sha256": "a18b639cfeb4e968874cc5b57aba22f88074877be66a8c8f1bd3b9a78d1d4b84"
+      },
+      {
+        "id": "h-artifact",
+        "kind": "hypothesize",
+        "sha256": "d7813155ce686f083fce1969bbf4bf01ce2501923763882b4d4174886cea6db4"
+      },
+      {
+        "id": "h-clean",
+        "kind": "hypothesize",
+        "sha256": "1d6ca7502125e858289e8dd61843eb76db7d1560dc7460b1adec8134e998dbdc"
+      },
+      {
+        "id": "h-exact",
+        "kind": "hypothesize",
+        "sha256": "bf777fbb717740fad439c3e1162e1d70f4feb98088c56513282bddafa725a1b5"
+      },
+      {
+        "id": "h-frankenstein-one",
+        "kind": "hypothesize",
+        "sha256": "e1f6a6468a2bea551976b3a6ac7c5942df2a536793f61fd51e6e2d2d73a50d50"
+      },
+      {
+        "id": "h-frankenstein-two",
+        "kind": "hypothesize",
+        "sha256": "aac26de051c34ebbe04a6e32a24305c23bb8c38d4099874d1c0bc45b811256fd"
+      },
+      {
+        "id": "h-high-anomaly",
+        "kind": "hypothesize",
+        "sha256": "2c2f8b15e1917cb53c53c98213a5d1992468efbe611b5b085fae35cfc81afecd"
+      },
+      {
+        "id": "h-insufficient",
+        "kind": "hypothesize",
+        "sha256": "d958ffec7d522bfc68cbd1a57aa92fcbeec588a743233f68f969d6bc2f5c0299"
+      },
+      {
+        "id": "h-overlap",
+        "kind": "hypothesize",
+        "sha256": "3c205a44bbb2a74689cdd6546ff72806b8b1293eb82dafd07cca56008b1a31cc"
+      },
+      {
+        "id": "request-alternative",
+        "kind": "request",
+        "sha256": "39431017736d337c72768a9e4df85021682c8742c411adbda6efd46c4a446c62"
+      },
+      {
+        "id": "request-artifact",
+        "kind": "request",
+        "sha256": "0ea4df1718923b86ac71c1ebd5f15214f839c4323f5ede391942130848db3c68"
+      },
+      {
+        "id": "request-clean",
+        "kind": "request",
+        "sha256": "c93f1674ac3f25233dbe1d8f80b61fb76e6bccceda3252946ff82d9b89148874"
+      },
+      {
+        "id": "request-exact",
+        "kind": "request",
+        "sha256": "606b9f3d1c06329a2805b49bfcd0ac86c20f34ee760b50a0e41ba1296c6830f9"
+      },
+      {
+        "id": "request-frankenstein-one",
+        "kind": "request",
+        "sha256": "98d42159757c9cd263945f3a11f4105bc610ed53ce78c315e89e81f1c0098845"
+      },
+      {
+        "id": "request-frankenstein-two",
+        "kind": "request",
+        "sha256": "a3fb2054c5b62d558dc91295c0bd3041d94b34c231ddab074a12d779f34aa1ba"
+      },
+      {
+        "id": "request-high-anomaly",
+        "kind": "request",
+        "sha256": "b9b59241bfd19603e738a7fac16ce14d3e2fa67b1159a6711820607317c10bb8"
+      },
+      {
+        "id": "request-insufficient",
+        "kind": "request",
+        "sha256": "43aff08dfaa37e37d4d702c41f6ceecffb475011c7b48420df4b0cf1c45c77d6"
+      },
+      {
+        "id": "request-overlap",
+        "kind": "request",
+        "sha256": "5bb5f349e98a9ab6bf088d907533462d395cd76ff1bb686f8fdcd39fba52b994"
+      },
+      {
+        "id": "factor-artifact",
+        "kind": "evidence",
+        "sha256": "8b6e53902b807be7a29e0a784f474ed8479e9adb8471b04445ca02b6d3efb4e9"
+      },
+      {
+        "id": "factor-clean",
+        "kind": "evidence",
+        "sha256": "bba3e26b51ee4f37e827469bc66afd6682b0a45b86549ca5ff9158dcd58a95d3"
+      },
+      {
+        "id": "factor-frankenstein-one",
+        "kind": "evidence",
+        "sha256": "adc739fee4801059af5ce83973f3a97ca5cb433f4d414eefe0287925033bf808"
+      },
+      {
+        "id": "factor-frankenstein-two",
+        "kind": "evidence",
+        "sha256": "b0b1c8dc1b6d5371bd26c5f9525bf8a07d57e4fa81b96f9589dda440ed97a28f"
+      },
+      {
+        "id": "factor-high-anomaly",
+        "kind": "evidence",
+        "sha256": "03d47331054300d9c3ad22e8a5bff87374c6bab44e3eb2faee45d768043707a7"
+      }
+    ],
+    "agents": [
+      {
+        "id": "fixture-author",
+        "name": "offline-fixture-builder",
+        "role": "synthetic_fixture_author"
+      }
+    ],
+    "records": [
+      {
+        "id": "activity-observe",
+        "activity": "synthetic_observe",
+        "method_version": "fixture.v0",
+        "agent_ids": [
+          "fixture-author"
+        ],
+        "used_entity_ids": [
+          "fixture-seed"
+        ],
+        "generated_entity_ids": [
+          "o-a0",
+          "o-a1",
+          "o-a2",
+          "o-a3",
+          "o-anomaly",
+          "o-b0",
+          "o-b1",
+          "o-b2",
+          "o-insufficient",
+          "o-noise0",
+          "o-noise1",
+          "o-static",
+          "o-unusable"
+        ],
+        "derivations": {
+          "o-a0": [
+            "fixture-seed"
+          ],
+          "o-a1": [
+            "fixture-seed"
+          ],
+          "o-a2": [
+            "fixture-seed"
+          ],
+          "o-a3": [
+            "fixture-seed"
+          ],
+          "o-anomaly": [
+            "fixture-seed"
+          ],
+          "o-b0": [
+            "fixture-seed"
+          ],
+          "o-b1": [
+            "fixture-seed"
+          ],
+          "o-b2": [
+            "fixture-seed"
+          ],
+          "o-insufficient": [
+            "fixture-seed"
+          ],
+          "o-noise0": [
+            "fixture-seed"
+          ],
+          "o-noise1": [
+            "fixture-seed"
+          ],
+          "o-static": [
+            "fixture-seed"
+          ],
+          "o-unusable": [
+            "fixture-seed"
+          ]
+        },
+        "code_commit": "REFERENCE_GENERATOR_V0",
+        "software_version": "fixture.v0",
+        "configuration": {
+          "synthetic": true,
+          "stress": false
+        },
+        "request_parameters": {},
+        "random_seeds": {
+          "fixture": 0
+        },
+        "environment_id": "stdlib-json-fixture.v0",
+        "started_at": "2026-10-05T00:00:00Z",
+        "ended_at": "2026-10-05T00:00:00Z"
+      },
+      {
+        "id": "activity-detect",
+        "activity": "synthetic_detect",
+        "method_version": "fixture.v0",
+        "agent_ids": [
+          "fixture-author"
+        ],
+        "used_entity_ids": [
+          "o-a0",
+          "o-a1",
+          "o-a2",
+          "o-a3",
+          "o-anomaly",
+          "o-b0",
+          "o-b1",
+          "o-b2",
+          "o-insufficient",
+          "o-noise0",
+          "o-noise1",
+          "o-static",
+          "o-unusable"
+        ],
+        "generated_entity_ids": [
+          "d-a0",
+          "d-a1",
+          "d-a2",
+          "d-a3",
+          "d-anomaly",
+          "d-b0",
+          "d-b1",
+          "d-b2",
+          "d-insufficient",
+          "d-noise0",
+          "d-noise1",
+          "d-static",
+          "d-unusable"
+        ],
+        "derivations": {
+          "d-a0": [
+            "o-a0"
+          ],
+          "d-a1": [
+            "o-a1"
+          ],
+          "d-a2": [
+            "o-a2"
+          ],
+          "d-a3": [
+            "o-a3"
+          ],
+          "d-anomaly": [
+            "o-anomaly"
+          ],
+          "d-b0": [
+            "o-b0"
+          ],
+          "d-b1": [
+            "o-b1"
+          ],
+          "d-b2": [
+            "o-b2"
+          ],
+          "d-insufficient": [
+            "o-insufficient"
+          ],
+          "d-noise0": [
+            "o-noise0"
+          ],
+          "d-noise1": [
+            "o-noise1"
+          ],
+          "d-static": [
+            "o-static"
+          ],
+          "d-unusable": [
+            "o-unusable"
+          ]
+        },
+        "code_commit": "REFERENCE_GENERATOR_V0",
+        "software_version": "fixture.v0",
+        "configuration": {
+          "synthetic": true,
+          "stress": false
+        },
+        "request_parameters": {},
+        "random_seeds": {
+          "fixture": 0
+        },
+        "environment_id": "stdlib-json-fixture.v0",
+        "started_at": "2026-10-05T00:00:00Z",
+        "ended_at": "2026-10-05T00:00:00Z"
+      },
+      {
+        "id": "activity-propose",
+        "activity": "synthetic_propose",
+        "method_version": "fixture.v0",
+        "agent_ids": [
+          "fixture-author"
+        ],
+        "used_entity_ids": [
+          "d-a0",
+          "d-a1",
+          "d-a2",
+          "d-a3",
+          "d-anomaly",
+          "d-b1",
+          "d-b2",
+          "d-insufficient",
+          "d-noise0",
+          "d-noise1",
+          "d-static",
+          "d-unusable"
+        ],
+        "generated_entity_ids": [
+          "p-alternative",
+          "p-artifact",
+          "p-clean",
+          "p-exact",
+          "p-frankenstein",
+          "p-high-anomaly",
+          "p-insufficient",
+          "p-overlap",
+          "p-static",
+          "p-unusable"
+        ],
+        "derivations": {
+          "p-alternative": [
+            "d-a0",
+            "d-a1",
+            "d-a2"
+          ],
+          "p-artifact": [
+            "d-noise0",
+            "d-noise1"
+          ],
+          "p-clean": [
+            "d-a0",
+            "d-a1",
+            "d-a2",
+            "d-a3"
+          ],
+          "p-exact": [
+            "d-a3",
+            "d-a2",
+            "d-a1",
+            "d-a0"
+          ],
+          "p-frankenstein": [
+            "d-a0",
+            "d-a1",
+            "d-b1",
+            "d-b2"
+          ],
+          "p-high-anomaly": [
+            "d-anomaly"
+          ],
+          "p-insufficient": [
+            "d-insufficient"
+          ],
+          "p-overlap": [
+            "d-a0",
+            "d-a1",
+            "d-a2"
+          ],
+          "p-static": [
+            "d-static"
+          ],
+          "p-unusable": [
+            "d-unusable"
+          ]
+        },
+        "code_commit": "REFERENCE_GENERATOR_V0",
+        "software_version": "fixture.v0",
+        "configuration": {
+          "synthetic": true,
+          "stress": false
+        },
+        "request_parameters": {},
+        "random_seeds": {
+          "fixture": 0
+        },
+        "environment_id": "stdlib-json-fixture.v0",
+        "started_at": "2026-10-05T00:00:00Z",
+        "ended_at": "2026-10-05T00:00:00Z"
+      },
+      {
+        "id": "activity-hypothesize",
+        "activity": "synthetic_hypothesize",
+        "method_version": "fixture.v0",
+        "agent_ids": [
+          "fixture-author"
+        ],
+        "used_entity_ids": [
+          "d-a0",
+          "d-a1",
+          "d-a2",
+          "d-a3",
+          "d-anomaly",
+          "d-b1",
+          "d-b2",
+          "d-insufficient",
+          "d-noise0",
+          "d-noise1",
+          "p-alternative",
+          "p-artifact",
+          "p-clean",
+          "p-exact",
+          "p-frankenstein",
+          "p-high-anomaly",
+          "p-insufficient",
+          "p-overlap"
+        ],
+        "generated_entity_ids": [
+          "h-alternative",
+          "h-artifact",
+          "h-clean",
+          "h-exact",
+          "h-frankenstein-one",
+          "h-frankenstein-two",
+          "h-high-anomaly",
+          "h-insufficient",
+          "h-overlap"
+        ],
+        "derivations": {
+          "h-alternative": [
+            "p-alternative",
+            "d-a0",
+            "d-a1",
+            "d-a2"
+          ],
+          "h-artifact": [
+            "p-artifact",
+            "d-noise0",
+            "d-noise1"
+          ],
+          "h-clean": [
+            "p-clean",
+            "d-a0",
+            "d-a1",
+            "d-a2",
+            "d-a3"
+          ],
+          "h-exact": [
+            "p-exact",
+            "d-a0",
+            "d-a1",
+            "d-a2",
+            "d-a3"
+          ],
+          "h-frankenstein-one": [
+            "p-frankenstein",
+            "d-a0",
+            "d-a1",
+            "d-b1",
+            "d-b2"
+          ],
+          "h-frankenstein-two": [
+            "p-frankenstein",
+            "d-a0",
+            "d-a1",
+            "d-b1",
+            "d-b2"
+          ],
+          "h-high-anomaly": [
+            "p-high-anomaly",
+            "d-anomaly"
+          ],
+          "h-insufficient": [
+            "p-insufficient",
+            "d-insufficient"
+          ],
+          "h-overlap": [
+            "p-overlap",
+            "d-a0",
+            "d-a1",
+            "d-a2"
+          ]
+        },
+        "code_commit": "REFERENCE_GENERATOR_V0",
+        "software_version": "fixture.v0",
+        "configuration": {
+          "synthetic": true,
+          "stress": false
+        },
+        "request_parameters": {},
+        "random_seeds": {
+          "fixture": 0
+        },
+        "environment_id": "stdlib-json-fixture.v0",
+        "started_at": "2026-10-05T00:00:00Z",
+        "ended_at": "2026-10-05T00:00:00Z"
+      },
+      {
+        "id": "activity-request",
+        "activity": "synthetic_request",
+        "method_version": "fixture.v0",
+        "agent_ids": [
+          "fixture-author"
+        ],
+        "used_entity_ids": [
+          "d-a0",
+          "d-a1",
+          "d-a2",
+          "d-a3",
+          "d-anomaly",
+          "d-b1",
+          "d-b2",
+          "d-insufficient",
+          "d-noise0",
+          "d-noise1",
+          "h-alternative",
+          "h-artifact",
+          "h-clean",
+          "h-exact",
+          "h-frankenstein-one",
+          "h-frankenstein-two",
+          "h-high-anomaly",
+          "h-insufficient",
+          "h-overlap"
+        ],
+        "generated_entity_ids": [
+          "request-alternative",
+          "request-artifact",
+          "request-clean",
+          "request-exact",
+          "request-frankenstein-one",
+          "request-frankenstein-two",
+          "request-high-anomaly",
+          "request-insufficient",
+          "request-overlap"
+        ],
+        "derivations": {
+          "request-alternative": [
+            "h-alternative",
+            "d-a0",
+            "d-a1",
+            "d-a2"
+          ],
+          "request-artifact": [
+            "h-artifact",
+            "d-noise0",
+            "d-noise1"
+          ],
+          "request-clean": [
+            "h-clean",
+            "d-a0",
+            "d-a1",
+            "d-a2",
+            "d-a3"
+          ],
+          "request-exact": [
+            "h-exact",
+            "d-a0",
+            "d-a1",
+            "d-a2",
+            "d-a3"
+          ],
+          "request-frankenstein-one": [
+            "h-frankenstein-one",
+            "d-a0",
+            "d-a1",
+            "d-b1",
+            "d-b2"
+          ],
+          "request-frankenstein-two": [
+            "h-frankenstein-two",
+            "d-a0",
+            "d-a1",
+            "d-b1",
+            "d-b2"
+          ],
+          "request-high-anomaly": [
+            "h-high-anomaly",
+            "d-anomaly"
+          ],
+          "request-insufficient": [
+            "h-insufficient",
+            "d-insufficient"
+          ],
+          "request-overlap": [
+            "h-overlap",
+            "d-a0",
+            "d-a1",
+            "d-a2"
+          ]
+        },
+        "code_commit": "REFERENCE_GENERATOR_V0",
+        "software_version": "fixture.v0",
+        "configuration": {
+          "synthetic": true,
+          "stress": false
+        },
+        "request_parameters": {},
+        "random_seeds": {
+          "fixture": 0
+        },
+        "environment_id": "stdlib-json-fixture.v0",
+        "started_at": "2026-10-05T00:00:00Z",
+        "ended_at": "2026-10-05T00:00:00Z"
+      },
+      {
+        "id": "activity-evidence",
+        "activity": "synthetic_evidence",
+        "method_version": "fixture.v0",
+        "agent_ids": [
+          "fixture-author"
+        ],
+        "used_entity_ids": [
+          "d-a0",
+          "d-a1",
+          "d-a2",
+          "d-a3",
+          "d-anomaly",
+          "d-b1",
+          "d-b2",
+          "d-noise0",
+          "d-noise1",
+          "h-artifact",
+          "h-clean",
+          "h-frankenstein-one",
+          "h-frankenstein-two",
+          "h-high-anomaly",
+          "request-artifact",
+          "request-clean",
+          "request-frankenstein-one",
+          "request-frankenstein-two",
+          "request-high-anomaly"
+        ],
+        "generated_entity_ids": [
+          "factor-artifact",
+          "factor-clean",
+          "factor-frankenstein-one",
+          "factor-frankenstein-two",
+          "factor-high-anomaly"
+        ],
+        "derivations": {
+          "factor-artifact": [
+            "request-artifact",
+            "h-artifact",
+            "d-noise0",
+            "d-noise1"
+          ],
+          "factor-clean": [
+            "request-clean",
+            "h-clean",
+            "d-a0",
+            "d-a1",
+            "d-a2",
+            "d-a3"
+          ],
+          "factor-frankenstein-one": [
+            "request-frankenstein-one",
+            "h-frankenstein-one",
+            "d-a0",
+            "d-a1",
+            "d-b1",
+            "d-b2"
+          ],
+          "factor-frankenstein-two": [
+            "request-frankenstein-two",
+            "h-frankenstein-two",
+            "d-a0",
+            "d-a1",
+            "d-b1",
+            "d-b2"
+          ],
+          "factor-high-anomaly": [
+            "request-high-anomaly",
+            "h-high-anomaly",
+            "d-anomaly"
+          ]
+        },
+        "code_commit": "REFERENCE_GENERATOR_V0",
+        "software_version": "fixture.v0",
+        "configuration": {
+          "synthetic": true,
+          "stress": false
+        },
+        "request_parameters": {},
+        "random_seeds": {
+          "fixture": 0
+        },
+        "environment_id": "stdlib-json-fixture.v0",
+        "started_at": "2026-10-05T00:00:00Z",
+        "ended_at": "2026-10-05T00:00:00Z"
+      }
+    ]
+  }
+}

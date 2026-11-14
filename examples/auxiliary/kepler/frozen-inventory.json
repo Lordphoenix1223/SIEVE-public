@@ -1,0 +1,212 @@
+{
+  "role": "AUXILIARY_CATALOG_RANKING_ONLY",
+  "retuning": "PROHIBITED",
+  "scientific_identity_evidence": false,
+  "original_head": "b5b3037deee51dafb95719e1e4fef2b473a0b689",
+  "files": [
+    {
+      "path": "docs/kepler-benchmark-report.md",
+      "sha256": "2a84b96086e38ed0f9ab7c0960f3599ebdc9a64f2d124124c650fe805accef55",
+      "bytes": 6137,
+      "local_only": false
+    },
+    {
+      "path": "docs/specialist-workflow.md",
+      "sha256": "762b078381702713d5a24ae69d16cf9742e57bf97c8690c37fa32b0e5d121b00",
+      "bytes": 8433,
+      "local_only": false
+    },
+    {
+      "path": "evaluation/kepler_specialist.py",
+      "sha256": "3a3f635058cff79821633f1ce4da80718c8d21c66dca9cbea33501dea4c66432",
+      "bytes": 14326,
+      "local_only": false
+    },
+    {
+      "path": "examples/auxiliary/kepler/benchmark.json",
+      "sha256": "897cd40c08e8ca5298e7946a3d35f75fac798b5d168222cb28a43e7b1fa8fc40",
+      "bytes": 3280,
+      "local_only": false
+    },
+    {
+      "path": "examples/auxiliary/kepler/profile.json",
+      "sha256": "860521ae18c2e51d13ada0a9dbd43ebc7fc92f66f261437f3091e590a2c41b36",
+      "bytes": 1249,
+      "local_only": false
+    },
+    {
+      "path": "examples/auxiliary/kepler/protocol.json",
+      "sha256": "f6431b2df4ebd1a4cbf1dec2681d12d7e7a2129ecbc340c7fcffe4a399448b78",
+      "bytes": 1932,
+      "local_only": false
+    },
+    {
+      "path": "examples/auxiliary/kepler/receipt.json",
+      "sha256": "c1a606e3e5ce62ff9862b79d365ef1f65d9f46f479b338cc8c9591800f3f2e6b",
+      "bytes": 4364,
+      "local_only": false
+    },
+    {
+      "path": "examples/auxiliary/kepler/selection.json",
+      "sha256": "c3bef9728b73b63fa0cc887bef107e1eade5e36534268f4d80c04dd933071b10",
+      "bytes": 14534,
+      "local_only": false
+    },
+    {
+      "path": "examples/auxiliary/kepler/test.scores.jsonl",
+      "sha256": "1df88b0572f894a062d1df54b5181a1061963527235b55ad7a4d329d40145b65",
+      "bytes": 58707,
+      "local_only": false
+    },
+    {
+      "path": "reports/kepler-curves-v1/cases.json",
+      "sha256": "a84c834951140fb8640529a9197c3ef0144bafbabd56dda66a9b81e277dd845e",
+      "bytes": 8033,
+      "local_only": true
+    },
+    {
+      "path": "reports/kepler-curves-v1/input.manifest.json",
+      "sha256": "ecc616f08b51668eab8b8435bad1d5c0e39f6b15183443355861cd0aaaf263b7",
+      "bytes": 771,
+      "local_only": true
+    },
+    {
+      "path": "reports/kepler-curves-v1/inventory.sqlite",
+      "sha256": "2314e2311bb9161f10eb599c550f48e32e11ad9f3caffe9c9b2ab26aaf7f4039",
+      "bytes": 245760,
+      "local_only": true
+    },
+    {
+      "path": "reports/kepler-curves-v1/profile.json",
+      "sha256": "860521ae18c2e51d13ada0a9dbd43ebc7fc92f66f261437f3091e590a2c41b36",
+      "bytes": 1249,
+      "local_only": true
+    },
+    {
+      "path": "reports/kepler-curves-v1/receipt.json",
+      "sha256": "52c7ba2886de19fbd600fe94989aa0fc729c075bc9214f64a392746a912a89f8",
+      "bytes": 2414,
+      "local_only": true
+    },
+    {
+      "path": "reports/kepler-curves-v1/records.json",
+      "sha256": "f8796fb61081ae64c684fb98402a09bc668959c813b989add6474aed256e71d4",
+      "bytes": 141594,
+      "local_only": true
+    },
+    {
+      "path": "reports/kepler-curves-v1/records.jsonl",
+      "sha256": "b5f72724b2a3449dc2fef9ff145e5fd4bd846171cf04346f965e8104cc8d3aff",
+      "bytes": 141192,
+      "local_only": true
+    },
+    {
+      "path": "reports/kepler-curves-v1/summary.json",
+      "sha256": "084c52bab90f6d5fab858d4e68d086101727ce8417c8fa688707e75bb5fa598f",
+      "bytes": 1682,
+      "local_only": true
+    },
+    {
+      "path": "reports/kepler-input-v1/KeplerLightCurves_TEST.ts",
+      "sha256": "119d63dddfe5f1fa2ea0399f91a3ca549c2fa1585551c59463cc56a332709b50",
+      "bytes": 40431577,
+      "local_only": true
+    },
+    {
+      "path": "reports/kepler-input-v1/KeplerLightCurves_TRAIN.ts",
+      "sha256": "0cfe5d5d8fc4aa5f21262e0eb5a60cd997cb1c53314ffa07b59221158426e13c",
+      "bytes": 93213236,
+      "local_only": true
+    },
+    {
+      "path": "reports/kepler-input-v1/acquisition.json",
+      "sha256": "c438d162fd00d8a0f6ff3968149b2ac67df85bf6c80d008c8898c23fa27a575d",
+      "bytes": 798,
+      "local_only": true
+    },
+    {
+      "path": "reports/kepler-specialist-v1/benchmark.json",
+      "sha256": "897cd40c08e8ca5298e7946a3d35f75fac798b5d168222cb28a43e7b1fa8fc40",
+      "bytes": 3280,
+      "local_only": true
+    },
+    {
+      "path": "reports/kepler-specialist-v1/model.skops",
+      "sha256": "eca56f8eccc599aed61cdb971deb39d29fa7d62521695cfe6604f00358d3bcb7",
+      "bytes": 5581580,
+      "local_only": true
+    },
+    {
+      "path": "reports/kepler-specialist-v1/profile.json",
+      "sha256": "860521ae18c2e51d13ada0a9dbd43ebc7fc92f66f261437f3091e590a2c41b36",
+      "bytes": 1249,
+      "local_only": true
+    },
+    {
+      "path": "reports/kepler-specialist-v1/protocol.json",
+      "sha256": "f6431b2df4ebd1a4cbf1dec2681d12d7e7a2129ecbc340c7fcffe4a399448b78",
+      "bytes": 1932,
+      "local_only": true
+    },
+    {
+      "path": "reports/kepler-specialist-v1/receipt.json",
+      "sha256": "c1a606e3e5ce62ff9862b79d365ef1f65d9f46f479b338cc8c9591800f3f2e6b",
+      "bytes": 4364,
+      "local_only": true
+    },
+    {
+      "path": "reports/kepler-specialist-v1/selection.json",
+      "sha256": "c3bef9728b73b63fa0cc887bef107e1eade5e36534268f4d80c04dd933071b10",
+      "bytes": 14534,
+      "local_only": true
+    },
+    {
+      "path": "reports/kepler-specialist-v1/test.curves.jsonl",
+      "sha256": "937156b7a15c617c35b6d41be75b85bdfdb0c4b6804904f9c0e76c101ffb7586",
+      "bytes": 42373762,
+      "local_only": true
+    },
+    {
+      "path": "reports/kepler-specialist-v1/test.evaluator-labels.jsonl",
+      "sha256": "643c71a7f135483c4d45009880e833bf4c429dc62cebc49afcc9671b6e524c01",
+      "bytes": 62643,
+      "local_only": true
+    },
+    {
+      "path": "reports/kepler-specialist-v1/test.manifest.json",
+      "sha256": "ecc616f08b51668eab8b8435bad1d5c0e39f6b15183443355861cd0aaaf263b7",
+      "bytes": 771,
+      "local_only": true
+    },
+    {
+      "path": "reports/kepler-specialist-v1/test.scores.jsonl",
+      "sha256": "1df88b0572f894a062d1df54b5181a1061963527235b55ad7a4d329d40145b65",
+      "bytes": 58707,
+      "local_only": true
+    },
+    {
+      "path": "src/sieve/specialist/__init__.py",
+      "sha256": "7d22d987b06b26830a71aadaef3986f5bed3ca150555676c3ddb0c5bc2387133",
+      "bytes": 82,
+      "local_only": false
+    },
+    {
+      "path": "src/sieve/specialist/features.py",
+      "sha256": "5a3144bff67a1230fe0f24f723fe38e26c487812b139905d6b5bab9ecf0c8e3b",
+      "bytes": 2621,
+      "local_only": false
+    },
+    {
+      "path": "src/sieve/specialist/model.py",
+      "sha256": "3ebb9daa74d112babcb856eeba410414561f4798b02c8bb968aea838d2aeef31",
+      "bytes": 3742,
+      "local_only": false
+    },
+    {
+      "path": "src/sieve/specialist/workflow.py",
+      "sha256": "c3158c95a584cc3199200ae6711c319ba71eaf3a66338743452abcf92dc89bef",
+      "bytes": 10256,
+      "local_only": false
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "baseline": {
+    "accepted_case_fraction": 1.0,
+    "artifact_contamination_fraction": 0.0,
+    "counts": {
+      "abstained_cases": 0.0,
+      "accepted_cases": 16.0,
+      "cases": 16.0,
+      "claimed_links": 56.0,
+      "claimed_slots": 16.0,
+      "contaminated_slots": 0.0,
+      "covered_objects": 24.0,
+      "expected_objects": 24.0,
+      "false_merge_cases": 8.0,
+      "heldout_error_count": 0.0,
+      "heldout_error_sum": 0.0,
+      "inspected_cases": 16.0,
+      "merged_slots": 8.0,
+      "multi_object_cases": 8.0,
+      "recovered_true_links": 24.0,
+      "split_objects": 0.0,
+      "true_links": 24.0
+    },
+    "false_merge_fraction": 1.0,
+    "false_split_fraction": 0.0,
+    "link_purity": 0.42857142857142855,
+    "mean_heldout_normalized_residual": null,
+    "merged_slot_fraction": 0.5,
+    "peak_memory_bytes": 1000,
+    "runtime_seconds": 1.0,
+    "true_link_recall": 1.0
+  },
+  "bootstrap_defined_replicates": 100,
+  "false_merge_reduction": 1.0,
+  "independent_groups": 8,
+  "limitations": [
+    "Synthetic evaluator inputs, not scientific evidence",
+    "Only checks evaluator arithmetic; no treatment implementation"
+  ],
+  "matched_recall": true,
+  "paired_source_group_bootstrap95": [
+    1.0,
+    1.0
+  ],
+  "protocol_sha256": "f5a262ea0331bfee253fefd40b37c10938c27e5bd3699767b6c474ec565eb8f5",
+  "recall_gap": 0.0,
+  "review_burden": {
+    "baseline": 16.0,
+    "treatment": 16.0
+  },
+  "schema_version": "sieve.identity.evaluation.v1",
+  "scientific_claim_status": "NO_THESIS_EVIDENCE_CONTRACT_ONLY",
+  "treatment": {
+    "accepted_case_fraction": 1.0,
+    "artifact_contamination_fraction": 0.0,
+    "counts": {
+      "abstained_cases": 0.0,
+      "accepted_cases": 16.0,
+      "cases": 16.0,
+      "claimed_links": 24.0,
+      "claimed_slots": 24.0,
+      "contaminated_slots": 0.0,
+      "covered_objects": 24.0,
+      "expected_objects": 24.0,
+      "false_merge_cases": 0.0,
+      "heldout_error_count": 0.0,
+      "heldout_error_sum": 0.0,
+      "inspected_cases": 16.0,
+      "merged_slots": 0.0,
+      "multi_object_cases": 8.0,
+      "recovered_true_links": 24.0,
+      "split_objects": 0.0,
+      "true_links": 24.0
+    },
+    "false_merge_fraction": 0.0,
+    "false_split_fraction": 0.0,
+    "link_purity": 1.0,
+    "mean_heldout_normalized_residual": null,
+    "merged_slot_fraction": 0.0,
+    "peak_memory_bytes": 1000,
+    "runtime_seconds": 1.0,
+    "true_link_recall": 1.0
+  },
+  "verdict": "CONTRACT_CHECK_PASSED"
+}

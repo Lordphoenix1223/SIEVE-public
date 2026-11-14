@@ -1,0 +1,1232 @@
+{
+  "baseline": {
+    "detector_independent_reference_identities": "NOT_AVAILABLE",
+    "injection_control_limit": "Model-matched injections on one real image; not independent sky sensitivity or identity truth.",
+    "injection_controls": [
+      {
+        "arm": "real_image",
+        "methods": [
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 32,
+            "false_detections": null,
+            "name": "DAO",
+            "recovered": 3
+          },
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 32,
+            "false_detections": null,
+            "name": "IRAF",
+            "recovered": 3
+          }
+        ],
+        "nominal_snr": 3.0
+      },
+      {
+        "arm": "archive_variance_gaussian_blank",
+        "methods": [
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 32,
+            "false_detections": 0,
+            "name": "DAO",
+            "recovered": 0
+          },
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 32,
+            "false_detections": 2,
+            "name": "IRAF",
+            "recovered": 1
+          }
+        ],
+        "nominal_snr": 3.0
+      },
+      {
+        "arm": "two_source_blend",
+        "methods": [
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 64,
+            "false_detections": 0,
+            "name": "DAO",
+            "recovered": 1
+          },
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 64,
+            "false_detections": 2,
+            "name": "IRAF",
+            "recovered": 2
+          }
+        ],
+        "nominal_snr": 3.0
+      },
+      {
+        "arm": "masked_core",
+        "methods": [
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 32,
+            "false_detections": 0,
+            "name": "DAO",
+            "recovered": 0
+          },
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 32,
+            "false_detections": 2,
+            "name": "IRAF",
+            "recovered": 0
+          }
+        ],
+        "nominal_snr": 3.0
+      },
+      {
+        "arm": "one_pixel_artifact",
+        "methods": [
+          {
+            "artifact_peak_recoveries": 5,
+            "denominator": 32,
+            "false_detections": null,
+            "name": "DAO",
+            "recovered": 5
+          },
+          {
+            "artifact_peak_recoveries": 5,
+            "denominator": 32,
+            "false_detections": null,
+            "name": "IRAF",
+            "recovered": 5
+          }
+        ],
+        "nominal_snr": 3.0
+      },
+      {
+        "arm": "real_image",
+        "methods": [
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 32,
+            "false_detections": null,
+            "name": "DAO",
+            "recovered": 3
+          },
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 32,
+            "false_detections": null,
+            "name": "IRAF",
+            "recovered": 3
+          }
+        ],
+        "nominal_snr": 5.0
+      },
+      {
+        "arm": "archive_variance_gaussian_blank",
+        "methods": [
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 32,
+            "false_detections": 0,
+            "name": "DAO",
+            "recovered": 3
+          },
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 32,
+            "false_detections": 2,
+            "name": "IRAF",
+            "recovered": 4
+          }
+        ],
+        "nominal_snr": 5.0
+      },
+      {
+        "arm": "two_source_blend",
+        "methods": [
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 64,
+            "false_detections": 0,
+            "name": "DAO",
+            "recovered": 9
+          },
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 64,
+            "false_detections": 2,
+            "name": "IRAF",
+            "recovered": 14
+          }
+        ],
+        "nominal_snr": 5.0
+      },
+      {
+        "arm": "masked_core",
+        "methods": [
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 32,
+            "false_detections": 0,
+            "name": "DAO",
+            "recovered": 0
+          },
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 32,
+            "false_detections": 2,
+            "name": "IRAF",
+            "recovered": 1
+          }
+        ],
+        "nominal_snr": 5.0
+      },
+      {
+        "arm": "one_pixel_artifact",
+        "methods": [
+          {
+            "artifact_peak_recoveries": 27,
+            "denominator": 32,
+            "false_detections": null,
+            "name": "DAO",
+            "recovered": 27
+          },
+          {
+            "artifact_peak_recoveries": 27,
+            "denominator": 32,
+            "false_detections": null,
+            "name": "IRAF",
+            "recovered": 27
+          }
+        ],
+        "nominal_snr": 5.0
+      },
+      {
+        "arm": "real_image",
+        "methods": [
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 32,
+            "false_detections": null,
+            "name": "DAO",
+            "recovered": 13
+          },
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 32,
+            "false_detections": null,
+            "name": "IRAF",
+            "recovered": 13
+          }
+        ],
+        "nominal_snr": 10.0
+      },
+      {
+        "arm": "archive_variance_gaussian_blank",
+        "methods": [
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 32,
+            "false_detections": 0,
+            "name": "DAO",
+            "recovered": 27
+          },
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 32,
+            "false_detections": 2,
+            "name": "IRAF",
+            "recovered": 27
+          }
+        ],
+        "nominal_snr": 10.0
+      },
+      {
+        "arm": "two_source_blend",
+        "methods": [
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 64,
+            "false_detections": 0,
+            "name": "DAO",
+            "recovered": 29
+          },
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 64,
+            "false_detections": 2,
+            "name": "IRAF",
+            "recovered": 29
+          }
+        ],
+        "nominal_snr": 10.0
+      },
+      {
+        "arm": "masked_core",
+        "methods": [
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 32,
+            "false_detections": 0,
+            "name": "DAO",
+            "recovered": 5
+          },
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 32,
+            "false_detections": 2,
+            "name": "IRAF",
+            "recovered": 5
+          }
+        ],
+        "nominal_snr": 10.0
+      },
+      {
+        "arm": "one_pixel_artifact",
+        "methods": [
+          {
+            "artifact_peak_recoveries": 29,
+            "denominator": 32,
+            "false_detections": null,
+            "name": "DAO",
+            "recovered": 29
+          },
+          {
+            "artifact_peak_recoveries": 28,
+            "denominator": 32,
+            "false_detections": null,
+            "name": "IRAF",
+            "recovered": 28
+          }
+        ],
+        "nominal_snr": 10.0
+      },
+      {
+        "arm": "real_image",
+        "methods": [
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 32,
+            "false_detections": null,
+            "name": "DAO",
+            "recovered": 18
+          },
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 32,
+            "false_detections": null,
+            "name": "IRAF",
+            "recovered": 18
+          }
+        ],
+        "nominal_snr": 20.0
+      },
+      {
+        "arm": "archive_variance_gaussian_blank",
+        "methods": [
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 32,
+            "false_detections": 0,
+            "name": "DAO",
+            "recovered": 29
+          },
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 32,
+            "false_detections": 2,
+            "name": "IRAF",
+            "recovered": 29
+          }
+        ],
+        "nominal_snr": 20.0
+      },
+      {
+        "arm": "two_source_blend",
+        "methods": [
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 64,
+            "false_detections": 0,
+            "name": "DAO",
+            "recovered": 30
+          },
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 64,
+            "false_detections": 2,
+            "name": "IRAF",
+            "recovered": 30
+          }
+        ],
+        "nominal_snr": 20.0
+      },
+      {
+        "arm": "masked_core",
+        "methods": [
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 32,
+            "false_detections": 0,
+            "name": "DAO",
+            "recovered": 4
+          },
+          {
+            "artifact_peak_recoveries": null,
+            "denominator": 32,
+            "false_detections": 2,
+            "name": "IRAF",
+            "recovered": 4
+          }
+        ],
+        "nominal_snr": 20.0
+      },
+      {
+        "arm": "one_pixel_artifact",
+        "methods": [
+          {
+            "artifact_peak_recoveries": 29,
+            "denominator": 32,
+            "false_detections": null,
+            "name": "DAO",
+            "recovered": 29
+          },
+          {
+            "artifact_peak_recoveries": 28,
+            "denominator": 32,
+            "false_detections": null,
+            "name": "IRAF",
+            "recovered": 28
+          }
+        ],
+        "nominal_snr": 20.0
+      }
+    ],
+    "input_cutout_bytes": 5806080,
+    "name": "Photutils DAOStarFinder plus fixed-position QR3 finite-ePSF weighted least squares",
+    "photometry_and_position_metrics": {
+      "experiments": [
+        {
+          "arm": "real_image",
+          "baseline_scene_flux_fraction_median_absolute": 0.39178033658188643,
+          "flux_fit_count": 28,
+          "flux_fit_failures": 4,
+          "formal_one_sigma_coverage": 0.5,
+          "limits": [
+            "Injected and fit profiles share the released finite ePSF.",
+            "Pixel noise is independent archive variance; source shot noise and covariance are absent.",
+            "Association correctness is only known for these injected sites and the one-to-one matching radius."
+          ],
+          "median_absolute_fractional_flux_error": 0.3917803365818859,
+          "median_fractional_flux_error": -0.2041054469254407,
+          "median_recovered_position_error_pixels": 1.079003125297795,
+          "nominal_snr": 3.0,
+          "paired_injection_fractional_error_median_absolute": 1.942890293094024e-15,
+          "paired_injection_standardized_residual_rms": 8.754215041345173e-15,
+          "paired_measurement_interpretation": "Paired difference checks numerical response to the injected template; it cancels scene flux and is not source-truth photometric accuracy.",
+          "position_match_count": 6,
+          "standardized_flux_residual_rms": 4.048123121873374
+        },
+        {
+          "arm": "archive_variance_gaussian_blank",
+          "baseline_scene_flux_fraction_median_absolute": 0.2735298509212697,
+          "flux_fit_count": 28,
+          "flux_fit_failures": 4,
+          "formal_one_sigma_coverage": 0.6785714285714286,
+          "limits": [
+            "Injected and fit profiles share the released finite ePSF.",
+            "Pixel noise is independent archive variance; source shot noise and covariance are absent.",
+            "Association correctness is only known for these injected sites and the one-to-one matching radius."
+          ],
+          "median_absolute_fractional_flux_error": 0.2735298509212698,
+          "median_fractional_flux_error": 0.1302214908596363,
+          "median_recovered_position_error_pixels": 0.35484573895718724,
+          "nominal_snr": 3.0,
+          "paired_injection_fractional_error_median_absolute": 2.220446049250313e-16,
+          "paired_injection_standardized_residual_rms": 1.0717735765633348e-15,
+          "paired_measurement_interpretation": "Paired difference checks numerical response to the injected template; it cancels scene flux and is not source-truth photometric accuracy.",
+          "position_match_count": 1,
+          "standardized_flux_residual_rms": 0.9830762954674886
+        },
+        {
+          "arm": "two_source_blend",
+          "baseline_scene_flux_fraction_median_absolute": 0.28076799809240505,
+          "flux_fit_count": 59,
+          "flux_fit_failures": 5,
+          "formal_one_sigma_coverage": 0.5084745762711864,
+          "limits": [
+            "Injected and fit profiles share the released finite ePSF.",
+            "Pixel noise is independent archive variance; source shot noise and covariance are absent.",
+            "Association correctness is only known for these injected sites and the one-to-one matching radius."
+          ],
+          "median_absolute_fractional_flux_error": 0.2916208002313919,
+          "median_fractional_flux_error": 0.1707113006262131,
+          "median_recovered_position_error_pixels": 0.7273750181857394,
+          "nominal_snr": 3.0,
+          "paired_injection_fractional_error_median_absolute": 0.09822497869780467,
+          "paired_injection_standardized_residual_rms": 0.3328328952980156,
+          "paired_measurement_interpretation": "Paired difference checks numerical response to the injected template; it cancels scene flux and is not source-truth photometric accuracy.",
+          "position_match_count": 3,
+          "standardized_flux_residual_rms": 1.1286986674576867
+        },
+        {
+          "arm": "masked_core",
+          "baseline_scene_flux_fraction_median_absolute": null,
+          "flux_fit_count": 0,
+          "flux_fit_failures": 32,
+          "formal_one_sigma_coverage": null,
+          "limits": [
+            "Injected and fit profiles share the released finite ePSF.",
+            "Pixel noise is independent archive variance; source shot noise and covariance are absent.",
+            "Association correctness is only known for these injected sites and the one-to-one matching radius."
+          ],
+          "median_absolute_fractional_flux_error": null,
+          "median_fractional_flux_error": null,
+          "median_recovered_position_error_pixels": null,
+          "nominal_snr": 3.0,
+          "paired_injection_fractional_error_median_absolute": null,
+          "paired_injection_standardized_residual_rms": null,
+          "paired_measurement_interpretation": "Paired difference checks numerical response to the injected template; it cancels scene flux and is not source-truth photometric accuracy.",
+          "position_match_count": 0,
+          "standardized_flux_residual_rms": null
+        },
+        {
+          "arm": "one_pixel_artifact",
+          "baseline_scene_flux_fraction_median_absolute": 0.2735298509212697,
+          "flux_fit_count": 28,
+          "flux_fit_failures": 4,
+          "formal_one_sigma_coverage": 0.21428571428571427,
+          "limits": [
+            "Injected and fit profiles share the released finite ePSF.",
+            "Pixel noise is independent archive variance; source shot noise and covariance are absent.",
+            "Association correctness is only known for these injected sites and the one-to-one matching radius."
+          ],
+          "median_absolute_fractional_flux_error": 0.6566779622120253,
+          "median_fractional_flux_error": 0.6566779622120253,
+          "median_recovered_position_error_pixels": 0.6531713082557047,
+          "nominal_snr": 3.0,
+          "paired_injection_fractional_error_median_absolute": 0.5491914786750376,
+          "paired_injection_standardized_residual_rms": 1.8289914422112574,
+          "paired_measurement_interpretation": "Paired difference checks numerical response to the injected template; it cancels scene flux and is not source-truth photometric accuracy.",
+          "position_match_count": 10,
+          "standardized_flux_residual_rms": 2.127965982704927
+        },
+        {
+          "arm": "real_image",
+          "baseline_scene_flux_fraction_median_absolute": 0.23506820194913186,
+          "flux_fit_count": 28,
+          "flux_fit_failures": 4,
+          "formal_one_sigma_coverage": 0.5,
+          "limits": [
+            "Injected and fit profiles share the released finite ePSF.",
+            "Pixel noise is independent archive variance; source shot noise and covariance are absent.",
+            "Association correctness is only known for these injected sites and the one-to-one matching radius."
+          ],
+          "median_absolute_fractional_flux_error": 0.23506820194913025,
+          "median_fractional_flux_error": -0.1224632681552647,
+          "median_recovered_position_error_pixels": 1.0416123664832395,
+          "nominal_snr": 5.0,
+          "paired_injection_fractional_error_median_absolute": 1.3322676295501878e-15,
+          "paired_injection_standardized_residual_rms": 9.489449207880723e-15,
+          "paired_measurement_interpretation": "Paired difference checks numerical response to the injected template; it cancels scene flux and is not source-truth photometric accuracy.",
+          "position_match_count": 6,
+          "standardized_flux_residual_rms": 4.0481231218733695
+        },
+        {
+          "arm": "archive_variance_gaussian_blank",
+          "baseline_scene_flux_fraction_median_absolute": 0.16411791055276181,
+          "flux_fit_count": 28,
+          "flux_fit_failures": 4,
+          "formal_one_sigma_coverage": 0.6785714285714286,
+          "limits": [
+            "Injected and fit profiles share the released finite ePSF.",
+            "Pixel noise is independent archive variance; source shot noise and covariance are absent.",
+            "Association correctness is only known for these injected sites and the one-to-one matching radius."
+          ],
+          "median_absolute_fractional_flux_error": 0.16411791055276187,
+          "median_fractional_flux_error": 0.07813289451578165,
+          "median_recovered_position_error_pixels": 0.291055625777994,
+          "nominal_snr": 5.0,
+          "paired_injection_fractional_error_median_absolute": 2.7755575615628914e-16,
+          "paired_injection_standardized_residual_rms": 1.6829046809282468e-15,
+          "paired_measurement_interpretation": "Paired difference checks numerical response to the injected template; it cancels scene flux and is not source-truth photometric accuracy.",
+          "position_match_count": 7,
+          "standardized_flux_residual_rms": 0.983076295467489
+        },
+        {
+          "arm": "two_source_blend",
+          "baseline_scene_flux_fraction_median_absolute": 0.16846079885544302,
+          "flux_fit_count": 59,
+          "flux_fit_failures": 5,
+          "formal_one_sigma_coverage": 0.4745762711864407,
+          "limits": [
+            "Injected and fit profiles share the released finite ePSF.",
+            "Pixel noise is independent archive variance; source shot noise and covariance are absent.",
+            "Association correctness is only known for these injected sites and the one-to-one matching radius."
+          ],
+          "median_absolute_fractional_flux_error": 0.1958474847630054,
+          "median_fractional_flux_error": 0.15077558574612326,
+          "median_recovered_position_error_pixels": 0.5239974039562967,
+          "nominal_snr": 5.0,
+          "paired_injection_fractional_error_median_absolute": 0.09822497869780489,
+          "paired_injection_standardized_residual_rms": 0.5547214921633589,
+          "paired_measurement_interpretation": "Paired difference checks numerical response to the injected template; it cancels scene flux and is not source-truth photometric accuracy.",
+          "position_match_count": 23,
+          "standardized_flux_residual_rms": 1.2359363232373433
+        },
+        {
+          "arm": "masked_core",
+          "baseline_scene_flux_fraction_median_absolute": null,
+          "flux_fit_count": 0,
+          "flux_fit_failures": 32,
+          "formal_one_sigma_coverage": null,
+          "limits": [
+            "Injected and fit profiles share the released finite ePSF.",
+            "Pixel noise is independent archive variance; source shot noise and covariance are absent.",
+            "Association correctness is only known for these injected sites and the one-to-one matching radius."
+          ],
+          "median_absolute_fractional_flux_error": null,
+          "median_fractional_flux_error": null,
+          "median_recovered_position_error_pixels": 0.29105572149095155,
+          "nominal_snr": 5.0,
+          "paired_injection_fractional_error_median_absolute": null,
+          "paired_injection_standardized_residual_rms": null,
+          "paired_measurement_interpretation": "Paired difference checks numerical response to the injected template; it cancels scene flux and is not source-truth photometric accuracy.",
+          "position_match_count": 1,
+          "standardized_flux_residual_rms": null
+        },
+        {
+          "arm": "one_pixel_artifact",
+          "baseline_scene_flux_fraction_median_absolute": 0.16411791055276181,
+          "flux_fit_count": 28,
+          "flux_fit_failures": 4,
+          "formal_one_sigma_coverage": 0.03571428571428571,
+          "limits": [
+            "Injected and fit profiles share the released finite ePSF.",
+            "Pixel noise is independent archive variance; source shot noise and covariance are absent.",
+            "Association correctness is only known for these injected sites and the one-to-one matching radius."
+          ],
+          "median_absolute_fractional_flux_error": 0.6384396305716951,
+          "median_fractional_flux_error": 0.6384396305716951,
+          "median_recovered_position_error_pixels": 0.45260972826270063,
+          "nominal_snr": 5.0,
+          "paired_injection_fractional_error_median_absolute": 0.5491914786750377,
+          "paired_injection_standardized_residual_rms": 3.0483190703520955,
+          "paired_measurement_interpretation": "Paired difference checks numerical response to the injected template; it cancels scene flux and is not source-truth photometric accuracy.",
+          "position_match_count": 54,
+          "standardized_flux_residual_rms": 3.2587838783782144
+        },
+        {
+          "arm": "real_image",
+          "baseline_scene_flux_fraction_median_absolute": 0.11753410097456593,
+          "flux_fit_count": 28,
+          "flux_fit_failures": 4,
+          "formal_one_sigma_coverage": 0.5,
+          "limits": [
+            "Injected and fit profiles share the released finite ePSF.",
+            "Pixel noise is independent archive variance; source shot noise and covariance are absent.",
+            "Association correctness is only known for these injected sites and the one-to-one matching radius."
+          ],
+          "median_absolute_fractional_flux_error": 0.11753410097456535,
+          "median_fractional_flux_error": -0.06123163407763205,
+          "median_recovered_position_error_pixels": 0.28988778656751135,
+          "nominal_snr": 10.0,
+          "paired_injection_fractional_error_median_absolute": 6.106226635438361e-16,
+          "paired_injection_standardized_residual_rms": 9.43358400155037e-15,
+          "paired_measurement_interpretation": "Paired difference checks numerical response to the injected template; it cancels scene flux and is not source-truth photometric accuracy.",
+          "position_match_count": 26,
+          "standardized_flux_residual_rms": 4.048123121873373
+        },
+        {
+          "arm": "archive_variance_gaussian_blank",
+          "baseline_scene_flux_fraction_median_absolute": 0.08205895527638091,
+          "flux_fit_count": 28,
+          "flux_fit_failures": 4,
+          "formal_one_sigma_coverage": 0.6785714285714286,
+          "limits": [
+            "Injected and fit profiles share the released finite ePSF.",
+            "Pixel noise is independent archive variance; source shot noise and covariance are absent.",
+            "Association correctness is only known for these injected sites and the one-to-one matching radius."
+          ],
+          "median_absolute_fractional_flux_error": 0.08205895527638096,
+          "median_fractional_flux_error": 0.03906644725789088,
+          "median_recovered_position_error_pixels": 0.1815338914945463,
+          "nominal_snr": 10.0,
+          "paired_injection_fractional_error_median_absolute": 2.220446049250313e-16,
+          "paired_injection_standardized_residual_rms": 3.3875294185082334e-15,
+          "paired_measurement_interpretation": "Paired difference checks numerical response to the injected template; it cancels scene flux and is not source-truth photometric accuracy.",
+          "position_match_count": 54,
+          "standardized_flux_residual_rms": 0.9830762954674895
+        },
+        {
+          "arm": "two_source_blend",
+          "baseline_scene_flux_fraction_median_absolute": 0.08423039942772151,
+          "flux_fit_count": 59,
+          "flux_fit_failures": 5,
+          "formal_one_sigma_coverage": 0.4067796610169492,
+          "limits": [
+            "Injected and fit profiles share the released finite ePSF.",
+            "Pixel noise is independent archive variance; source shot noise and covariance are absent.",
+            "Association correctness is only known for these injected sites and the one-to-one matching radius."
+          ],
+          "median_absolute_fractional_flux_error": 0.13312544238223478,
+          "median_fractional_flux_error": 0.13243006423657033,
+          "median_recovered_position_error_pixels": 0.6222593577583473,
+          "nominal_snr": 10.0,
+          "paired_injection_fractional_error_median_absolute": 0.09822497869780489,
+          "paired_injection_standardized_residual_rms": 1.109442984326718,
+          "paired_measurement_interpretation": "Paired difference checks numerical response to the injected template; it cancels scene flux and is not source-truth photometric accuracy.",
+          "position_match_count": 58,
+          "standardized_flux_residual_rms": 1.610057665257452
+        },
+        {
+          "arm": "masked_core",
+          "baseline_scene_flux_fraction_median_absolute": null,
+          "flux_fit_count": 0,
+          "flux_fit_failures": 32,
+          "formal_one_sigma_coverage": null,
+          "limits": [
+            "Injected and fit profiles share the released finite ePSF.",
+            "Pixel noise is independent archive variance; source shot noise and covariance are absent.",
+            "Association correctness is only known for these injected sites and the one-to-one matching radius."
+          ],
+          "median_absolute_fractional_flux_error": null,
+          "median_fractional_flux_error": null,
+          "median_recovered_position_error_pixels": 0.2883994743169304,
+          "nominal_snr": 10.0,
+          "paired_injection_fractional_error_median_absolute": null,
+          "paired_injection_standardized_residual_rms": null,
+          "paired_measurement_interpretation": "Paired difference checks numerical response to the injected template; it cancels scene flux and is not source-truth photometric accuracy.",
+          "position_match_count": 10,
+          "standardized_flux_residual_rms": null
+        },
+        {
+          "arm": "one_pixel_artifact",
+          "baseline_scene_flux_fraction_median_absolute": 0.08205895527638091,
+          "flux_fit_count": 28,
+          "flux_fit_failures": 4,
+          "formal_one_sigma_coverage": 0.03571428571428571,
+          "limits": [
+            "Injected and fit profiles share the released finite ePSF.",
+            "Pixel noise is independent archive variance; source shot noise and covariance are absent.",
+            "Association correctness is only known for these injected sites and the one-to-one matching radius."
+          ],
+          "median_absolute_fractional_flux_error": 0.6009606801191035,
+          "median_fractional_flux_error": 0.6009606801191035,
+          "median_recovered_position_error_pixels": 0.44950285127928236,
+          "nominal_snr": 10.0,
+          "paired_injection_fractional_error_median_absolute": 0.5491914786750374,
+          "paired_injection_standardized_residual_rms": 6.096638140704192,
+          "paired_measurement_interpretation": "Paired difference checks numerical response to the injected template; it cancels scene flux and is not source-truth photometric accuracy.",
+          "position_match_count": 57,
+          "standardized_flux_residual_rms": 6.233570729412636
+        },
+        {
+          "arm": "real_image",
+          "baseline_scene_flux_fraction_median_absolute": 0.058767050487282965,
+          "flux_fit_count": 28,
+          "flux_fit_failures": 4,
+          "formal_one_sigma_coverage": 0.5,
+          "limits": [
+            "Injected and fit profiles share the released finite ePSF.",
+            "Pixel noise is independent archive variance; source shot noise and covariance are absent.",
+            "Association correctness is only known for these injected sites and the one-to-one matching radius."
+          ],
+          "median_absolute_fractional_flux_error": 0.0587670504872827,
+          "median_fractional_flux_error": -0.03061581703881594,
+          "median_recovered_position_error_pixels": 0.17263835187652898,
+          "nominal_snr": 20.0,
+          "paired_injection_fractional_error_median_absolute": 4.440892098500626e-16,
+          "paired_injection_standardized_residual_rms": 1.2375467982759305e-14,
+          "paired_measurement_interpretation": "Paired difference checks numerical response to the injected template; it cancels scene flux and is not source-truth photometric accuracy.",
+          "position_match_count": 36,
+          "standardized_flux_residual_rms": 4.048123121873373
+        },
+        {
+          "arm": "archive_variance_gaussian_blank",
+          "baseline_scene_flux_fraction_median_absolute": 0.041029477638190454,
+          "flux_fit_count": 28,
+          "flux_fit_failures": 4,
+          "formal_one_sigma_coverage": 0.6785714285714286,
+          "limits": [
+            "Injected and fit profiles share the released finite ePSF.",
+            "Pixel noise is independent archive variance; source shot noise and covariance are absent.",
+            "Association correctness is only known for these injected sites and the one-to-one matching radius."
+          ],
+          "median_absolute_fractional_flux_error": 0.04102947763819076,
+          "median_fractional_flux_error": 0.019533223628945495,
+          "median_recovered_position_error_pixels": 0.10445451866509461,
+          "nominal_snr": 20.0,
+          "paired_injection_fractional_error_median_absolute": 2.220446049250313e-16,
+          "paired_injection_standardized_residual_rms": 6.921364173495343e-15,
+          "paired_measurement_interpretation": "Paired difference checks numerical response to the injected template; it cancels scene flux and is not source-truth photometric accuracy.",
+          "position_match_count": 58,
+          "standardized_flux_residual_rms": 0.9830762954674908
+        },
+        {
+          "arm": "two_source_blend",
+          "baseline_scene_flux_fraction_median_absolute": 0.042115199713860754,
+          "flux_fit_count": 59,
+          "flux_fit_failures": 5,
+          "formal_one_sigma_coverage": 0.1694915254237288,
+          "limits": [
+            "Injected and fit profiles share the released finite ePSF.",
+            "Pixel noise is independent archive variance; source shot noise and covariance are absent.",
+            "Association correctness is only known for these injected sites and the one-to-one matching radius."
+          ],
+          "median_absolute_fractional_flux_error": 0.11685509151202056,
+          "median_fractional_flux_error": 0.11685509151202056,
+          "median_recovered_position_error_pixels": 0.6724338994464907,
+          "nominal_snr": 20.0,
+          "paired_injection_fractional_error_median_absolute": 0.09822497869780511,
+          "paired_injection_standardized_residual_rms": 2.2188859686534355,
+          "paired_measurement_interpretation": "Paired difference checks numerical response to the injected template; it cancels scene flux and is not source-truth photometric accuracy.",
+          "position_match_count": 60,
+          "standardized_flux_residual_rms": 2.5628256806454095
+        },
+        {
+          "arm": "masked_core",
+          "baseline_scene_flux_fraction_median_absolute": null,
+          "flux_fit_count": 0,
+          "flux_fit_failures": 32,
+          "formal_one_sigma_coverage": null,
+          "limits": [
+            "Injected and fit profiles share the released finite ePSF.",
+            "Pixel noise is independent archive variance; source shot noise and covariance are absent.",
+            "Association correctness is only known for these injected sites and the one-to-one matching radius."
+          ],
+          "median_absolute_fractional_flux_error": null,
+          "median_fractional_flux_error": null,
+          "median_recovered_position_error_pixels": 0.16815910611278168,
+          "nominal_snr": 20.0,
+          "paired_injection_fractional_error_median_absolute": null,
+          "paired_injection_standardized_residual_rms": null,
+          "paired_measurement_interpretation": "Paired difference checks numerical response to the injected template; it cancels scene flux and is not source-truth photometric accuracy.",
+          "position_match_count": 8,
+          "standardized_flux_residual_rms": null
+        },
+        {
+          "arm": "one_pixel_artifact",
+          "baseline_scene_flux_fraction_median_absolute": 0.041029477638190454,
+          "flux_fit_count": 28,
+          "flux_fit_failures": 4,
+          "formal_one_sigma_coverage": 0.03571428571428571,
+          "limits": [
+            "Injected and fit profiles share the released finite ePSF.",
+            "Pixel noise is independent archive variance; source shot noise and covariance are absent.",
+            "Association correctness is only known for these injected sites and the one-to-one matching radius."
+          ],
+          "median_absolute_fractional_flux_error": 0.5766680482961651,
+          "median_fractional_flux_error": 0.5766680482961651,
+          "median_recovered_position_error_pixels": 0.4556799070583494,
+          "nominal_snr": 20.0,
+          "paired_injection_fractional_error_median_absolute": 0.5491914786750374,
+          "paired_injection_standardized_residual_rms": 12.193276281408385,
+          "paired_measurement_interpretation": "Paired difference checks numerical response to the injected template; it cancels scene flux and is not source-truth photometric accuracy.",
+          "position_match_count": 57,
+          "standardized_flux_residual_rms": 12.291719257770575
+        }
+      ],
+      "limitations": [
+        "injection and fit share finite ePSF; not independent PSF validation",
+        "paired deltas cancel existing noise; cannot calibrate uncertainty",
+        "no added source Poisson noise or covariance",
+        "real unmatched peaks have unknown identity",
+        "no real blank-sky or moving-source truth cohort"
+      ],
+      "status": "MODEL_CONDITIONAL_RECOVERY_ONLY"
+    },
+    "process_cpu_seconds": 1.9650930000000002,
+    "process_peak_rss_bytes": 154943488,
+    "runtime_seconds": 1.965741457999684
+  },
+  "budgets": {
+    "deep_one_worker": {
+      "detection_tasks": 3,
+      "detections": 1233,
+      "label": "deep-one-worker",
+      "measurement_failures": 5,
+      "median_profile_delta_bic_two_minus_one": -381.03770815950804,
+      "photometry_status_counts": {
+        "FAILED": 5,
+        "MEASURED_CONDITIONAL": 1228
+      },
+      "profile_status_counts": {
+        "INCONCLUSIVE": 12,
+        "SUPPORTS_MULTIPLE": 0,
+        "SUPPORTS_SINGLE": 0
+      },
+      "profile_tasks_requested": 12,
+      "profile_wavelength_partitions": {
+        "0.75-1.30um": 12
+      },
+      "profiles_measured": 12,
+      "resource_runs": [
+        {
+          "completed_status_counts": {
+            "COMPLETED": 3
+          },
+          "completed_unit_ids": [
+            "detect-0-2026W30_1B_0001_1",
+            "detect-1-2026W30_1B_0001_2",
+            "detect-2-2026W30_1B_0001_3"
+          ],
+          "resources": {
+            "admitted_cpu_seconds": 90.0,
+            "admitted_input_bytes": 17418240.0,
+            "admitted_output_bytes": 3145728.0,
+            "budget": {
+              "exploration_fraction": 0.3333333333333333,
+              "max_cpu_seconds": 300,
+              "max_input_bytes": 268435456,
+              "max_output_bytes": 67108864,
+              "max_rss_bytes": 6442450944,
+              "max_tasks": 3,
+              "max_wall_seconds": 600,
+              "max_workers": 1
+            },
+            "checkpoint_bytes": 345395.0,
+            "max_workers": 1,
+            "process_cpu_seconds": 1.135325,
+            "process_peak_rss_bytes": 168984576,
+            "wall_seconds": 1.4341425829334185,
+            "worker_cpu_seconds": 1.1154870410000002
+          },
+          "reused_checkpoints": [],
+          "status": "COMPLETE",
+          "stop_reason": null,
+          "unit_order": [
+            "detect-0-2026W30_1B_0001_1",
+            "detect-1-2026W30_1B_0001_2",
+            "detect-2-2026W30_1B_0001_3"
+          ],
+          "unstarted": []
+        },
+        {
+          "completed_status_counts": {
+            "COMPLETED": 12
+          },
+          "completed_unit_ids": [
+            "profile-00031-00028",
+            "profile-00066-00061",
+            "profile-00105-00101",
+            "profile-00106-00103",
+            "profile-00150-00142",
+            "profile-00180-00172",
+            "profile-00187-00179",
+            "profile-00214-00203",
+            "profile-00305-00290",
+            "profile-00314-00299",
+            "profile-00317-00302",
+            "profile-00395-00382"
+          ],
+          "resources": {
+            "admitted_cpu_seconds": 12.0,
+            "admitted_input_bytes": 69672960.0,
+            "admitted_output_bytes": 49152.0,
+            "budget": {
+              "exploration_fraction": 0.2,
+              "max_cpu_seconds": 300,
+              "max_input_bytes": 268435456,
+              "max_output_bytes": 67108864,
+              "max_rss_bytes": 6442450944,
+              "max_tasks": 12,
+              "max_wall_seconds": 600,
+              "max_workers": 1
+            },
+            "checkpoint_bytes": 44198.0,
+            "max_workers": 1,
+            "process_cpu_seconds": 1.084988,
+            "process_peak_rss_bytes": 181846016,
+            "wall_seconds": 1.0882768749725074,
+            "worker_cpu_seconds": 1.072550583
+          },
+          "reused_checkpoints": [],
+          "status": "COMPLETE",
+          "stop_reason": null,
+          "unit_order": [
+            "profile-00105-00101",
+            "profile-00187-00179",
+            "profile-00066-00061",
+            "profile-00031-00028",
+            "profile-00150-00142",
+            "profile-00106-00103",
+            "profile-00314-00299",
+            "profile-00395-00382",
+            "profile-00305-00290",
+            "profile-00317-00302",
+            "profile-00214-00203",
+            "profile-00180-00172"
+          ],
+          "unstarted": []
+        }
+      ],
+      "resource_totals": {
+        "checkpoint_bytes_written": 389593.0,
+        "logical_input_bytes_processed": 87091200.0,
+        "peak_process_rss_bytes": 181846016,
+        "resource_measurement_limits": [
+          "RSS is the Python process high-water mark, not per-task incremental memory.",
+          "Input bytes count pinned file sizes processed, not physical device reads; OS cache is uncontrolled.",
+          "Checkpoint bytes are actual serialized bytes written; no other scratch outputs are generated."
+        ],
+        "scheduler_process_cpu_seconds": 2.220313,
+        "scheduler_wall_seconds": 2.522419457905926,
+        "worker_cpu_seconds": 2.188037624
+      },
+      "scientific_status": "INCONCLUSIVE_DIAGNOSTIC_ONLY",
+      "wall_seconds_including_setup": 3.2792939170030877,
+      "work_unit_throughput_per_second": 4.5743479639004665
+    },
+    "deep_two_workers": {
+      "detection_tasks": 3,
+      "detections": 1233,
+      "label": "deep-two-workers",
+      "measurement_failures": 5,
+      "median_profile_delta_bic_two_minus_one": -381.03770815950804,
+      "photometry_status_counts": {
+        "FAILED": 5,
+        "MEASURED_CONDITIONAL": 1228
+      },
+      "profile_status_counts": {
+        "INCONCLUSIVE": 12,
+        "SUPPORTS_MULTIPLE": 0,
+        "SUPPORTS_SINGLE": 0
+      },
+      "profile_tasks_requested": 12,
+      "profile_wavelength_partitions": {
+        "0.75-1.30um": 12
+      },
+      "profiles_measured": 12,
+      "resource_runs": [
+        {
+          "completed_status_counts": {
+            "COMPLETED": 3
+          },
+          "completed_unit_ids": [
+            "detect-0-2026W30_1B_0001_1",
+            "detect-1-2026W30_1B_0001_2",
+            "detect-2-2026W30_1B_0001_3"
+          ],
+          "resources": {
+            "admitted_cpu_seconds": 90.0,
+            "admitted_input_bytes": 17418240.0,
+            "admitted_output_bytes": 3145728.0,
+            "budget": {
+              "exploration_fraction": 0.3333333333333333,
+              "max_cpu_seconds": 300,
+              "max_input_bytes": 268435456,
+              "max_output_bytes": 67108864,
+              "max_rss_bytes": 6442450944,
+              "max_tasks": 3,
+              "max_wall_seconds": 600,
+              "max_workers": 2
+            },
+            "checkpoint_bytes": 345419.0,
+            "max_workers": 2,
+            "process_cpu_seconds": 0.9485680000000007,
+            "process_peak_rss_bytes": 190857216,
+            "wall_seconds": 0.8967698329361156,
+            "worker_cpu_seconds": 0.9183802909999998
+          },
+          "reused_checkpoints": [],
+          "status": "COMPLETE",
+          "stop_reason": null,
+          "unit_order": [
+            "detect-0-2026W30_1B_0001_1",
+            "detect-1-2026W30_1B_0001_2",
+            "detect-2-2026W30_1B_0001_3"
+          ],
+          "unstarted": []
+        },
+        {
+          "completed_status_counts": {
+            "COMPLETED": 12
+          },
+          "completed_unit_ids": [
+            "profile-00031-00028",
+            "profile-00066-00061",
+            "profile-00105-00101",
+            "profile-00106-00103",
+            "profile-00150-00142",
+            "profile-00180-00172",
+            "profile-00187-00179",
+            "profile-00214-00203",
+            "profile-00305-00290",
+            "profile-00314-00299",
+            "profile-00317-00302",
+            "profile-00395-00382"
+          ],
+          "resources": {
+            "admitted_cpu_seconds": 12.0,
+            "admitted_input_bytes": 69672960.0,
+            "admitted_output_bytes": 49152.0,
+            "budget": {
+              "exploration_fraction": 0.2,
+              "max_cpu_seconds": 300,
+              "max_input_bytes": 268435456,
+              "max_output_bytes": 67108864,
+              "max_rss_bytes": 6442450944,
+              "max_tasks": 12,
+              "max_wall_seconds": 600,
+              "max_workers": 2
+            },
+            "checkpoint_bytes": 44174.0,
+            "max_workers": 2,
+            "process_cpu_seconds": 1.0999050000000015,
+            "process_peak_rss_bytes": 190889984,
+            "wall_seconds": 1.026874375063926,
+            "worker_cpu_seconds": 1.087809792
+          },
+          "reused_checkpoints": [],
+          "status": "COMPLETE",
+          "stop_reason": null,
+          "unit_order": [
+            "profile-00105-00101",
+            "profile-00187-00179",
+            "profile-00066-00061",
+            "profile-00031-00028",
+            "profile-00150-00142",
+            "profile-00106-00103",
+            "profile-00314-00299",
+            "profile-00395-00382",
+            "profile-00305-00290",
+            "profile-00317-00302",
+            "profile-00214-00203",
+            "profile-00180-00172"
+          ],
+          "unstarted": []
+        }
+      ],
+      "resource_totals": {
+        "checkpoint_bytes_written": 389593.0,
+        "logical_input_bytes_processed": 87091200.0,
+        "peak_process_rss_bytes": 190889984,
+        "resource_measurement_limits": [
+          "RSS is the Python process high-water mark, not per-task incremental memory.",
+          "Input bytes count pinned file sizes processed, not physical device reads; OS cache is uncontrolled.",
+          "Checkpoint bytes are actual serialized bytes written; no other scratch outputs are generated."
+        ],
+        "scheduler_process_cpu_seconds": 2.048473000000002,
+        "scheduler_wall_seconds": 1.9236442080000415,
+        "worker_cpu_seconds": 2.006190083
+      },
+      "scientific_status": "INCONCLUSIVE_DIAGNOSTIC_ONLY",
+      "wall_seconds_including_setup": 2.7208384999539703,
+      "work_unit_throughput_per_second": 5.51328550188375
+    },
+    "shallow": {
+      "detection_tasks": 3,
+      "detections": 1233,
+      "label": "shallow",
+      "measurement_failures": 5,
+      "median_profile_delta_bic_two_minus_one": null,
+      "photometry_status_counts": {
+        "FAILED": 5,
+        "MEASURED_CONDITIONAL": 1228
+      },
+      "profile_status_counts": {
+        "INCONCLUSIVE": 0,
+        "SUPPORTS_MULTIPLE": 0,
+        "SUPPORTS_SINGLE": 0
+      },
+      "profile_tasks_requested": 0,
+      "profile_wavelength_partitions": {},
+      "profiles_measured": 0,
+      "resource_runs": [
+        {
+          "completed_status_counts": {
+            "COMPLETED": 3
+          },
+          "completed_unit_ids": [
+            "detect-0-2026W30_1B_0001_1",
+            "detect-1-2026W30_1B_0001_2",
+            "detect-2-2026W30_1B_0001_3"
+          ],
+          "resources": {
+            "admitted_cpu_seconds": 90.0,
+            "admitted_input_bytes": 17418240.0,
+            "admitted_output_bytes": 3145728.0,
+            "budget": {
+              "exploration_fraction": 0.3333333333333333,
+              "max_cpu_seconds": 300,
+              "max_input_bytes": 268435456,
+              "max_output_bytes": 67108864,
+              "max_rss_bytes": 6442450944,
+              "max_tasks": 3,
+              "max_wall_seconds": 600,
+              "max_workers": 1
+            },
+            "checkpoint_bytes": 345402.0,
+            "max_workers": 1,
+            "process_cpu_seconds": 0.9339230000000005,
+            "process_peak_rss_bytes": 165625856,
+            "wall_seconds": 0.9421383340377361,
+            "worker_cpu_seconds": 0.9141181660000001
+          },
+          "reused_checkpoints": [],
+          "status": "COMPLETE",
+          "stop_reason": null,
+          "unit_order": [
+            "detect-0-2026W30_1B_0001_1",
+            "detect-1-2026W30_1B_0001_2",
+            "detect-2-2026W30_1B_0001_3"
+          ],
+          "unstarted": []
+        }
+      ],
+      "resource_totals": {
+        "checkpoint_bytes_written": 345402.0,
+        "logical_input_bytes_processed": 17418240.0,
+        "peak_process_rss_bytes": 165625856,
+        "resource_measurement_limits": [
+          "RSS is the Python process high-water mark, not per-task incremental memory.",
+          "Input bytes count pinned file sizes processed, not physical device reads; OS cache is uncontrolled.",
+          "Checkpoint bytes are actual serialized bytes written; no other scratch outputs are generated."
+        ],
+        "scheduler_process_cpu_seconds": 0.9339230000000005,
+        "scheduler_wall_seconds": 0.9421383340377361,
+        "worker_cpu_seconds": 0.9141181660000001
+      },
+      "scientific_status": "INCONCLUSIVE_DIAGNOSTIC_ONLY",
+      "wall_seconds_including_setup": 0.9424768330063671,
+      "work_unit_throughput_per_second": 3.1834390437832742
+    }
+  },
+  "code_commit": "9897178fe7c0eafe58f2ae383effef7fda24f40d",
+  "deeper_analysis_limit": "Held-out one/multiple-profile delta-BIC is conditional diagnostic only; it cannot confirm source identity or discovery.",
+  "dirty_source": false,
+  "environment_id": "env:33d263eed615c55b58f5ab2fa40e9c5fed3187ea53f26c68b4a60865661a4179",
+  "measured_scaling": {
+    "efficiency_at_two_workers": 0.6026256091749961,
+    "limit": "Single local host, one sequential pair of runs, filesystem cache warmed by first run; descriptive only.",
+    "same_12_profile_units_worker_speedup": 1.2052512183499922,
+    "throughput_tasks_per_second": {
+      "deep_one_worker": 4.574155406511516,
+      "deep_two_workers": 5.513006376620208,
+      "shallow": 3.1831021144895697
+    }
+  },
+  "pinned_code_sha256": {
+    "heldout_profiles": "fc20cf7c25d46db9b419d3cdcc62da8e87ebe0c6e292c620bc9b83362679fe9c",
+    "injection_evaluator": "1b5ff34c31a2df7afb395a86516c923fd7268f2922a8313796e5e8e0caebe1a5",
+    "manifest": "1375753fa6e2b004773beaa8f313e060ef0d124b6ac2f1ccf93fff7d30633bd8",
+    "protocol": "475bd9678e2b6f7c62a4e8f529e8b41d87e3de734fe11fe3899dbdd22afbebf9",
+    "qr3_photometry": "61fb15f149a0042ce042e2b24ed430725fea550089bbf9a8037c5778659e6343",
+    "runner": "738e501fe51ad5c04ff07d009e4e6e4a836b101592e3468a0109b5b398e9e57a",
+    "scheduler": "9ccf345a287a691236887ed91e0ef1e9f15292d5bdc49b9c342e53dc84a643ed"
+  },
+  "protocol_sha256": "475bd9678e2b6f7c62a4e8f529e8b41d87e3de734fe11fe3899dbdd22afbebf9",
+  "schema_version": "sieve.resource-adaptive-qr3.result.v1",
+  "scientific_claim": "All runs reuse the same three real QR3 D1 exposures. Deeper budget adds held-out profile diagnostics, not validated objects. Injection recovery reports conditional controls only.",
+  "source_data_sha256": [
+    "13434d8c4615a7b788594d3065809c61dfa5c28d5fae6590cf5d7e8b952a4117",
+    "0d6297702adcbb65786230b1ed7f9c4e6a58e1746885d8dd5ebbc46c8be24fc9",
+    "faff32a95ac0afdaed8d2bbf46f5d4324b774a43a74382b9b482adb3a8849d01"
+  ],
+  "source_manifest_sha256": "1375753fa6e2b004773beaa8f313e060ef0d124b6ac2f1ccf93fff7d30633bd8",
+  "source_tree_sha256": "1be8cd1bd9336523f5480fafa7994479fca84bcda62b9c19ae30f2d0810ab3d7",
+  "status": "LOCAL_MEASURED_SCIENTIFIC_RESULT_INCONCLUSIVE"
+}

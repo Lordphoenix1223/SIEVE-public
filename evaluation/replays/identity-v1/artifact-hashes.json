@@ -1,0 +1,10 @@
+{
+  "baseline.json": "e686b7c0b5c236f7940953737390db626eb6828650cd5e352dacae41cddcc420",
+  "evaluator-truth.json": "69e1aa1e2e243cf30ce1ab8e36addb5be31ebdaa45f2f141c86a40a5d864b7bb",
+  "failure-examples.jsonl": "aa1b5040cf579f32554bcc6b2a1ee5a32fd3636dc4a86058e7f4f68af3a34cd6",
+  "paired-metrics.json": "de52f89fdb3bf5189b6b97b257d0c6bb43287f344275bc8608caec0f0fe40121",
+  "per-case.jsonl": "8dbb20b375a91c315e94ab85c58be077de2967671da22cac33e0ec0376b90ffa",
+  "protocol.json": "4e1645b26f5cdc815760420a3153a14bb5bed6d447bdc4d63a476acb8a3a59dd",
+  "receipt.json": "b61581a2b70a48c3d60302f682f9f26cc6da12fe81ffb9b5661bc97411ddc144",
+  "treatment.json": "ad7528810144beaeb7ef9ea27154cdd3f8d38a7fa10cdf8e2e5e7e0fbd8f9c73"
+}

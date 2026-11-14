@@ -1,0 +1,619 @@
+{
+  "cv": [
+    {
+      "candidate": {
+        "C": 0.1,
+        "id": "logistic-C0.1",
+        "kind": "logistic"
+      },
+      "folds": [
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 6,
+          "precision_at_budget": 0.375,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.6096657120978346,
+            1.0
+          ],
+          "recovered": 6,
+          "roc_auc": 1.0,
+          "rows": 307
+        },
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 6,
+          "precision_at_budget": 0.375,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.6096657120978346,
+            1.0
+          ],
+          "recovered": 6,
+          "roc_auc": 1.0,
+          "rows": 307
+        },
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 5,
+          "precision_at_budget": 0.3125,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.5655175352168251,
+            1.0
+          ],
+          "recovered": 5,
+          "roc_auc": 1.0,
+          "rows": 306
+        }
+      ],
+      "mean_ap": 1.0,
+      "mean_recall": 1.0,
+      "seconds": 0.020937666995450854
+    },
+    {
+      "candidate": {
+        "C": 1.0,
+        "id": "logistic-C1.0",
+        "kind": "logistic"
+      },
+      "folds": [
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 6,
+          "precision_at_budget": 0.375,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.6096657120978346,
+            1.0
+          ],
+          "recovered": 6,
+          "roc_auc": 1.0,
+          "rows": 307
+        },
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 6,
+          "precision_at_budget": 0.375,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.6096657120978346,
+            1.0
+          ],
+          "recovered": 6,
+          "roc_auc": 1.0,
+          "rows": 307
+        },
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 5,
+          "precision_at_budget": 0.3125,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.5655175352168251,
+            1.0
+          ],
+          "recovered": 5,
+          "roc_auc": 1.0,
+          "rows": 306
+        }
+      ],
+      "mean_ap": 1.0,
+      "mean_recall": 1.0,
+      "seconds": 0.019260374989244156
+    },
+    {
+      "candidate": {
+        "C": 10.0,
+        "id": "logistic-C10.0",
+        "kind": "logistic"
+      },
+      "folds": [
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 6,
+          "precision_at_budget": 0.375,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.6096657120978346,
+            1.0
+          ],
+          "recovered": 6,
+          "roc_auc": 1.0,
+          "rows": 307
+        },
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 6,
+          "precision_at_budget": 0.375,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.6096657120978346,
+            1.0
+          ],
+          "recovered": 6,
+          "roc_auc": 1.0,
+          "rows": 307
+        },
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 5,
+          "precision_at_budget": 0.3125,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.5655175352168251,
+            1.0
+          ],
+          "recovered": 5,
+          "roc_auc": 1.0,
+          "rows": 306
+        }
+      ],
+      "mean_ap": 1.0,
+      "mean_recall": 1.0,
+      "seconds": 0.018626040997332893
+    },
+    {
+      "candidate": {
+        "C": 0.1,
+        "id": "svc-C0.1",
+        "kind": "svc"
+      },
+      "folds": [
+        {
+          "average_precision": 0.976190476190476,
+          "budget": 16,
+          "positives": 6,
+          "precision_at_budget": 0.375,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.6096657120978346,
+            1.0
+          ],
+          "recovered": 6,
+          "roc_auc": 0.9994462901439646,
+          "rows": 307
+        },
+        {
+          "average_precision": 0.9242424242424242,
+          "budget": 16,
+          "positives": 6,
+          "precision_at_budget": 0.375,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.6096657120978346,
+            1.0
+          ],
+          "recovered": 6,
+          "roc_auc": 0.9972314507198228,
+          "rows": 307
+        },
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 5,
+          "precision_at_budget": 0.3125,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.5655175352168251,
+            1.0
+          ],
+          "recovered": 5,
+          "roc_auc": 1.0,
+          "rows": 306
+        }
+      ],
+      "mean_ap": 0.9668109668109667,
+      "mean_recall": 1.0,
+      "seconds": 0.036137542003416456
+    },
+    {
+      "candidate": {
+        "C": 1.0,
+        "id": "svc-C1.0",
+        "kind": "svc"
+      },
+      "folds": [
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 6,
+          "precision_at_budget": 0.375,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.6096657120978346,
+            1.0
+          ],
+          "recovered": 6,
+          "roc_auc": 1.0,
+          "rows": 307
+        },
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 6,
+          "precision_at_budget": 0.375,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.6096657120978346,
+            1.0
+          ],
+          "recovered": 6,
+          "roc_auc": 1.0,
+          "rows": 307
+        },
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 5,
+          "precision_at_budget": 0.3125,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.5655175352168251,
+            1.0
+          ],
+          "recovered": 5,
+          "roc_auc": 1.0,
+          "rows": 306
+        }
+      ],
+      "mean_ap": 1.0,
+      "mean_recall": 1.0,
+      "seconds": 0.021942834006040357
+    },
+    {
+      "candidate": {
+        "C": 10.0,
+        "id": "svc-C10.0",
+        "kind": "svc"
+      },
+      "folds": [
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 6,
+          "precision_at_budget": 0.375,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.6096657120978346,
+            1.0
+          ],
+          "recovered": 6,
+          "roc_auc": 1.0,
+          "rows": 307
+        },
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 6,
+          "precision_at_budget": 0.375,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.6096657120978346,
+            1.0
+          ],
+          "recovered": 6,
+          "roc_auc": 1.0,
+          "rows": 307
+        },
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 5,
+          "precision_at_budget": 0.3125,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.5655175352168251,
+            1.0
+          ],
+          "recovered": 5,
+          "roc_auc": 1.0,
+          "rows": 306
+        }
+      ],
+      "mean_ap": 1.0,
+      "mean_recall": 1.0,
+      "seconds": 0.02028004199382849
+    },
+    {
+      "candidate": {
+        "C": 100.0,
+        "id": "svc-C100.0",
+        "kind": "svc"
+      },
+      "folds": [
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 6,
+          "precision_at_budget": 0.375,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.6096657120978346,
+            1.0
+          ],
+          "recovered": 6,
+          "roc_auc": 1.0,
+          "rows": 307
+        },
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 6,
+          "precision_at_budget": 0.375,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.6096657120978346,
+            1.0
+          ],
+          "recovered": 6,
+          "roc_auc": 1.0,
+          "rows": 307
+        },
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 5,
+          "precision_at_budget": 0.3125,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.5655175352168251,
+            1.0
+          ],
+          "recovered": 5,
+          "roc_auc": 1.0,
+          "rows": 306
+        }
+      ],
+      "mean_ap": 1.0,
+      "mean_recall": 1.0,
+      "seconds": 0.020790165988728404
+    },
+    {
+      "candidate": {
+        "depth": 8,
+        "id": "extra-depth8-leaf1",
+        "kind": "extra",
+        "leaf": 1
+      },
+      "folds": [
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 6,
+          "precision_at_budget": 0.375,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.6096657120978346,
+            1.0
+          ],
+          "recovered": 6,
+          "roc_auc": 1.0,
+          "rows": 307
+        },
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 6,
+          "precision_at_budget": 0.375,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.6096657120978346,
+            1.0
+          ],
+          "recovered": 6,
+          "roc_auc": 1.0,
+          "rows": 307
+        },
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 5,
+          "precision_at_budget": 0.3125,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.5655175352168251,
+            1.0
+          ],
+          "recovered": 5,
+          "roc_auc": 1.0,
+          "rows": 306
+        }
+      ],
+      "mean_ap": 1.0,
+      "mean_recall": 1.0,
+      "seconds": 0.5817705000081332
+    },
+    {
+      "candidate": {
+        "depth": 8,
+        "id": "extra-depth8-leaf3",
+        "kind": "extra",
+        "leaf": 3
+      },
+      "folds": [
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 6,
+          "precision_at_budget": 0.375,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.6096657120978346,
+            1.0
+          ],
+          "recovered": 6,
+          "roc_auc": 1.0,
+          "rows": 307
+        },
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 6,
+          "precision_at_budget": 0.375,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.6096657120978346,
+            1.0
+          ],
+          "recovered": 6,
+          "roc_auc": 1.0,
+          "rows": 307
+        },
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 5,
+          "precision_at_budget": 0.3125,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.5655175352168251,
+            1.0
+          ],
+          "recovered": 5,
+          "roc_auc": 1.0,
+          "rows": 306
+        }
+      ],
+      "mean_ap": 1.0,
+      "mean_recall": 1.0,
+      "seconds": 0.5783390830038115
+    },
+    {
+      "candidate": {
+        "depth": null,
+        "id": "extra-depthNone-leaf1",
+        "kind": "extra",
+        "leaf": 1
+      },
+      "folds": [
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 6,
+          "precision_at_budget": 0.375,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.6096657120978346,
+            1.0
+          ],
+          "recovered": 6,
+          "roc_auc": 1.0,
+          "rows": 307
+        },
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 6,
+          "precision_at_budget": 0.375,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.6096657120978346,
+            1.0
+          ],
+          "recovered": 6,
+          "roc_auc": 1.0,
+          "rows": 307
+        },
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 5,
+          "precision_at_budget": 0.3125,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.5655175352168251,
+            1.0
+          ],
+          "recovered": 5,
+          "roc_auc": 1.0,
+          "rows": 306
+        }
+      ],
+      "mean_ap": 1.0,
+      "mean_recall": 1.0,
+      "seconds": 0.5824325409921585
+    },
+    {
+      "candidate": {
+        "depth": null,
+        "id": "extra-depthNone-leaf3",
+        "kind": "extra",
+        "leaf": 3
+      },
+      "folds": [
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 6,
+          "precision_at_budget": 0.375,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.6096657120978346,
+            1.0
+          ],
+          "recovered": 6,
+          "roc_auc": 1.0,
+          "rows": 307
+        },
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 6,
+          "precision_at_budget": 0.375,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.6096657120978346,
+            1.0
+          ],
+          "recovered": 6,
+          "roc_auc": 1.0,
+          "rows": 307
+        },
+        {
+          "average_precision": 1.0,
+          "budget": 16,
+          "positives": 5,
+          "precision_at_budget": 0.3125,
+          "recall_at_budget": 1.0,
+          "recall_wilson95": [
+            0.5655175352168251,
+            1.0
+          ],
+          "recovered": 5,
+          "roc_auc": 1.0,
+          "rows": 306
+        }
+      ],
+      "mean_ap": 1.0,
+      "mean_recall": 1.0,
+      "seconds": 0.6025914170022588
+    }
+  ],
+  "protocol_sha256": "1f5f35867f7724f4ce768ef41596f102266e9f1a54517013897981eeac4a35ea",
+  "selected": {
+    "depth": 8,
+    "id": "extra-depth8-leaf1",
+    "kind": "extra",
+    "leaf": 1
+  },
+  "test_labels_accessed": false,
+  "training_class_counts": {
+    "1": 119,
+    "2": 58,
+    "3": 287,
+    "4": 183,
+    "5": 140,
+    "6": 116,
+    "7": 17
+  }
+}

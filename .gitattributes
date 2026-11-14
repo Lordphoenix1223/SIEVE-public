@@ -1,0 +1,2 @@
+# FITS headers are long ASCII prefixes, but the files contain binary science arrays.
+*.fits binary

@@ -1,0 +1,1 @@
+{"generation_input_ids": ["m0", "m1", "m2", "m3"], "id": "proposal", "member_ids": ["m0", "m1", "m2", "m3"], "method": {"name": "reference-contract", "version": "v1"}, "provenance_ref": "activity-propose", "rationale": "Fixed synthetic candidate; no identity claim", "raw_output_asset_ids": ["raw-proposal"]}

@@ -1,0 +1,213 @@
+{
+  "schema_version": "sieve.identity.v1",
+  "role": "VALIDATION",
+  "task_scope": "membership",
+  "input_sha256": "97dfc65f74283f60c606bda3f75a6a6bec3fc1e513b8b40797b5ecb86c824ee2",
+  "cases": [
+    {
+      "schema_version": "sieve.identity.v1",
+      "id": "val:0:clean",
+      "member_ids": [
+        "val:0:a0",
+        "val:0:a1"
+      ],
+      "dependence_groups": [
+        "val:ex:0"
+      ]
+    },
+    {
+      "schema_version": "sieve.identity.v1",
+      "id": "val:0:merge",
+      "member_ids": [
+        "val:0:a0",
+        "val:0:a1",
+        "val:0:b0",
+        "val:0:b1"
+      ],
+      "dependence_groups": [
+        "val:ex:0"
+      ]
+    },
+    {
+      "schema_version": "sieve.identity.v1",
+      "id": "val:1:clean",
+      "member_ids": [
+        "val:1:a0",
+        "val:1:a1"
+      ],
+      "dependence_groups": [
+        "val:ex:1"
+      ]
+    },
+    {
+      "schema_version": "sieve.identity.v1",
+      "id": "val:1:merge",
+      "member_ids": [
+        "val:1:a0",
+        "val:1:a1",
+        "val:1:b0",
+        "val:1:b1"
+      ],
+      "dependence_groups": [
+        "val:ex:1"
+      ]
+    }
+  ],
+  "records": [
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:val:0:a0",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "val:0:a0"
+      ],
+      "object_ids": [
+        "val:physical:0:A"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:val:0:a1",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "val:0:a1"
+      ],
+      "object_ids": [
+        "val:physical:0:A"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:val:0:b0",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "val:0:b0"
+      ],
+      "object_ids": [
+        "val:physical:0:B"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:val:0:b1",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "val:0:b1"
+      ],
+      "object_ids": [
+        "val:physical:0:B"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:val:1:a0",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "val:1:a0"
+      ],
+      "object_ids": [
+        "val:physical:1:A"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:val:1:a1",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "val:1:a1"
+      ],
+      "object_ids": [
+        "val:physical:1:A"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:val:1:b0",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "val:1:b0"
+      ],
+      "object_ids": [
+        "val:physical:1:B"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    },
+    {
+      "schema_version": "sieve.v0",
+      "id": "truth:val:1:b1",
+      "source_type": "SIMULATED_TRUTH",
+      "source_ref": "fixture",
+      "task_scope": "membership",
+      "member_ids": [
+        "val:1:b1"
+      ],
+      "object_ids": [
+        "val:physical:1:B"
+      ],
+      "frozen": true,
+      "complete_for_scope": true,
+      "audit_ref": null,
+      "limitations": [
+        "Contract test only"
+      ]
+    }
+  ],
+  "limitations": [
+    "Synthetic evaluator inputs, not scientific evidence"
+  ]
+}

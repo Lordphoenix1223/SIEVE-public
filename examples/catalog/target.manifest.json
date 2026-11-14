@@ -1,0 +1,66 @@
+{
+  "schema_version": "sieve.catalog.v1",
+  "path": "target.csv",
+  "format": "csv",
+  "sha256": "9bafedf48252d9efee263a85c315d3f28304f8bbe30b7df4eae1ba3b7ec3b943",
+  "provider": "synthetic-export",
+  "dataset": "synthetic-two-flux-catalog",
+  "release": "fixture-v1",
+  "data_kind": "SYNTHETIC",
+  "source_uri": "urn:sieve:synthetic:catalog-demo",
+  "request_parameters": {
+    "role": "target",
+    "rows": 40
+  },
+  "citations": [
+    "SIEVE synthetic engineering fixture; not astronomical data"
+  ],
+  "identity_namespace": "synthetic-catalog-v1",
+  "id_column": "source_id",
+  "ra_column": "ra",
+  "dec_column": "dec",
+  "coordinate_frame": "icrs",
+  "coordinate_unit": "deg",
+  "features": [
+    {
+      "name": "flux_a",
+      "column": "flux_a",
+      "unit": "Jy",
+      "description": "Synthetic reported flux_a",
+      "lower": 0,
+      "upper": 100,
+      "error_column": "sigma",
+      "uncertainty_kind": "reported_standard_deviation"
+    },
+    {
+      "name": "flux_b",
+      "column": "flux_b",
+      "unit": "Jy",
+      "description": "Synthetic reported flux_b",
+      "lower": 0,
+      "upper": 100,
+      "error_column": "sigma",
+      "uncertainty_kind": "reported_standard_deviation"
+    }
+  ],
+  "split_groups": [
+    {
+      "namespace": "synthetic-exposure",
+      "column": "group"
+    }
+  ],
+  "split_policy_ref": "explicit separate source and exposure groups in fixture",
+  "support_domain": "synthetic finite two-flux feature exercise only",
+  "selection_description": "deterministic trigonometric values; engineered offsets",
+  "quality": {
+    "column": "quality",
+    "accepted_values": [
+      "good"
+    ],
+    "definition_ref": "synthetic declared good/bad flag; no instrument calibration"
+  },
+  "calibration_refs": [],
+  "limitations": [
+    "Synthetic catalog; no measured sources, sensitivity or probability"
+  ]
+}

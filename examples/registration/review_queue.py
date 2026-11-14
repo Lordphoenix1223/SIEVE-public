@@ -58,6 +58,8 @@ def build(comparison: dict[str, Any], comparison_sha256: str) -> dict[str, Any]:
             "catalog_association": "NOT_EVALUATED_FOR_FIELD",
             "independent_check": "NOT_RUN",
         })
+    order = {"review_measurements": 0, "review_flags_or_ambiguity": 1, "deferred": 2}
+    records.sort(key=lambda r: (order[r["review_priority"]], r["detection_ids"]))
     counts = Counter(r["review_priority"] for r in records)
     return {
         "schema_version": "sieve.qr3.review_queue.v1",

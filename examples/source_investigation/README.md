@@ -91,3 +91,16 @@ reference MJD. THOR needs prepared observations and seed orbits; its linker comp
 needs at least two working linkers on shared IDs. This single source has no validated
 moving-object track or backend verdict. Do not map a numerical centroid check to a
 Harness acceptance claim.
+
+### SearchX Identify evidence
+
+The demo also writes `searchx-identifications.json` automatically (requires Node.js 20+ on PATH).
+Each row is a detection inspector record with its original measurement, FITS provenance,
+and independent checks. Aladin can place a marker at `detection.ra_deg` / `detection.dec_deg`
+and use `detection.id` to find the inspector record. An inconclusive association can
+contain a catalog counterpart; it does not confirm its identity. For the included
+QR3 observations, calibrated positional uncertainty is unavailable and is left null.
+The original independent checks are retained; Harness was not run.
+
+The unmodified MIT matcher in `identify/engine.mjs` is pre-existing SearchX Identify
+code from commit `7c24aeead8587215f9f9c73c0db51e2e17043cc8`; its license is included.

@@ -1,0 +1,32 @@
+{
+  "schema_version": "sieve.registration.gaia-diagnostic.v1",
+  "catalog": "Gaia DR3",
+  "query": "SELECT TOP 3000 source_id,ra,dec,ra_error,dec_error,pmra,pmdec,parallax,ref_epoch,phot_g_mean_mag FROM gaiadr3.gaia_source WHERE 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',232.663579354,-10.7213238583,0.25)) AND pmra IS NOT NULL AND pmdec IS NOT NULL AND phot_g_mean_mag < 18",
+  "catalog_url": "https://gea.esac.esa.int/tap-server/tap/sync",
+  "catalog_sha256": "c6ca7cb28496f14e0146835018a7605130177b2dfc4be9a8fcb0572a72957517",
+  "input_measurements_sha256": "326a92d1d4ca70a164068602a4b235d05a32b0e3d286c104b9ea55fcc701893c",
+  "propagation_warnings": [
+    "ERFA function \"pmsafe\" yielded 473 of \"distance overridden (Note 6)\""
+  ],
+  "catalog_rows": 473,
+  "detected_measurements": 415,
+  "candidate_pairs": 282,
+  "unique_candidate_pairs": 278,
+  "ambiguous_candidate_pairs": 4,
+  "train_count": 155,
+  "heldout_count": 123,
+  "shift_east_north_arcsec": [
+    0.09829656401002708,
+    0.02783133667157311
+  ],
+  "heldout_median_before_arcsec": 0.6571430846860051,
+  "heldout_median_after_arcsec": 0.6421799904398465,
+  "heldout_p95_after_arcsec": 1.3253998370182989,
+  "status": "REGISTRATION_UNQUALIFIED",
+  "limitations": [
+    "Unique 3-arcsecond proximity is not independently confirmed identity.",
+    "Gaia proper motion is propagated without distance/radial velocity; spacecraft parallax is not corrected.",
+    "SIEVE astrometric covariance and false-match ground truth are unavailable.",
+    "Split is deterministic SHA-256 partition of Gaia source IDs, not source-population or calibration independence."
+  ]
+}

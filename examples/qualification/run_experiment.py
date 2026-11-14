@@ -20,6 +20,7 @@ from sieve.photometry.profiles import compare_profiles
 from sieve.photometry.provider import QR3ObservationProvider, build_competing_input
 from sieve.photometry.qualified import detect_positions, file_digest, fit_flux, load_qr3_frame
 from sieve.provenance.runtime import source_identity
+from sieve.registration import associate, compare, load_observation
 
 
 def write(path: Path, value: Any) -> None:
@@ -111,6 +112,14 @@ def run(output: Path) -> None:
     frames = [load_qr3_frame(base / e["file"], e["sha256"]) for e in manifest["exposures"]]
     if len(frames) != 3 or len({f.header["OBSID"] for f in frames}) != 3:
         raise ValueError("three different real exposures required")
+    # Guard the existing pilot before it generates hypotheses. A numeric WCS
+    # round trip is not astrometric qualification, so science claims stay closed.
+    native = [load_observation(base / e["file"]) for e in manifest["exposures"][:2]]
+    registration_gate = compare(native[0], native[1])
+    if registration_gate["spatial_status"] == "NO_SAMPLED_COMMON_COVERAGE" or registration_gate[
+        "temporal_status"
+    ] in {"DUPLICATE_EXPOSURE", "POSSIBLE_DUPLICATE_EXPOSURE"}:
+        raise ValueError("registration gate refused overlap or exposure identity")
     exposures, generation = [], []
     for frame in frames[:2]:
         positions = detect_positions(frame, frame.image, "DAO")
@@ -151,6 +160,11 @@ def run(output: Path) -> None:
         "error_status": "FORMAL_CONDITIONAL_ONLY_NOT_CALIBRATED",
     }
     write(output / "measurements.json", measurement_report)
+    gated_pairs = associate(native[0], native[1], generation[0], generation[1], 12.0)
+    registration_gate = compare(native[0], native[1], gated_pairs)
+    registration_gate["motion_claim"] = "REFUSED"
+    registration_gate["flux_variability_claim"] = "REFUSED"
+    write(output / "registration-gate.json", registration_gate)
     # All radius candidates are retained, not a nearest-neighbor identity benchmark.
     coordinates = [
         SkyCoord(*frame.wcs.pixel_to_world_values(p[:, 0], p[:, 1]), unit="deg")

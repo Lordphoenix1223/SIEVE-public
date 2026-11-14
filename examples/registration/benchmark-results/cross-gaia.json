@@ -1,0 +1,46 @@
+{
+  "schema_version": "sieve.registration.cross-gaia.v1",
+  "gaia_sha256": "71d7063bb0f61cef9cdbc402a78433738d6dd969dedc03124fe43cddf8a43c6d",
+  "gaia_service": "https://gea.esac.esa.int/tap-server/tap/sync",
+  "gaia_query": "SELECT TOP 2000 source_id,ra,dec,ra_error,dec_error,pmra,pmdec,ref_epoch,phot_g_mean_mag FROM gaiadr3.gaia_source WHERE 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',266.4,-28.9333,0.2)) AND pmra IS NOT NULL AND pmdec IS NOT NULL AND phot_g_mean_mag < 15",
+  "image_sha256": {
+    "2mass.fits": "763ef344df3ac8fa80ff46f00ca1ec59946ca3f99502562d6fcfb73320b1cec3",
+    "msx.fits": "3687fb3763911825f981e74b6a9b82c0e618f7e592b1e0cb17e2c63164e28cd6"
+  },
+  "gaia_rows": 337,
+  "gaia_catalog_epoch_jyear": 2016.0,
+  "images": [
+    {
+      "image": "2mass.fits",
+      "detections": 1217,
+      "gaia_candidate_pairs": 48,
+      "unique_candidates": 41,
+      "ambiguous_pairs": 7,
+      "median_separation_arcsec": 1.9179510717818955
+    },
+    {
+      "image": "msx.fits",
+      "detections": 26,
+      "gaia_candidate_pairs": 4,
+      "unique_candidates": 4,
+      "ambiguous_pairs": 0,
+      "median_separation_arcsec": 7.1263172664343095
+    }
+  ],
+  "cross_instrument_unique_pairs": 1,
+  "shared_unique_gaia_candidates": [
+    {
+      "gaia_source_id": "4057490174731431808",
+      "cross_separation_arcsec": 9.33116125727951,
+      "2mass_gaia_arcsec": 1.278677413316109,
+      "msx_gaia_arcsec": 8.22442332760424
+    }
+  ],
+  "status": "REGISTRATION_UNQUALIFIED",
+  "limitations": [
+    "Unknown image observation epochs prevent proper-motion propagation.",
+    "Gaia is independent; proximity does not certify source identity.",
+    "Pixel scales, PSFs and bands differ; covariance and observer geometry are unknown.",
+    "A single shared candidate cannot qualify a registration model or false-match rate."
+  ]
+}

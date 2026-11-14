@@ -1,0 +1,133 @@
+{
+  "schema_version": "sieve.registration.cross-example.v1",
+  "input_urls": [
+    "https://www.astropy.org/astropy-data/galactic_center/gc_2mass_k.fits",
+    "https://www.astropy.org/astropy-data/galactic_center/gc_msx_e.fits"
+  ],
+  "peak_counts": [
+    1217,
+    26
+  ],
+  "candidate_association": {
+    "candidate_pairs": [
+      {
+        "a": 701,
+        "b": 16,
+        "separation_arcsec": 9.33116125727951,
+        "ambiguous": false
+      }
+    ],
+    "unambiguous_pairs": [
+      {
+        "a": 701,
+        "b": 16,
+        "separation_arcsec": 9.33116125727951,
+        "ambiguous": false
+      }
+    ],
+    "ambiguous_pairs": [],
+    "radius_arcsec": 12,
+    "limitations": [
+      "Proximity is not identity; covariance and proper motion are not qualified.",
+      "These are candidate pairings; unmatched detections are not anomalies."
+    ]
+  },
+  "diagnostics": {
+    "schema_version": "sieve.registration.diagnostics.v1",
+    "inputs": [
+      {
+        "sha256": "763ef344df3ac8fa80ff46f00ca1ec59946ca3f99502562d6fcfb73320b1cec3",
+        "source_name": "2mass.fits",
+        "image_hdu": "PRIMARY",
+        "telescope": null,
+        "instrument": null,
+        "date_start": null,
+        "date_end": null,
+        "time_scale": null,
+        "reference_frame": null,
+        "equinox": 2000.0,
+        "has_distortion": false,
+        "pixel_scale_matrix_deg": [
+          [
+            -0.001388889,
+            0.0
+          ],
+          [
+            0.0,
+            0.001388889
+          ]
+        ],
+        "exposure_id": null,
+        "detector": null,
+        "mjd_mid_utc": null,
+        "image_unit": null,
+        "variance_flag_wcs_verified": false,
+        "band_median_um": null,
+        "pixel_scales_arcsec": [
+          5.000000399999999,
+          5.000000399999999
+        ],
+        "roundtrip_max_pixel": 4.94412035552042e-11
+      },
+      {
+        "sha256": "3687fb3763911825f981e74b6a9b82c0e618f7e592b1e0cb17e2c63164e28cd6",
+        "source_name": "msx.fits",
+        "image_hdu": "PRIMARY",
+        "telescope": "MSX",
+        "instrument": "SPIRITIII",
+        "date_start": null,
+        "date_end": null,
+        "time_scale": null,
+        "reference_frame": null,
+        "equinox": null,
+        "has_distortion": false,
+        "pixel_scale_matrix_deg": [
+          [
+            -0.006666666828,
+            0.0
+          ],
+          [
+            0.0,
+            0.006666666828
+          ]
+        ],
+        "exposure_id": null,
+        "detector": null,
+        "mjd_mid_utc": null,
+        "image_unit": "W/m^2-sr",
+        "variance_flag_wcs_verified": false,
+        "band_median_um": null,
+        "pixel_scales_arcsec": [
+          24.000000580800002,
+          24.000000580800002
+        ],
+        "roundtrip_max_pixel": 1.4096028957531932e-11
+      }
+    ],
+    "sampled_overlap": {
+      "a_in_b_fraction": 0.8149910767400357,
+      "b_in_a_fraction": 0.8322427126710291,
+      "grid": 41
+    },
+    "spatial_status": "REGISTRATION_UNQUALIFIED",
+    "temporal_status": "INSUFFICIENT_CALIBRATION",
+    "spectral_status": "INSUFFICIENT_CALIBRATION",
+    "flux_variability_status": "INSUFFICIENT_CALIBRATION",
+    "source_motion_status": "REGISTRATION_UNQUALIFIED",
+    "matched_unambiguous": 1,
+    "separation_median_arcsec": 9.33116125727951,
+    "separation_p95_arcsec": 9.33116125727951,
+    "limitations": [
+      "Overlap is sampled, not an exact footprint; tiny overlaps may be missed.",
+      "Pair separations are in-sample, not independent astrometric registration residuals.",
+      "Reference identity, covariance, proper motion, PSF and calibration are unqualified.",
+      "Band medians omit response curves and source-local wavelength differences."
+    ]
+  },
+  "runtime_seconds": 1.201226208009757,
+  "limitations": [
+    "Different instruments and passbands; source identity is not independently labeled.",
+    "The 12-arcsecond gate and point-source finder are illustrative, not calibrated.",
+    "No variance, quality planes, PSF matching or qualified registration solution."
+  ]
+}

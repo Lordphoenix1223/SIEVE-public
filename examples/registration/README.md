@@ -53,3 +53,20 @@ and [proper image subtraction](https://arxiv.org/abs/1601.02655), which requires
 appropriate calibration, PSFs and registration beyond this demonstration.
 
 See [BENCHMARK.md](BENCHMARK.md) for baseline comparisons, Gaia cohorts, limitations and the experimental CLI.
+
+### Evidence-completeness review queue
+
+After running `compare-qr3`, an experimental review aid retains every candidate pair:
+
+```sh
+PYTHONPATH=. uv run --no-sync python examples/registration/review_queue.py \
+  --comparison reports/compare-qr3.json --output reports/review-queue.json
+```
+
+This groups usable singleton measurements, measurements with excluded-pixel bits in
+the fit window or ambiguous pairings, and deferred incomplete measurements. SOURCE
+is not treated as a bad-pixel flag. Flags describe pixels in the fit window and are
+not artifact labels. All pairs remain present. Catalog associations are unknown for
+the field; the selected-source Gaia cone is not used as a field-wide catalog.
+Scientific eligibility remains insufficient. The groups have not been validated as
+an accuracy ranking, and the queue does not change legacy identity/triage gates.

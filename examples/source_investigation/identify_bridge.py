@@ -17,7 +17,8 @@ REVISION = "7c24aeead8587215f9f9c73c0db51e2e17043cc8"
 def build(case, catalog):
     """Keep the original measurement and evidence alongside each match."""
     observations = {o["obs_id"]: o for o in case.observation["input_exposures"]}
-    results = []
+    jobs = []
+    context = []
     for measurement in case.measurements:
         observation = observations[measurement["obs_id"]]
         time = Time(observation["mjd_avg_utc"], format="mjd", scale="utc")
@@ -55,15 +56,23 @@ def build(case, catalog):
                     "epoch_year": raw["epoch_year"],
                 }
             )
-        proc = subprocess.run(
-            ["node", str(RUNNER)],
-            input=json.dumps({"detection": raw, "catalog": rows}, allow_nan=False),
-            check=True,
-            capture_output=True,
-            text=True,
-            timeout=15,
-        )
-        association = json.loads(proc.stdout)
+        jobs.append({"detection": raw, "catalog": rows})
+        context.append((measurement, observation, raw))
+    proc = subprocess.run(
+        ["node", str(RUNNER)],
+        input=json.dumps({"jobs": jobs}, allow_nan=False),
+        check=True,
+        capture_output=True,
+        text=True,
+        timeout=60,
+    )
+    associations = json.loads(proc.stdout)
+    if len(associations) != len(context):
+        raise ValueError("SearchX returned an unexpected number of results")
+    results = []
+    for (measurement, observation, raw), association in zip(context, associations, strict=True):
+        if association["detection_id"] != raw["id"]:
+            raise ValueError("SearchX returned a mismatched detection ID")
         results.append(
             {
                 "schema_version": "sieve.searchx.identify.v1",

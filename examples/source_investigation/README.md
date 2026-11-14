@@ -104,3 +104,15 @@ The original independent checks are retained; Harness was not run.
 
 The unmodified MIT matcher in `identify/engine.mjs` is pre-existing SearchX Identify
 code from commit `7c24aeead8587215f9f9c73c0db51e2e17043cc8`; its license is included.
+
+The demo validates the two original FITS WCS inputs and writes
+`wcs-diagnostics.json`. Each Identify record links that file and explicitly refuses
+motion and flux-variability claims: registration covariance and calibration are not
+qualified. The marker's `identify_file` points to per-detection inspector records;
+join by the marker `id` and record `detection.id`. The source case's tentative Gaia
+association and Identify's **inconclusive** result use different evidence criteria;
+neither confirms identity. Catalog input is the retained narrow cone, not a
+field-wide survey. Harness remains `NOT_RUN`.
+
+The bridge sends all detection jobs through one Node process while preserving the
+original matcher's separate per-detection, epoch-propagated catalog inputs.

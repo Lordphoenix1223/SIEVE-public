@@ -19,7 +19,7 @@ import numpy
 import photutils
 from pydantic import BaseModel, ConfigDict, Field
 
-from examples.source_investigation import build_evidence
+from examples.source_investigation import build_evidence, identify_bridge
 
 HERE = Path(__file__).resolve().parent
 CATALOG_SHA256 = "69395c68563b17afec52117c73f229a68f96b7840d92862efcdabc94198c42f0"
@@ -85,6 +85,10 @@ def main() -> None:
         (args.output / "evidence.json").read_text()
     )
     case = package.cases[0]
+    identities = identify_bridge.build(case, package.catalog)
+    (args.output / "searchx-identifications.json").write_text(
+        json.dumps(identities, indent=2, allow_nan=False) + "\n"
+    )
     marker = Marker(
         id=case.measurements[0]["measurement_id"], ra_deg=case.ra_deg, dec_deg=case.dec_deg
     )
@@ -107,7 +111,7 @@ def main() -> None:
                     "run_demo.py": digest(Path(__file__)),
                     "build_evidence.py": digest(HERE / "build_evidence.py"),
                 },
-                "identify": "NOT_RUN: SearchX Identify interface unavailable",
+                "identify": "searchx-identifications.json",
                 "harness": "NOT_RUN: no applicable moving-object backend executed",
                 "artifact_case": "retained exploratory simulation, not re-executed by this command",
                 "files_sha256": {
@@ -119,7 +123,7 @@ def main() -> None:
         + "\n"
     )
     print(f"Validated evidence and Aladin marker: {args.output}")
-    print(f"Gaia mode: {package.catalog['access_mode']}; Identify and Harness NOT_RUN")
+    print(f"Gaia mode: {package.catalog['access_mode']}; Identify complete; Harness NOT_RUN")
 
 
 if __name__ == "__main__":
